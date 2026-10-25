@@ -1,0 +1,1776 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>RighTool.ai — Find the right AI tool for the job</title>
+    <meta name="description" content="A curated, honest directory of AI tools, organised by the job you need done. Sponsored placements are always labelled — rankings are never for sale." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="RighTool.ai" />
+    <meta name="theme-color" content="#d9480f" />
+    <link rel="canonical" id="canonicalLink" href="https://rightool.ai/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RighTool.ai" />
+    <meta property="og:title" id="ogTitle" content="RighTool.ai — Find the right AI tool for the job" />
+    <meta property="og:description" id="ogDesc" content="A curated, honest directory of AI tools, organised by the job you need done. Sponsored placements are always labelled — rankings are never for sale." />
+    <meta property="og:url" id="ogUrl" content="https://rightool.ai/" />
+    <meta property="og:image" content="https://rightool.ai/icon.webp" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" id="twTitle" content="RighTool.ai — Find the right AI tool for the job" />
+    <meta name="twitter:description" id="twDesc" content="A curated, honest directory of AI tools, organised by the job you need done. Sponsored placements are always labelled — rankings are never for sale." />
+    <meta name="twitter:image" content="https://rightool.ai/icon.webp" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[
+      {"@type":"WebSite","@id":"https://rightool.ai/#website","url":"https://rightool.ai/","name":"RighTool.ai","description":"A curated, honest directory of AI tools, organised by the job you need done.","publisher":{"@id":"https://rightool.ai/#org"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://rightool.ai/directory?q={search_term_string}"},"query-input":"required name=search_term_string"}},
+      {"@type":"Organization","@id":"https://rightool.ai/#org","name":"RighTool.ai","url":"https://rightool.ai/","logo":"https://rightool.ai/icon.webp","slogan":"Find the right AI tool for the job."}
+    ]}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root{
+        --bg:#ffffff;
+        --bg-soft:#f6f7f5;
+        --panel:#ffffff;
+        --ink:#10151d;
+        --ink-2:#3d4654;
+        --muted:#6b7482;
+        --line:#e4e7e1;
+        --accent:#d9480f;
+        --accent-dark:#b53c0b;
+        --accent-soft:#fdf0e8;
+        --green:#177245;
+        --green-soft:#e6f4ec;
+        --amber:#9a6206;
+        --amber-soft:#fbf0da;
+        --slate-badge:#40506b;
+        --slate-soft:#e9edf3;
+        --featured-bg:#fff8ec;
+        --featured-line:#ecc887;
+        --shadow:0 1px 2px rgba(16,21,29,.05),0 8px 24px -12px rgba(16,21,29,.18);
+        --radius:14px;
+      }
+      @media (prefers-color-scheme: dark){
+        :root{
+          --bg:#0e1116;
+          --bg-soft:#141922;
+          --panel:#151b24;
+          --ink:#eef2f6;
+          --ink-2:#c3ccd7;
+          --muted:#8d97a5;
+          --line:#26303d;
+          --accent:#ff7a45;
+          --accent-dark:#ffa07e;
+          --accent-soft:#2b1c12;
+          --green:#5fc98d;
+          --green-soft:#14291e;
+          --amber:#e8b45a;
+          --amber-soft:#2c2310;
+          --slate-badge:#a9bcd8;
+          --slate-soft:#1d2735;
+          --featured-bg:#241b0d;
+          --featured-line:#6d5620;
+          --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+        }
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      body{
+        margin:0;background:var(--bg);color:var(--ink);
+        font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+        font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;
+      }
+      h1,h2,h3,.display{font-family:"Sora","Manrope",sans-serif;line-height:1.15;letter-spacing:-.01em;margin:0}
+      p{margin:0}
+      a{color:var(--accent);text-decoration:none}
+      a:hover{text-decoration:underline}
+      button{font:inherit;cursor:pointer}
+      .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+      /* ---------- header ---------- */
+      header.site{
+        position:sticky;top:0;z-index:50;background:var(--bg);
+        border-bottom:1px solid var(--line);
+      }
+      .header-in{display:flex;align-items:center;gap:28px;height:64px}
+      .brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-family:"Sora",sans-serif;font-weight:800;font-size:20px;letter-spacing:-.02em}
+      .brand:hover{text-decoration:none}
+      .brand .mark{
+        width:32px;height:32px;border-radius:9px;background:var(--accent);color:#fff;
+        display:grid;place-items:center;font-size:17px;font-weight:800;flex:none;
+      }
+      .brand .dot{color:var(--accent)}
+      nav.main{display:flex;gap:4px;margin-left:auto}
+      nav.main a{
+        color:var(--ink-2);font-weight:600;font-size:15px;padding:8px 12px;border-radius:8px;
+      }
+      nav.main a:hover{color:var(--ink);background:var(--bg-soft);text-decoration:none}
+      nav.main a.active{color:var(--accent)}
+      .header-cta{
+        background:var(--ink);color:var(--bg);font-weight:700;font-size:14px;
+        padding:9px 16px;border-radius:9px;border:1px solid var(--ink);white-space:nowrap;
+      }
+      .header-cta:hover{background:var(--accent);border-color:var(--accent);color:#fff;text-decoration:none}
+      @media (max-width:760px){
+        nav.main{display:none}
+        .header-in{gap:14px}
+      }
+      .mobile-nav{display:none;border-top:1px solid var(--line);padding:8px 0}
+      .mobile-nav.open{display:block}
+      .mobile-nav a{display:block;padding:10px 20px;color:var(--ink-2);font-weight:600}
+      .burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:8px;width:40px;height:40px;color:var(--ink)}
+      @media (max-width:760px){.burger{display:grid;place-items:center}.header-cta{display:none}}
+
+      /* ---------- hero ---------- */
+      .hero{padding:64px 0 8px;text-align:left}
+      .hero h1{font-size:clamp(34px,5.4vw,56px);font-weight:800;max-width:16ch}
+      .hero h1 em{font-style:normal;color:var(--accent)}
+      .hero .sub{margin-top:16px;font-size:clamp(16px,2vw,19px);color:var(--ink-2);max-width:56ch}
+      .searchbar{
+        margin-top:28px;display:flex;gap:10px;max-width:640px;
+        background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:6px;
+        box-shadow:var(--shadow);
+      }
+      .searchbar:focus-within{border-color:var(--accent)}
+      .searchbar input{
+        flex:1;border:0;outline:0;background:transparent;color:var(--ink);
+        font:inherit;font-size:16px;padding:8px 10px;min-width:0;
+      }
+      .searchbar button{
+        background:var(--accent);color:#fff;border:0;border-radius:9px;
+        font-weight:700;padding:10px 22px;font-size:15px;
+      }
+      .searchbar button:hover{background:var(--accent-dark)}
+      .hero .quick{margin-top:14px;font-size:14px;color:var(--muted)}
+      .hero .quick a{font-weight:600}
+      .trust-row{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;padding:18px 0 6px;border-top:1px solid var(--line)}
+      .trust-row div{display:flex;gap:9px;align-items:baseline;font-size:14.5px;color:var(--ink-2)}
+      .trust-row b{font-family:"Sora",sans-serif;color:var(--ink)}
+
+      /* ---------- sections ---------- */
+      section.block{padding:44px 0 8px}
+      .sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+      .sec-head h2{font-size:26px;font-weight:700}
+      .sec-head .note{font-size:14px;color:var(--muted)}
+      .sec-head .more{margin-left:auto;font-weight:700;font-size:14.5px}
+
+      /* ---------- category grid ---------- */
+      .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+      .cat-card{
+        display:flex;gap:13px;align-items:center;padding:16px;border:1px solid var(--line);
+        border-radius:var(--radius);background:var(--panel);color:var(--ink);
+      }
+      .cat-card:hover{border-color:var(--accent);text-decoration:none;box-shadow:var(--shadow)}
+      .cat-ic{
+        width:42px;height:42px;flex:none;border-radius:11px;background:var(--accent-soft);
+        color:var(--accent);display:grid;place-items:center;
+      }
+      .cat-card b{display:block;font-size:15.5px;line-height:1.25}
+      .cat-card span{font-size:13px;color:var(--muted)}
+
+      /* ---------- tool cards ---------- */
+      .tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:14px}
+      .tool-card{
+        display:flex;flex-direction:column;gap:10px;padding:18px;height:100%;
+        border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);color:var(--ink);
+      }
+      .tool-card:hover{border-color:var(--accent);text-decoration:none;box-shadow:var(--shadow)}
+      .tool-top{display:flex;align-items:center;gap:12px}
+      .logo-mark{
+        width:44px;height:44px;flex:none;border-radius:11px;display:block;
+        position:relative;overflow:hidden;border:1px solid var(--line);
+      }
+      .logo-mark .fb{
+        position:absolute;inset:0;display:grid;place-items:center;font-style:normal;
+        font-family:"Sora",sans-serif;font-weight:700;font-size:16px;color:#fff;
+      }
+      .logo-mark img{
+        position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
+        padding:5px;background:#fff;
+      }
+      .logo-mark.sm{width:40px;height:40px;border-radius:10px}
+      .logo-mark.sm .fb{font-size:14px}
+      .logo-mark.sm img{padding:4px}
+      .tool-top h3{font-size:17px;font-weight:700}
+      .tool-top .cat-name{font-size:12.5px;color:var(--muted);font-weight:600}
+      .tool-card .tag{font-size:14.5px;color:var(--ink-2);line-height:1.45;flex:1}
+      .badge-row{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+      .badge{font-size:12px;font-weight:800;padding:3px 9px;border-radius:999px;letter-spacing:.01em}
+      .badge.free{background:var(--green-soft);color:var(--green)}
+      .badge.freemium{background:var(--amber-soft);color:var(--amber)}
+      .badge.paid{background:var(--slate-soft);color:var(--slate-badge)}
+      .price-note{font-size:12.5px;color:var(--muted);font-weight:600}
+      .featured-strip{
+        border:1px solid var(--featured-line);background:var(--featured-bg);
+        border-radius:18px;padding:22px;margin-top:8px;
+      }
+      .featured-label{
+        display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:800;
+        letter-spacing:.06em;text-transform:uppercase;color:var(--amber);
+      }
+      .featured-flag{
+        font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+        background:var(--amber-soft);color:var(--amber);border:1px solid var(--featured-line);
+        padding:2px 8px;border-radius:999px;margin-left:auto;white-space:nowrap;
+      }
+
+      /* ---------- roundup teasers ---------- */
+      .teaser-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+      .teaser{
+        border:1px solid var(--line);border-radius:var(--radius);padding:22px;background:var(--panel);color:var(--ink);
+        display:flex;flex-direction:column;gap:8px;
+      }
+      .teaser:hover{border-color:var(--accent);text-decoration:none;box-shadow:var(--shadow)}
+      .teaser .kicker{font-size:12.5px;font-weight:800;color:var(--accent);letter-spacing:.05em;text-transform:uppercase}
+      .teaser h3{font-size:20px;font-weight:700}
+      .teaser p{font-size:14.5px;color:var(--ink-2)}
+      .teaser .go{margin-top:auto;font-weight:700;font-size:14.5px;color:var(--accent)}
+
+      /* ---------- newsletter / cta bands ---------- */
+      .band{
+        margin:52px 0 0;border-radius:18px;padding:34px;background:var(--ink);color:var(--bg);
+      }
+      .band h2{font-size:24px;font-weight:700;color:var(--bg)}
+      .band p{margin-top:8px;color:var(--bg);opacity:.75;max-width:52ch;font-size:15.5px}
+      .band form{display:flex;gap:10px;margin-top:20px;max-width:520px;flex-wrap:wrap}
+      .band input{
+        flex:1;min-width:220px;border-radius:10px;border:1px solid transparent;padding:12px 14px;
+        font:inherit;font-size:15px;background:var(--bg);color:var(--ink);
+      }
+      .band button{background:var(--accent);color:#fff;border:0;border-radius:10px;font-weight:700;padding:12px 22px}
+      .band button:hover{background:var(--accent-dark)}
+      .band .fine{font-size:13px;opacity:.6;margin-top:12px}
+      .band.light{background:var(--accent-soft);color:var(--ink)}
+      .band.light h2{color:var(--ink)}
+      .band.light p{color:var(--ink-2);opacity:1}
+      .form-done{
+        margin-top:20px;background:var(--green-soft);color:var(--green);font-weight:700;
+        padding:14px 18px;border-radius:10px;max-width:520px;font-size:15px;
+      }
+      .band .form-done{background:rgba(255,255,255,.12);color:inherit}
+
+      /* ---------- directory ---------- */
+      .page-head{padding:40px 0 6px}
+      .page-head h1{font-size:clamp(28px,4vw,40px);font-weight:800}
+      .page-head .sub{margin-top:10px;color:var(--ink-2);max-width:62ch;font-size:16.5px}
+      .filters{
+        position:sticky;top:64px;z-index:20;background:var(--bg);padding:16px 0 12px;
+        border-bottom:1px solid var(--line);margin-bottom:22px;
+      }
+      .filters .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+      .filters .search{
+        flex:1;min-width:200px;display:flex;align-items:center;gap:8px;
+        border:1.5px solid var(--line);border-radius:10px;padding:0 12px;background:var(--panel);
+      }
+      .filters .search:focus-within{border-color:var(--accent)}
+      .filters .search input{border:0;outline:0;background:transparent;color:var(--ink);font:inherit;padding:10px 0;width:100%}
+      .chip{
+        border:1.5px solid var(--line);background:var(--panel);color:var(--ink-2);
+        border-radius:999px;padding:7px 14px;font-weight:700;font-size:13.5px;
+      }
+      .chip:hover{border-color:var(--accent);color:var(--ink)}
+      .chip.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+      .chip-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+      .chip-row .lbl{font-size:13px;font-weight:700;color:var(--muted);align-self:center;margin-right:2px}
+      select.sortsel{
+        font:inherit;font-size:14px;font-weight:600;color:var(--ink);
+        border:1.5px solid var(--line);border-radius:10px;padding:9px 10px;background:var(--panel);
+      }
+      .result-count{font-size:14px;color:var(--muted);margin:4px 0 16px}
+      .empty{
+        border:1.5px dashed var(--line);border-radius:var(--radius);padding:44px 22px;text-align:center;color:var(--muted);
+      }
+      .empty b{color:var(--ink);display:block;font-size:17px;margin-bottom:6px}
+
+      /* ---------- tool detail ---------- */
+      .crumb{font-size:13.5px;color:var(--muted);padding-top:26px;font-weight:600}
+      .crumb a{color:var(--muted)}
+      .detail-head{display:flex;gap:18px;align-items:flex-start;margin-top:14px;flex-wrap:wrap}
+      .detail-head .logo-mark{width:64px;height:64px;border-radius:15px}
+      .detail-head .logo-mark .fb{font-size:22px}
+      .detail-head .logo-mark img{padding:8px}
+      .detail-head h1{font-size:clamp(28px,4vw,38px);font-weight:800}
+      .detail-head .tag{font-size:17px;color:var(--ink-2);margin-top:4px;max-width:56ch}
+      .visit-btn{
+        margin-left:auto;background:var(--accent);color:#fff;font-weight:700;font-size:15.5px;
+        padding:13px 26px;border-radius:11px;display:inline-block;white-space:nowrap;
+      }
+      .visit-btn:hover{background:var(--accent-dark);text-decoration:none}
+      .detail-grid{display:grid;grid-template-columns:1.7fr 1fr;gap:26px;margin-top:30px;align-items:start}
+      @media (max-width:820px){.detail-grid{grid-template-columns:1fr}}
+      .detail-grid h2{font-size:19px;font-weight:700;margin-bottom:10px}
+      .detail-grid p.body{color:var(--ink-2);font-size:16px}
+      .fact-box{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:var(--bg-soft)}
+      .fact-box dl{margin:0;display:grid;gap:14px}
+      .fact-box dt{font-size:12.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+      .fact-box dd{margin:3px 0 0;font-weight:600;font-size:15px}
+      .pc{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+      @media (max-width:560px){.pc{grid-template-columns:1fr}}
+      .pc .col{border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+      .pc h3{font-size:15px;font-weight:700;margin-bottom:10px}
+      .pc ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+      .pc li{font-size:14.5px;color:var(--ink-2);padding-left:24px;position:relative}
+      .pc li::before{position:absolute;left:0;top:0;font-weight:800}
+      .pc .pros li::before{content:"+";color:var(--green)}
+      .pc .cons li::before{content:"–";color:var(--accent)}
+      .tagchips{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}
+      .tagchips span{font-size:13px;font-weight:600;background:var(--bg-soft);border:1px solid var(--line);padding:4px 11px;border-radius:999px;color:var(--ink-2)}
+
+      /* ---------- roundup article ---------- */
+      .article{max-width:760px}
+      .article .intro{font-size:17px;color:var(--ink-2);margin-top:14px}
+      .pick{
+        display:flex;gap:16px;border:1px solid var(--line);border-radius:var(--radius);
+        padding:20px;margin-top:16px;background:var(--panel);align-items:flex-start;
+      }
+      .pick .rank{
+        font-family:"Sora",sans-serif;font-weight:800;font-size:22px;color:var(--accent);
+        width:34px;flex:none;text-align:center;
+      }
+      .pick h3{font-size:18px;font-weight:700}
+      .pick h3 a{color:var(--ink)}
+      .pick h3 a:hover{color:var(--accent)}
+      .pick p{font-size:15px;color:var(--ink-2);margin-top:4px}
+      .pick .badge-row{margin-top:10px}
+      .pick .visit{font-weight:700;font-size:14px;white-space:nowrap}
+
+      /* ---------- pricing / submit ---------- */
+      .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:26px}
+      .tier{border:1px solid var(--line);border-radius:16px;padding:26px;background:var(--panel);display:flex;flex-direction:column}
+      .tier.hot{border:2px solid var(--accent);position:relative}
+      .tier .t-name{font-weight:700;font-size:15px}
+      .tier .t-price{font-family:"Sora",sans-serif;font-size:38px;font-weight:800;margin-top:8px}
+      .tier .t-price small{font-size:14px;color:var(--muted);font-weight:600}
+      .tier .t-sub{font-size:14px;color:var(--muted);margin-top:2px}
+      .tier ul{margin:18px 0 22px;padding:0;list-style:none;display:grid;gap:9px;flex:1}
+      .tier li{font-size:14.5px;color:var(--ink-2);padding-left:22px;position:relative}
+      .tier li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
+      .tier button{
+        border-radius:10px;padding:12px;font-weight:700;font-size:15px;
+        border:1.5px solid var(--ink);background:var(--panel);color:var(--ink);
+      }
+      .tier button.pick-on,.tier.hot button{background:var(--accent);border-color:var(--accent);color:#fff}
+      .tier .flag{
+        position:absolute;top:-13px;left:22px;background:var(--accent);color:#fff;
+        font-size:11.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+        padding:4px 11px;border-radius:999px;
+      }
+      .submit-form{
+        margin-top:34px;border:1px solid var(--line);border-radius:16px;padding:26px;background:var(--bg-soft);
+      }
+      .submit-form h2{font-size:21px;font-weight:700}
+      .f-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+      @media (max-width:640px){.f-grid{grid-template-columns:1fr}}
+      .f-grid label{display:block;font-size:13.5px;font-weight:700;margin-bottom:6px}
+      .f-grid input,.f-grid select,.f-grid textarea{
+        width:100%;font:inherit;font-size:15px;padding:11px 12px;border:1.5px solid var(--line);
+        border-radius:10px;background:var(--panel);color:var(--ink);
+      }
+      .f-grid .full{grid-column:1/-1}
+      .submit-form .send{
+        margin-top:18px;background:var(--accent);color:#fff;border:0;border-radius:10px;
+        font-weight:700;padding:13px 28px;font-size:15.5px;
+      }
+      .submit-form .send:hover{background:var(--accent-dark)}
+
+      /* ---------- prose pages ---------- */
+      .prose{max-width:720px}
+      .prose h2{font-size:22px;font-weight:700;margin:34px 0 10px}
+      .prose h2:first-of-type{margin-top:24px}
+      .prose p{color:var(--ink-2);font-size:16.5px;margin-top:10px}
+      .prose ul{color:var(--ink-2);font-size:16.5px;padding-left:22px;display:grid;gap:8px;margin-top:10px}
+      .callout{
+        border:1px solid var(--featured-line);background:var(--featured-bg);border-radius:14px;
+        padding:20px 22px;margin-top:26px;
+      }
+      .callout b{font-family:"Sora",sans-serif}
+      .callout p{color:var(--ink-2);margin-top:6px;font-size:15.5px}
+
+      /* ---------- footer ---------- */
+      footer.site{margin-top:70px;border-top:1px solid var(--line);background:var(--bg-soft)}
+      .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;padding:42px 0 30px}
+      @media (max-width:820px){.foot-grid{grid-template-columns:1fr 1fr}}
+      .foot-grid h4{font-family:"Sora",sans-serif;font-size:14px;font-weight:700;margin:0 0 12px}
+      .foot-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+      .foot-grid a{color:var(--ink-2);font-size:14.5px}
+      .foot-brand p{font-size:14.5px;color:var(--muted);margin-top:10px;max-width:30ch}
+      .foot-base{
+        border-top:1px solid var(--line);padding:18px 0 26px;font-size:13.5px;color:var(--muted);
+        display:flex;gap:8px 26px;flex-wrap:wrap;
+      }
+      main{min-height:60vh}
+      .hidden{display:none!important}
+
+      /* ---------- answer boxes, FAQ, blog (SEO / AEO) ---------- */
+      .answer-box{
+        border:1px solid var(--line);background:var(--bg-soft);border-radius:14px;
+        padding:20px 22px;margin-top:22px;max-width:760px;
+      }
+      .answer-box .ab-label{
+        font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);
+      }
+      .answer-box p{margin-top:7px;font-size:16.5px;color:var(--ink-2)}
+      .answer-box p b{color:var(--ink)}
+      .faq-block{margin-top:40px;max-width:760px}
+      .faq-block>h2{font-size:22px;font-weight:700;margin-bottom:6px}
+      .faq-item{
+        border:1px solid var(--line);border-radius:12px;background:var(--panel);
+        padding:15px 18px;margin-top:10px;
+      }
+      .faq-item summary{font-family:"Sora",sans-serif;font-weight:700;font-size:15.5px;cursor:pointer;color:var(--ink)}
+      .faq-item p{margin-top:9px;color:var(--ink-2);font-size:15.5px}
+      .post-meta{display:flex;gap:8px 18px;flex-wrap:wrap;font-size:14px;color:var(--muted);font-weight:600;margin-top:12px}
+      .takeaways{
+        border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:22px;background:var(--panel);
+      }
+      .takeaways h2{font-size:16px;font-weight:700;margin:0 0 10px}
+      .takeaways ul{margin:0;padding-left:20px;display:grid;gap:7px;color:var(--ink-2);font-size:15.5px}
+      .post-card{
+        border:1px solid var(--line);border-radius:var(--radius);padding:22px;background:var(--panel);color:var(--ink);
+        display:flex;flex-direction:column;gap:8px;
+      }
+      .post-card:hover{border-color:var(--accent);text-decoration:none;box-shadow:var(--shadow)}
+      .post-card .kicker{font-size:12.5px;font-weight:800;color:var(--accent);letter-spacing:.05em;text-transform:uppercase}
+      .post-card h3{font-size:20px;font-weight:700}
+      .post-card p{font-size:14.5px;color:var(--ink-2)}
+      .post-card .pmeta{margin-top:auto;font-size:13px;color:var(--muted);font-weight:600}
+      .post-body{max-width:760px}
+      .post-body h2{font-size:23px;font-weight:700;margin:36px 0 10px}
+      .post-body p{color:var(--ink-2);font-size:16.5px;margin-top:10px}
+      .post-body ul{color:var(--ink-2);font-size:16.5px;padding-left:22px;display:grid;gap:8px;margin-top:10px}
+      .post-body a{font-weight:600}
+    </style>
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap header-in">
+        <a class="brand" href="#/"><span class="mark">R</span><span>RighTool<span class="dot">.ai</span></span></a>
+        <nav class="main" id="mainNav">
+          <a href="#/directory" data-nav="directory">Directory</a>
+          <a href="#/roundups" data-nav="roundups">Roundups</a>
+          <a href="#/blog" data-nav="blog">Blog</a>
+          <a href="#/how-we-rank" data-nav="rank">How We Rank</a>
+          <a href="#/submit" data-nav="submit">Submit a Tool</a>
+        </nav>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <a class="header-cta" href="#/submit">Submit your tool</a>
+      </div>
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#/directory">Directory</a>
+        <a href="#/roundups">Roundups</a>
+        <a href="#/blog">Blog</a>
+        <a href="#/how-we-rank">How We Rank</a>
+        <a href="#/submit">Submit a Tool</a>
+      </div>
+    </header>
+
+    <main id="app"></main>
+    <noscript>
+      <div class="wrap" style="padding:32px 20px">
+        <h1>Find the right AI tool for the job</h1>
+        <p>RighTool.ai is a curated directory of AI tools organised by job. Browse the <a href="#/directory">full directory</a>, read our <a href="#/roundups">best-of roundups</a> and <a href="#/blog">blog guides</a>, or learn <a href="#/how-we-rank">how we rank</a>. Enable JavaScript to search and filter the directory.</p>
+      </div>
+    </noscript>
+
+    <footer class="site">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div class="foot-brand">
+            <a class="brand" href="#/" style="font-size:18px"><span class="mark">R</span><span>RighTool<span class="dot">.ai</span></span></a>
+            <p>Find the right AI tool for the job. Curated by humans, organised by task — and honest about what's sponsored.</p>
+          </div>
+          <div>
+            <h4>Categories</h4>
+            <ul id="footCats"></ul>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#/directory">Full directory</a></li>
+              <li><a href="#/roundups">Best-of roundups</a></li>
+              <li><a href="#/blog">Blog &amp; guides</a></li>
+              <li><a href="#/directory?pricing=Free">Free AI tools</a></li>
+              <li><a href="#/directory?pricing=Freemium">Freemium AI tools</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>For tool makers</h4>
+            <ul>
+              <li><a href="#/submit">Submit a tool</a></li>
+              <li><a href="#/submit">Listing &amp; launch pricing</a></li>
+              <li><a href="#/how-we-rank">How we rank</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-base">
+          <span>© 2026 RighTool.ai</span>
+          <span><a href="sitemap.xml">Sitemap</a> · <a href="llms.txt">llms.txt</a> · <a href="robots.txt">robots.txt</a></span>
+          <span>Prices change — always check the tool's own site before you buy.</span>
+          <span>Sponsored placements are always labelled. Rankings are never for sale.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+    /* ================= DATA ================= */
+    var CATEGORIES = [
+      {slug:'chatbots',     name:'Chatbots & Assistants', blurb:'Ask, brainstorm, reason', icon:'chat'},
+      {slug:'writing',      name:'Writing',               blurb:'Drafts, editing, polish', icon:'pen'},
+      {slug:'image',        name:'Image Generation',      blurb:'Art, photos, graphics', icon:'image'},
+      {slug:'video',        name:'Video',                 blurb:'Create, edit, repurpose', icon:'play'},
+      {slug:'audio',        name:'Audio & Voice',         blurb:'Voices, music, sound', icon:'wave'},
+      {slug:'coding',       name:'Coding',                blurb:'Write and ship code', icon:'code'},
+      {slug:'productivity', name:'Productivity',          blurb:'Meetings, notes, decks', icon:'check'},
+      {slug:'marketing',    name:'Marketing',             blurb:'Copy, ads, SEO', icon:'mega'},
+      {slug:'design',       name:'Design',                blurb:'Interfaces, logos, sites', icon:'penTool'},
+      {slug:'business',     name:'Business & Automation', blurb:'Workflows, CRM, ops', icon:'gear'}
+    ];
+    function catName(slug){ for (var i=0;i<CATEGORIES.length;i++) if (CATEGORIES[i].slug===slug) return CATEGORIES[i].name; return slug; }
+
+    /* price: model is Free | Freemium | Paid. note = what the plan situation actually is. */
+    var TOOLS = [
+      /* ---- Chatbots & Assistants ---- */
+      {id:'chatgpt',name:'ChatGPT',cat:'chatbots',hue:'#0e8a6d',
+       tag:'The all-round AI assistant for writing, analysis, coding and images',
+       desc:'OpenAI\u2019s conversational assistant and the default starting point for most people. It drafts and edits text, explains and writes code, analyses files and spreadsheets, generates images, and holds natural voice conversations. Custom GPTs and a large ecosystem of shared assistants extend it to niche jobs.',
+       best:'Everyday questions, drafting, brainstorming and coding help across almost any topic',
+       price:'Freemium',priceNote:'Free tier · Plus from $20/mo',
+       pros:['Most capable all-rounder in one chat window','Custom GPTs and a huge shared ecosystem','Strong voice mode and image generation built in'],
+       cons:['The best models are capped on the free tier','Can state wrong answers with total confidence'],
+       tags:['writing','coding','research','images','voice','analysis'],url:'https://chatgpt.com',affiliate:'',trend:true},
+      {id:'claude',name:'Claude',cat:'chatbots',hue:'#c05a2e',
+       tag:'Thoughtful AI assistant that excels at long documents and natural writing',
+       desc:'Anthropic\u2019s assistant, known for writing that reads like a person wrote it and for handling very long inputs — contracts, manuscripts, codebases — in one conversation. Projects let you ground it in your own files, and it is a favourite of developers for careful, well-explained code.',
+       best:'Long-form writing, document analysis and coding where quality of reasoning matters',
+       price:'Freemium',priceNote:'Free tier · Pro from $20/mo',
+       pros:['Best-in-class long-form writing tone','Very large context window for big documents','Careful, well-structured reasoning and code'],
+       cons:['Usage limits bite on the Pro plan during heavy days','Fewer built-in extras than ChatGPT (no image generation)'],
+       tags:['writing','documents','coding','analysis','long documents'],url:'https://claude.ai',affiliate:'',trend:true},
+      {id:'gemini',name:'Gemini',cat:'chatbots',hue:'#2f6fd0',
+       tag:'Google\u2019s AI assistant, woven into Search, Gmail, Docs and Android',
+       desc:'Google\u2019s flagship assistant. It answers questions with live web grounding, drafts inside Gmail and Docs, summarises YouTube videos, and on paid plans handles very large files and long research reports. If your work already lives in Google Workspace, it meets you where you are.',
+       best:'People who live in Google Workspace and want AI inside the apps they already use',
+       price:'Freemium',priceNote:'Free tier · Google AI Pro from $19.99/mo',
+       pros:['Deep integration with Gmail, Docs, Drive and Search','Excellent with video and very long inputs','Generous free tier'],
+       cons:['Answer quality varies more between tasks than rivals','The best features require the paid Google AI plan'],
+       tags:['google','gmail','docs','research','video','android'],url:'https://gemini.google.com',affiliate:''},
+      {id:'perplexity',name:'Perplexity',cat:'chatbots',hue:'#1f7a72',
+       tag:'An answer engine that searches the live web and cites its sources',
+       desc:'Perplexity works like a search engine that reads the results for you: ask a question and it returns a written answer with numbered citations you can check. Pro adds stronger models, file uploads and image generation. It is the fastest way to research a topic without opening fifteen tabs.',
+       best:'Research, fact-checking and any question where you need to see the sources',
+       price:'Freemium',priceNote:'Free tier · Pro from $20/mo',
+       pros:['Every answer links to its sources','Fast, focused research without tab overload','Good free tier for everyday questions'],
+       cons:['Not the tool for long creative writing','Deep research and best models are Pro-only'],
+       tags:['research','search','facts','citations','news'],url:'https://www.perplexity.ai',affiliate:'',trend:true},
+      {id:'microsoft-copilot',name:'Microsoft Copilot',cat:'chatbots',hue:'#3a6ea5',
+       tag:'AI built into Windows, Edge and Microsoft 365 apps',
+       desc:'Microsoft\u2019s assistant sits inside Windows, Edge, Word, Excel, Outlook and Teams. It drafts documents, summarises meetings and email threads, and builds spreadsheets from prompts. For offices standardised on Microsoft 365, it is the AI that is already installed.',
+       best:'Microsoft 365 shops that want AI inside Word, Excel, Outlook and Teams',
+       price:'Freemium',priceNote:'Free tier · Copilot Pro from $20/mo',
+       pros:['Already built into Windows and Office apps','Strong meeting and email summaries in Teams/Outlook','Free tier gives capable chat and image creation'],
+       cons:['Quality can feel a step behind ChatGPT itself','Full value needs a Microsoft 365 subscription on top'],
+       tags:['microsoft','office','word','excel','teams','windows'],url:'https://copilot.microsoft.com',affiliate:''},
+
+      /* ---- Writing ---- */
+      {id:'grammarly',name:'Grammarly',cat:'writing',hue:'#12805c',
+       tag:'Writing assistant that checks grammar, clarity and tone everywhere you type',
+       desc:'Grammarly sits in your browser, email, docs and phone keyboard, catching grammar and spelling errors and suggesting clearer, better-toned rewrites as you write. Its generative features can draft and rework paragraphs in your own voice. It is less a chatbot than a permanent second pair of eyes.',
+       best:'Anyone whose writing is read by customers, clients or a boss',
+       price:'Freemium',priceNote:'Free tier · Pro from $12/mo billed yearly',
+       pros:['Works in almost every app and website','Tone and clarity suggestions, not just spellcheck','Easy for non-writers to use well'],
+       cons:['The most useful suggestions are paywalled','Can flatten your personal style if you accept everything'],
+       tags:['grammar','editing','email','proofreading','tone'],url:'https://www.grammarly.com',affiliate:''},
+      {id:'jasper',name:'Jasper',cat:'writing',hue:'#7a4a9e',
+       tag:'AI writing platform built for marketing teams and brand voice',
+       desc:'Jasper generates marketing copy — ads, emails, social posts, blog drafts — using templates and campaigns, and learns your brand voice, style guide and product facts so output sounds like your company rather than generic AI. Built for teams, with collaboration and review workflows.',
+       best:'Marketing teams that produce a high volume of on-brand copy',
+       price:'Paid',priceNote:'From $39/mo billed yearly',
+       pros:['Brand voice and knowledge base keep output on-message','Campaigns generate a full asset set from one brief','Mature template library for ads, email and social'],
+       cons:['Expensive for solo users compared to a general chatbot','Output still needs a human edit before publishing'],
+       tags:['marketing copy','ads','brand voice','blogging','teams'],url:'https://www.jasper.ai',affiliate:''},
+      {id:'writesonic',name:'Writesonic',cat:'writing',hue:'#3e63d8',
+       tag:'Affordable AI writer for SEO articles and marketing copy',
+       desc:'Writesonic focuses on long-form SEO content: give it a keyword and it researches top-ranking pages and drafts a structured article, alongside tools for ads, product descriptions and a website chatbot builder. It undercuts most rivals on price for similar output volume.',
+       best:'Bloggers and small teams publishing SEO content on a budget',
+       price:'Freemium',priceNote:'Free trial · paid plans scale with word volume',
+       pros:['Lower cost per article than most rivals','SEO workflow built around keywords and rankings','Chatbot builder included on paid plans'],
+       cons:['Word credits run down quickly on long pieces','Article quality varies — fact-check before publishing'],
+       tags:['seo','blogging','articles','ads','chatbot'],url:'https://writesonic.com',affiliate:''},
+      {id:'quillbot',name:'QuillBot',cat:'writing',hue:'#1d9668',
+       tag:'Paraphrasing and rewriting tool loved by students and ESL writers',
+       desc:'QuillBot\u2019s paraphraser rewrites sentences in multiple modes — standard, fluency, formal, creative — while keeping the meaning. Around it sit a grammar checker, summariser, citation generator and plagiarism checker, making it a practical toolkit for academic and everyday rewriting.',
+       best:'Rewording drafts, tightening sentences and summarising source material',
+       price:'Freemium',priceNote:'Free tier · Premium unlocks all modes and longer inputs',
+       pros:['Best-in-class paraphrasing with tone modes','Cheap premium compared to full writing suites','Useful citation and summarising tools included'],
+       cons:['Free tier limits you to short passages','Heavy paraphrasing can sound stilted or evasive'],
+       tags:['paraphrasing','rewriting','students','summarising','citations'],url:'https://quillbot.com',affiliate:''},
+
+      /* ---- Image Generation ---- */
+      {id:'midjourney',name:'Midjourney',cat:'image',hue:'#31435c',
+       tag:'The benchmark for beautiful, artistic AI images',
+       desc:'Midjourney turns text prompts into striking, art-directed images — illustration, concept art, product mockups, editorial art. Its house style is consistently gorgeous, and controls for style reference, character consistency and moodboards give experienced users real art direction. Runs on the web and through Discord.',
+       best:'Designers and creators who want the highest-quality artistic output',
+       price:'Paid',priceNote:'From $10/mo · no free tier',
+       pros:['Consistently the most beautiful results','Powerful style and character reference controls','Active community sharing prompts and styles'],
+       cons:['No free plan to test with','Creations are public by default on lower tiers'],
+       tags:['art','illustration','concept art','design','photorealism'],url:'https://www.midjourney.com',affiliate:'',trend:true},
+      {id:'ideogram',name:'Ideogram',cat:'image',hue:'#0f766e',
+       tag:'AI image generator that actually gets text in images right',
+       desc:'Ideogram is the generator to reach for when the image needs words in it — posters, logos, t-shirt designs, social graphics, memes. It renders legible typography where rivals garble it, and its Magic Prompt helps beginners expand a rough idea into a detailed prompt.',
+       best:'Posters, logos, merch and social graphics with text in the design',
+       price:'Freemium',priceNote:'Free tier · paid plans add private generations and speed',
+       pros:['Far better at rendering text than rivals','Generous free tier to experiment','Good at graphic design styles, not just photos'],
+       cons:['Free generations are public and slower','Fine photographic detail trails Midjourney'],
+       tags:['text in images','posters','logos','social graphics','memes'],url:'https://ideogram.ai',affiliate:'',trend:true},
+      {id:'leonardo',name:'Leonardo AI',cat:'image',hue:'#8a5a2b',
+       tag:'Image platform for game assets, textures and production art',
+       desc:'Leonardo bundles many fine-tuned image models with a canvas editor, texture generation and upscaling, aimed at people producing assets rather than one-off pictures — game art, product shots, marketing visuals. Owned by Canva, it keeps a generous free tier with daily tokens.',
+       best:'Game developers, illustrators and marketers producing lots of assets',
+       price:'Freemium',priceNote:'Free tier with daily tokens · paid plans from $10/mo',
+       pros:['Great for game assets and seamless textures','Canvas editor for fixing parts of an image','Free daily tokens let you learn properly'],
+       cons:['Token system takes a while to understand','Quality swings between its many models'],
+       tags:['game assets','textures','illustration','upscaling','canvas'],url:'https://leonardo.ai',affiliate:''},
+      {id:'adobe-firefly',name:'Adobe Firefly',cat:'image',hue:'#d33a2c',
+       tag:'Generative AI inside Photoshop and Express, trained on licensed content',
+       desc:'Firefly powers Generative Fill in Photoshop, text-to-image in Adobe Express, and vector and template generation across Adobe\u2019s apps. Its key selling point is provenance: models are trained on licensed and public-domain content, so output is designed to be safe for commercial work.',
+       best:'Commercial design work where licensing and copyright safety matter',
+       price:'Freemium',priceNote:'Free credits · included with many Creative Cloud plans',
+       pros:['Trained on licensed content — built for commercial use','Generative Fill inside Photoshop is genuinely useful','Tight integration across Adobe apps'],
+       cons:['Standalone image quality trails Midjourney','Generative credits can run out mid-month'],
+       tags:['photoshop','commercial use','generative fill','adobe','design'],url:'https://firefly.adobe.com',affiliate:''},
+      {id:'stable-diffusion',name:'Stable Diffusion',cat:'image',hue:'#5b4a8a',
+       tag:'Free, open-source image generation you can run on your own computer',
+       desc:'Stability AI\u2019s open models power a huge ecosystem of free tools and custom fine-tuned models. Run it locally for total privacy and control — LoRAs, ControlNet, inpainting — or use a hosted version. It is the tinkerer\u2019s choice: unlimited generations, no per-image cost, steep learning curve.',
+       best:'Technical users who want free, private, fully customisable image generation',
+       price:'Free',priceNote:'Open source · free to run locally',
+       pros:['Completely free with no per-image cost','Runs privately on your own hardware','Enormous ecosystem of custom models and controls'],
+       cons:['Setup and terminology are genuinely technical','Needs a decent graphics card for local use'],
+       tags:['open source','local','free','custom models','controlnet'],url:'https://stability.ai',affiliate:''},
+
+      /* ---- Video ---- */
+      {id:'runway',name:'Runway',cat:'video',hue:'#22252b',
+       tag:'Professional AI video generation and editing suite',
+       desc:'Runway\u2019s Gen-4 models generate video from text or images with unusually good motion and camera control, and the surrounding editor adds green screen, inpainting, motion tracking and more. It is the tool film-makers and agencies reach for when a clip has to look intentional, not random.',
+       best:'Creators and agencies producing polished AI video clips and ads',
+       price:'Freemium',priceNote:'Free credits · Standard from $12/mo billed yearly',
+       pros:['Leading text-to-video quality and camera control','Full editing toolkit beyond generation','Image-to-video brings stills to life well'],
+       cons:['Credits burn fast at higher resolutions','Best results take prompt iteration (and more credits)'],
+       tags:['text to video','filmmaking','ads','editing','generation'],url:'https://runwayml.com',affiliate:'',trend:true},
+      {id:'descript',name:'Descript',cat:'video',hue:'#3555d6',
+       tag:'Edit video and audio by editing the transcript',
+       desc:'Descript transcribes your recording, then lets you edit the media by deleting words in the text. Remove filler words in one click, clean audio to studio quality, clone your voice to patch mistakes, and publish — it has quietly become the default editor for podcasters and YouTubers.',
+       best:'Podcasters, YouTubers and anyone who edits talking-head video',
+       price:'Freemium',priceNote:'Free tier · paid plans add transcription hours and AI tools',
+       pros:['Editing by transcript is dramatically faster','Studio Sound rescues bad recordings','Voice cloning patches mistakes without re-recording'],
+       cons:['Browser editor can struggle with very large projects','Transcription slips on heavy accents and crosstalk'],
+       tags:['podcast','editing','transcription','youtube','voice clone'],url:'https://www.descript.com',affiliate:''},
+      {id:'opus-clip',name:'Opus Clip',cat:'video',hue:'#6d4fc2',
+       tag:'Turns long videos into captioned short clips automatically',
+       desc:'Feed Opus Clip a podcast, webinar or livestream and it finds the most shareable moments, cuts them into vertical clips, adds animated captions and scores each clip\u2019s viral potential. Built for the repurposing workflow every creator and social team now runs.',
+       best:'Repurposing podcasts, webinars and streams into TikToks, Reels and Shorts',
+       price:'Freemium',priceNote:'Free tier · Pro unlocks more minutes and removes watermark',
+       pros:['Finds genuinely good moments in long recordings','Animated captions and reframing are automatic','Virality scoring helps prioritise what to post'],
+       cons:['Clip picks occasionally miss the context','Free tier clips carry a watermark'],
+       tags:['shorts','reels','tiktok','repurposing','captions','podcast'],url:'https://www.opus.pro',affiliate:'',featured:true},
+      {id:'heygen',name:'HeyGen',cat:'video',hue:'#4a5fd9',
+       tag:'Realistic AI avatar videos and automatic video translation',
+       desc:'HeyGen generates presenter-led videos from a script using stock or custom avatars, and translates existing videos into other languages with lip-sync and your own cloned voice. Marketing, training and support teams use it to produce video at a pace a camera crew can\u2019t match.',
+       best:'Training, marketing and explainer videos without filming anyone',
+       price:'Freemium',priceNote:'Free credits · Creator from $29/mo',
+       pros:['Avatars are convincing for short-form content','Video translation with lip-sync is a standout','Custom avatar from a short phone recording'],
+       cons:['Long scripts can drift into uncanny territory','Credit limits on mid tiers add up for heavy users'],
+       tags:['avatars','translation','training videos','explainer','dubbing'],url:'https://www.heygen.com',affiliate:'',trend:true},
+      {id:'synthesia',name:'Synthesia',cat:'video',hue:'#7c3aed',
+       tag:'Enterprise AI avatar videos for training and internal comms',
+       desc:'Synthesia is the corporate standard for avatar video: a large library of stock presenters, brand kits, SCORM export for learning platforms, and collaboration and compliance features enterprises require. If your training videos need to exist in thirty languages by Friday, this is the shortlist.',
+       best:'Corporate training, onboarding and compliance video at scale',
+       price:'Paid',priceNote:'Starter from $22/mo billed yearly',
+       pros:['Deep avatar library and enterprise controls','Exports to LMS platforms training teams actually use','Consistent, on-brand output across teams'],
+       cons:['No free plan to try before buying','Avatars can feel stiff for consumer-facing content'],
+       tags:['training','enterprise','avatars','lms','onboarding'],url:'https://www.synthesia.io',affiliate:''},
+      {id:'capcut',name:'CapCut',cat:'video',hue:'#111111',
+       tag:'Free, friendly video editor with strong AI captions and cleanup tools',
+       desc:'ByteDance\u2019s editor is what most short-form creators actually use: a free, fast editor on phone, desktop and web with auto-captions, background removal, script-to-video and a deep template library. The core editor is free; a Pro tier adds storage, effects and more AI features.',
+       best:'Short-form creators who want a capable free editor on any device',
+       price:'Freemium',priceNote:'Free editor · Pro adds effects, storage and AI extras',
+       pros:['Core editor is genuinely free and powerful','Auto-captions are fast and accurate','Templates make trends easy to copy'],
+       cons:['More AI features keep moving behind Pro','Owned by ByteDance — some organisations restrict it'],
+       tags:['shorts','editing','captions','free','tiktok','templates'],url:'https://www.capcut.com',affiliate:''},
+
+      /* ---- Audio & Voice ---- */
+      {id:'elevenlabs',name:'ElevenLabs',cat:'audio',hue:'#1c1c1e',
+       tag:'The most natural AI voices — text-to-speech and voice cloning',
+       desc:'ElevenLabs generates speech that is hard to tell from a recording: text-to-speech in dozens of languages, instant voice cloning from a short sample, dubbing that keeps the original speaker\u2019s voice, and a strong API. It powers audiobooks, videos, games and accessibility tools everywhere.',
+       best:'Voiceovers, audiobooks, dubbing and any product that needs a voice',
+       price:'Freemium',priceNote:'Free tier · Starter from $5/mo',
+       pros:['Most human-sounding voices available','Voice cloning from a short sample','Excellent API and language coverage'],
+       cons:['Character-based pricing punishes long-form use','Emotional control still takes trial and error'],
+       tags:['text to speech','voice cloning','dubbing','audiobooks','api'],url:'https://elevenlabs.io',affiliate:'',featured:true},
+      {id:'suno',name:'Suno',cat:'audio',hue:'#2b2b30',
+       tag:'Generate complete songs — vocals included — from a text prompt',
+       desc:'Describe a song and Suno writes, composes and performs it: lyrics, vocals, instrumentation, in almost any genre. It is startlingly fun for demos, jingles, gifts and social content, and good enough that working musicians use it for sketching ideas. Paid plans include commercial-use rights.',
+       best:'Demos, jingles, fun projects and fast musical ideas',
+       price:'Freemium',priceNote:'Free credits daily · Pro from $8/mo with commercial rights',
+       pros:['Full songs with vocals in about a minute','Surprisingly strong hooks and arrangements','Pro tier includes commercial-use rights'],
+       cons:['Limited control over the final mix and structure','Vocals occasionally glitch on unusual lyrics'],
+       tags:['music','songs','jingles','composition','vocals'],url:'https://suno.com',affiliate:'',trend:true},
+      {id:'udio',name:'Udio',cat:'audio',hue:'#93356b',
+       tag:'High-fidelity AI music generation with remix and extend tools',
+       desc:'Udio is Suno\u2019s main rival: prompt-based song generation with a reputation for rich, high-quality audio and expressive vocals, plus tools to extend, remix and inpaint sections of a track. Musicians use it to prototype songs before committing studio time.',
+       best:'Songwriters prototyping tracks and creators needing original music',
+       price:'Freemium',priceNote:'Free credits · paid plans add credits and commercial terms',
+       pros:['Audio quality and vocal expression are excellent','Extend and remix tools give real creative control','Good across experimental genres'],
+       cons:['Credit system limits experimentation on free tier','Long tracks can wander off-structure'],
+       tags:['music','songs','remixing','composition','vocals'],url:'https://www.udio.com',affiliate:''},
+      {id:'murf',name:'Murf AI',cat:'audio',hue:'#0e7490',
+       tag:'Voiceover studio with a large voice library and timeline editing',
+       desc:'Murf is a voiceover workspace: pick from a large library of voices across many languages, drop in a script, adjust pitch, pauses and emphasis on a timeline, and layer music. Aimed at e-learning, explainer videos, ads and IVR rather than raw API access.',
+       best:'E-learning, explainer and ad voiceovers made by non-audio people',
+       price:'Paid',priceNote:'Free trial · paid plans scale by voice minutes and seats',
+       pros:['Timeline editor makes timing easy to control','Large, business-appropriate voice library','Team workspaces and brand sharing'],
+       cons:['No ongoing free plan','Voices less emotive than ElevenLabs at its best'],
+       tags:['voiceover','e-learning','explainer','ads','narration'],url:'https://murf.ai',affiliate:''},
+
+      /* ---- Coding ---- */
+      {id:'github-copilot',name:'GitHub Copilot',cat:'coding',hue:'#24292f',
+       tag:'AI pair programmer inside your editor and across GitHub',
+       desc:'Copilot autocompletes code, answers questions about your codebase, drafts pull-request summaries and reviews, and works in VS Code, JetBrains IDEs, Neovim and on GitHub itself. A free tier covers light use; paid plans add the strongest models and higher limits. It is the most widely deployed coding assistant in the world.',
+       best:'Developers who want AI help without leaving their current editor',
+       price:'Freemium',priceNote:'Free tier · Pro from $10/mo',
+       pros:['Works in every major IDE and on GitHub','Multi-model choice, including Claude and GPT models','Free for verified students and open-source maintainers'],
+       cons:['Completions still need review — it writes plausible bugs','Agentic features lag specialist AI editors'],
+       tags:['autocomplete','ide','github','pair programming','code review'],url:'https://github.com/features/copilot',affiliate:''},
+      {id:'cursor',name:'Cursor',cat:'coding',hue:'#0b0d10',
+       tag:'AI-first code editor that edits whole features, not just lines',
+       desc:'Cursor is a fork of VS Code rebuilt around AI: chat that sees your whole codebase, multi-file edits from a single instruction, and an agent that runs terminal commands and fixes its own errors. Many developers who try it don\u2019t go back to a plain editor.',
+       best:'Developers who want an agent that understands and edits the whole project',
+       price:'Freemium',priceNote:'Free tier · Pro from $20/mo',
+       pros:['Codebase-wide awareness makes edits land first try','Multi-file agent edits save hours weekly','Familiar VS Code interface and extensions'],
+       cons:['Frontier-model usage can exceed plan limits','Requires switching editors (worth it, but still)'],
+       tags:['editor','agent','refactoring','vs code','multi-file'],url:'https://cursor.com',affiliate:'',featured:true,trend:true},
+      {id:'windsurf',name:'Windsurf',cat:'coding',hue:'#0a7d6c',
+       tag:'Agentic code editor with a generous free tier',
+       desc:'Windsurf (formerly Codeium) pairs an AI editor with Cascade, an agent that plans multi-step changes, runs commands and keeps context across a session. It tracks Cursor feature-for-feature at a lower price, with a free tier that is actually usable.',
+       best:'Developers who want Cursor-style agent editing for less',
+       price:'Freemium',priceNote:'Free tier · Pro from $15/mo',
+       pros:['Cascade agent handles multi-step tasks well','Cheaper than Cursor with a real free tier','Good context awareness in large repos'],
+       cons:['Smaller community and plugin ecosystem','Indexing very large monorepos can lag'],
+       tags:['editor','agent','cascade','free tier','refactoring'],url:'https://windsurf.com',affiliate:''},
+      {id:'replit',name:'Replit',cat:'coding',hue:'#c2511f',
+       tag:'Describe an app and watch it get built and deployed in your browser',
+       desc:'Replit combines a cloud IDE, instant hosting and an AI Agent that turns a plain-English description into a working, deployed web app. Non-developers use it to prototype real tools; developers use it to skip all setup and start from something running.',
+       best:'Founders and tinkerers going from idea to a live app fast',
+       price:'Freemium',priceNote:'Free tier · Core from $20/mo billed yearly',
+       pros:['Idea to deployed app without any local setup','Agent builds, tests and fixes in the open','Collaboration is as easy as sharing a link'],
+       cons:['Agent usage costs grow with ambitious projects','Not the right home for large existing codebases'],
+       tags:['app builder','prototyping','hosting','no setup','agent'],url:'https://replit.com',affiliate:''},
+
+      /* ---- Productivity ---- */
+      {id:'notion-ai',name:'Notion AI',cat:'productivity',hue:'#26221f',
+       tag:'AI that searches, summarises and drafts across your Notion workspace',
+       desc:'Notion AI answers questions using your own docs and wikis, summarises meeting notes, autofills database properties and drafts inside the pages you already keep. Its value scales with how much of your work lives in Notion — for all-in teams it quietly replaces a lot of searching and status-writing.',
+       best:'Teams whose knowledge already lives in Notion',
+       price:'Paid',priceNote:'Included in Business plans · add-on on lower tiers',
+       pros:['Answers grounded in your actual workspace','Autofill and summaries save real admin time','No new tool for the team to learn'],
+       cons:['An extra per-member cost on most plans','Useless if your docs live somewhere else'],
+       tags:['notes','wiki','summaries','search','docs'],url:'https://www.notion.com/product/ai',affiliate:''},
+      {id:'otter',name:'Otter.ai',cat:'productivity',hue:'#2e5fe8',
+       tag:'Meeting transcription with live notes, summaries and action items',
+       desc:'Otter joins your Zoom, Meet and Teams calls, transcribes in real time with speaker labels, and produces a summary with action items afterwards. Sales and recruiting teams use its conversation features to search across every call they\u2019ve had.',
+       best:'Anyone who wants searchable, shareable records of their meetings',
+       price:'Freemium',priceNote:'Free tier · Pro from $10/mo billed yearly',
+       pros:['Accurate live transcription with speaker ID','Summaries and action items are genuinely useful','Slides shared in the call are captured too'],
+       cons:['A visible bot joining calls bothers some clients','Accuracy drops in noisy rooms and heavy accents'],
+       tags:['meetings','transcription','notes','zoom','summaries'],url:'https://otter.ai',affiliate:''},
+      {id:'fireflies',name:'Fireflies.ai',cat:'productivity',hue:'#5a2fd6',
+       tag:'AI meeting notetaker that plugs notes straight into your CRM',
+       desc:'Fireflies records and transcribes meetings across every major platform, then pushes summaries, tasks and call data into HubSpot, Salesforce, Slack and Notion. Its conversation-intelligence features — talk ratios, sentiment, topic tracking — are why sales teams pick it over plainer transcription tools.',
+       best:'Sales and customer teams that live in their CRM',
+       price:'Freemium',priceNote:'Free tier · Pro from $10/mo billed yearly',
+       pros:['Deep CRM and Slack integrations','Conversation analytics beyond raw transcription','Works across Zoom, Meet, Teams and more'],
+       cons:['Transcription minutes capped on lower tiers','Another bot in the call (see Otter)'],
+       tags:['meetings','crm','sales','transcription','integrations'],url:'https://fireflies.ai',affiliate:''},
+      {id:'motion',name:'Motion',cat:'productivity',hue:'#27407c',
+       tag:'AI calendar that schedules your tasks around your meetings automatically',
+       desc:'Motion merges your to-do list and calendar: tell it what needs doing and by when, and it builds (and constantly rebuilds) a realistic daily schedule around your meetings. When a day blows up, it re-plans instead of leaving you a graveyard of missed tasks.',
+       best:'Busy operators whose task list never survives contact with their calendar',
+       price:'Paid',priceNote:'From $19/mo billed yearly',
+       pros:['Auto-scheduling that adapts when days change','Project and task management included','Deadline warnings before things slip'],
+       cons:['Expensive next to a plain to-do app','Only works if you commit to its system'],
+       tags:['calendar','scheduling','tasks','planning','time management'],url:'https://www.usemotion.com',affiliate:''},
+      {id:'gamma',name:'Gamma',cat:'productivity',hue:'#7a4a2b',
+       tag:'Generate polished presentations, documents and sites from a prompt',
+       desc:'Describe what you need and Gamma drafts a structured, designed presentation or document you then refine in a card-based editor — no wrestling with slide masters. Sharing is a link, with analytics on who actually read it. A favourite for pitches, updates and internal decks.',
+       best:'Pitches and internal decks that need to look good by this afternoon',
+       price:'Freemium',priceNote:'Free credits · Plus removes branding and adds AI volume',
+       pros:['Decks look designed, not defaulted','Fast from prompt to presentable','Link sharing with view analytics'],
+       cons:['PowerPoint export can lose formatting','AI generation runs on credits'],
+       tags:['presentations','pitch decks','documents','slides'],url:'https://gamma.app',affiliate:''},
+
+      /* ---- Marketing ---- */
+      {id:'copy-ai',name:'Copy.ai',cat:'marketing',hue:'#0b6e4f',
+       tag:'Go-to-market AI: workflows that automate sales and marketing busywork',
+       desc:'Copy.ai grew from a copy generator into a go-to-market platform: workflows that enrich leads, research prospects, draft personalised outreach and keep CRM data clean, chaining AI steps with your tools. Marketing and sales ops teams use it to automate the repetitive middle of the funnel.',
+       best:'Sales and marketing teams automating prospecting and content workflows',
+       price:'Freemium',priceNote:'Free tier · paid plans scale with workflow credits',
+       pros:['Workflow automation goes far beyond chat','Strong lead enrichment and prospect research','Good template library for outreach'],
+       cons:['Full platform pricing is a jump from the free tier','Workflows take setup time to pay off'],
+       tags:['sales','outreach','workflows','lead enrichment','copywriting'],url:'https://www.copy.ai',affiliate:''},
+      {id:'adcreative',name:'AdCreative.ai',cat:'marketing',hue:'#b34724',
+       tag:'Generate conversion-focused ad creatives in bulk',
+       desc:'AdCreative.ai produces banner, social and product ad creatives in your branding, scores them by predicted performance, and can spy on competitors\u2019 ads for angles. Built for advertisers who need fifty variants this week, not one perfect design next month.',
+       best:'Performance advertisers testing many creative variants quickly',
+       price:'Paid',priceNote:'Paid plans · free trial available',
+       pros:['Bulk creative generation with brand kits','Performance scoring helps pick winners','Competitor ad insights included'],
+       cons:['Designs can feel templated without good assets','Best value only if you advertise constantly'],
+       tags:['ads','creatives','facebook ads','testing','banners'],url:'https://www.adcreative.ai',affiliate:''},
+      {id:'surfer',name:'Surfer SEO',cat:'marketing',hue:'#157f5b',
+       tag:'SEO content editor that tells you exactly what a ranking page needs',
+       desc:'Surfer analyses the pages currently ranking for your keyword and turns that into a live brief: terms to cover, structure, length and internal links, scored as you write in its editor or inside Google Docs and WordPress. Its AI writer can draft the full article from the same brief.',
+       best:'Content teams writing articles that need to rank, not just exist',
+       price:'Paid',priceNote:'Paid plans · priced per content editor credits',
+       pros:['Concrete, data-backed on-page guidance','Integrates with Docs, WordPress and Jasper','Audits existing pages for quick wins'],
+       cons:['Following the score blindly produces keyword-stuffed copy','AI writing and audits cost extra credits'],
+       tags:['seo','content','blogging','ranking','audits'],url:'https://surferseo.com',affiliate:''},
+      {id:'anyword',name:'Anyword',cat:'marketing',hue:'#8a3324',
+       tag:'Marketing copy scored by predicted performance before you publish',
+       desc:'Anyword generates ad, email, social and landing-page copy and scores each variant by how likely it is to perform, using models trained on real campaign results. Connect your ad accounts and it learns from your actual audience data, which is where it pulls ahead of generic writers.',
+       best:'Performance marketers who A/B test copy and want a head start',
+       price:'Paid',priceNote:'From $39/mo billed yearly',
+       pros:['Predictive scores prioritise variants before spend','Learns from your connected ad accounts','Brand voice and audience targeting built in'],
+       cons:['Scores are estimates, not guarantees','Pricey for the volume a small team produces'],
+       tags:['copywriting','ads','email','performance','testing'],url:'https://www.anyword.com',affiliate:''},
+
+      /* ---- Design ---- */
+      {id:'canva',name:'Canva',cat:'design',hue:'#7d4fc9',
+       tag:'Design for everyone, now with a full AI studio built in',
+       desc:'Canva\u2019s Magic Studio wraps AI into the design tool non-designers already love: generate images, rewrite and resize copy, remove backgrounds, turn a doc into slides, and translate designs in one click. For most small businesses it has quietly become the entire design department.',
+       best:'Small teams making social, print and presentation design without a designer',
+       price:'Freemium',priceNote:'Free tier · Pro from $13/mo',
+       pros:['Anyone can produce decent design in minutes','Enormous template and stock library','AI tools are woven in, not bolted on'],
+       cons:['The best AI features require Pro','Template-heavy work can look like everyone else\u2019s'],
+       tags:['social media','templates','presentations','branding','background remover'],url:'https://www.canva.com',affiliate:''},
+      {id:'figma',name:'Figma',cat:'design',hue:'#1e1e1e',
+       tag:'The standard for UI design, adding AI prototyping with Figma Make',
+       desc:'Figma is where product teams design interfaces together in real time. Its newer AI features rename and organise layers, generate content, and — via Figma Make — turn a prompt or an existing design into a working interactive prototype. Dev Mode hands designs to engineers with specs intact.',
+       best:'Product and UX teams designing apps and websites collaboratively',
+       price:'Freemium',priceNote:'Free starter · per-seat pricing for pro teams',
+       pros:['Industry-standard collaboration and components','Design-to-prototype AI is improving fast','Huge community file and plugin ecosystem'],
+       cons:['Full seats add up across a team','AI features still trail the core tool\u2019s polish'],
+       tags:['ui design','ux','prototyping','collaboration','product'],url:'https://www.figma.com',affiliate:''},
+      {id:'framer',name:'Framer',cat:'design',hue:'#0055ff',
+       tag:'Design and publish real websites — with AI to start the page',
+       desc:'Framer lets designers build production websites visually, with a real CMS, hosting, animations and SEO tooling, and an AI generator that drafts a starting page from a prompt. Marketing sites that used to need a developer and a Webflow expert increasingly just ship from Framer.',
+       best:'Designers and startups shipping marketing sites without developers',
+       price:'Freemium',priceNote:'Free tier · paid per-site plans for custom domains',
+       pros:['Publish a genuinely good site in days, not months','Animations and interactions are first-class','AI draft is a solid starting point, not a toy'],
+       cons:['Complex web apps outgrow it quickly','Per-site pricing stacks up across projects'],
+       tags:['websites','landing pages','cms','no code','portfolio'],url:'https://www.framer.com',affiliate:''},
+      {id:'looka',name:'Looka',cat:'design',hue:'#30417a',
+       tag:'AI logo maker that hands you a full brand kit',
+       desc:'Looka generates logo options from your business name, style and colour preferences, then builds a brand kit around your pick — social templates, business cards, brand guidelines. It will not replace a brand designer, but it gets a new business looking legitimate in an afternoon.',
+       best:'New businesses that need a logo and basic brand kit fast',
+       price:'Freemium',priceNote:'Free to generate · pay to download your logo files',
+       pros:['Logo to full brand kit in one flow','Designs are editable, not take-it-or-leave-it','One-off pricing options, no subscription required'],
+       cons:['Results can feel close to other AI logos','Vector and trademark questions still need a human'],
+       tags:['logo','branding','startup','brand kit'],url:'https://looka.com',affiliate:''},
+
+      /* ---- Business & Automation ---- */
+      {id:'zapier',name:'Zapier',cat:'business',hue:'#c24e12',
+       tag:'Connects 7,000+ apps so your tools do the busywork for you',
+       desc:'Zapier is the automation layer between the apps you already pay for: when this happens in one app, do that in another. Its newer AI features — agents, chatbots, and natural-language workflow building — sit on top of the largest integration library in the business, which is the real moat.',
+       best:'Non-technical teams automating handoffs between their existing apps',
+       price:'Freemium',priceNote:'Free tier · Starter from $20/mo billed yearly',
+       pros:['Integrates with practically everything','AI can draft automations from a description','Rock-solid reliability at scale'],
+       cons:['Task-based pricing punishes high-volume use','Complex multi-step logic gets hard to debug'],
+       tags:['automation','integrations','workflows','agents','no code'],url:'https://zapier.com',affiliate:''},
+      {id:'make',name:'Make',cat:'business',hue:'#5e35b1',
+       tag:'Visual automation builder with more power per dollar than rivals',
+       desc:'Make (formerly Integromat) builds automations as visual scenarios: modules, routers, filters and data mapping you can actually see. It handles complex, multi-branch logic that simpler tools choke on, at a fraction of the per-operation cost — the trade-off is a steeper first week.',
+       best:'Operations-minded users who outgrow simple if-this-then-that tools',
+       price:'Freemium',priceNote:'Free tier · Core from $9/mo',
+       pros:['Far cheaper per operation than Zapier','Visual builder makes complex logic understandable','Strong data transformation tools built in'],
+       cons:['Steeper learning curve for beginners','Error handling takes deliberate setup'],
+       tags:['automation','workflows','operations','integrations','scenarios'],url:'https://www.make.com',affiliate:''},
+      {id:'hubspot',name:'HubSpot',cat:'business',hue:'#d3542a',
+       tag:'CRM platform with AI (Breeze) across marketing, sales and service',
+       desc:'HubSpot\u2019s free CRM is the on-ramp; its Breeze AI now drafts content, enriches company data, scores and researches prospects, and summarises customer conversations across the platform. For growing businesses it replaces a stack of disconnected tools with one system that sees the whole customer.',
+       best:'Growing businesses consolidating CRM, marketing and sales in one place',
+       price:'Freemium',priceNote:'Free CRM · paid hubs and AI credits scale with seats',
+       pros:['Generous free CRM to start on','AI features use your actual customer data','One platform instead of five disconnected tools'],
+       cons:['Costs climb steeply as seats and hubs grow','AI credits add a second meter to watch'],
+       tags:['crm','sales','marketing','customer data','breeze'],url:'https://www.hubspot.com',affiliate:''},
+      {id:'airtable',name:'Airtable',cat:'business',hue:'#b8860b',
+       tag:'Spreadsheet-database hybrid for running operations, now with AI fields',
+       desc:'Airtable feels like a spreadsheet but behaves like a database, and teams run everything from content calendars to product launches on it. AI fields can categorise, summarise and generate content row by row, turning a tracker into something that does part of the work.',
+       best:'Teams running trackers and lightweight operations that outgrew spreadsheets',
+       price:'Freemium',priceNote:'Free tier · Team from $20/user/mo billed yearly',
+       pros:['Flexible enough to model almost any workflow','Automations and interfaces included','AI fields process data in bulk, row by row'],
+       cons:['Per-user pricing scales painfully','AI features sit on higher tiers'],
+       tags:['database','operations','tracking','spreadsheets','project management'],url:'https://www.airtable.com',affiliate:''}
+    ];
+
+    var ROUNDUPS = [
+      {
+        slug:'best-ai-tools-for-small-business-marketing',
+        title:'Best AI tools for small business marketing',
+        kicker:'Marketing roundup',
+        intro:'A small business doesn\u2019t need forty subscriptions — it needs a few tools that cover design, copy, ads and follow-up without a marketing department. These are the picks we\u2019d hand a local business owner today, ranked by how much real work each one takes off your plate for the money.',
+        picks:[
+          {id:'canva',why:'Your design department in a browser — social posts, flyers, menus and ads that look professional without hiring anyone.'},
+          {id:'hubspot',why:'The free CRM keeps every lead and customer in one place, and its AI drafts the follow-up emails you never get to.'},
+          {id:'copy-ai',why:'Automates the repetitive middle of marketing: lead research, personalised outreach drafts and CRM busywork.'},
+          {id:'jasper',why:'When you publish a lot of copy, Jasper\u2019s brand voice keeps ads, emails and posts sounding like one business.'},
+          {id:'adcreative',why:'Generates and scores dozens of ad variants so a small budget gets spent testing winners, not guesses.'},
+          {id:'surfer',why:'Shows you exactly what your blog posts need to rank locally — the cheapest traffic you\u2019ll ever earn.'},
+          {id:'zapier',why:'Glues it all together: new lead in, follow-up task, review request and spreadsheet row out — automatically.'}
+        ]
+      },
+      {
+        slug:'best-ai-tools-for-video-creation',
+        title:'Best AI tools for video creation',
+        kicker:'Video roundup',
+        intro:'AI video isn\u2019t one tool, it\u2019s a pipeline: generate, edit, repurpose, present. These picks cover each stage, ranked for creators and small teams who publish every week and don\u2019t have an editor on staff.',
+        picks:[
+          {id:'descript',why:'Start here if you record talking video or podcasts — editing the transcript instead of the timeline is a genuine superpower.'},
+          {id:'runway',why:'The best AI generation quality available when you need a shot that doesn\u2019t exist — product b-roll, backgrounds, effects.'},
+          {id:'opus-clip',why:'One long video becomes a week of captioned Shorts and Reels; the highest-leverage hour in a creator\u2019s week.'},
+          {id:'capcut',why:'The free editor most short-form creators already use — fast captions, cleanup and trends, on any device.'},
+          {id:'heygen',why:'Presenter videos without a presenter: script in, polished avatar video out, in your customers\u2019 languages.'},
+          {id:'synthesia',why:'The enterprise pick for training and onboarding libraries that must stay consistent across teams and languages.'}
+        ]
+      }
+    ];
+
+    /* ================= BLOG =================
+       Every post follows the same answer-first format, built for featured
+       snippets, Google AI Overviews and AI answer engines:
+       a direct short answer up top, key takeaways, question-led sections,
+       and an FAQ whose questions and answers mirror the FAQPage schema. */
+    var POSTS = [
+      {
+        slug:'how-to-choose-the-right-ai-tool',
+        title:'How to choose the right AI tool (without trying all of them)',
+        kicker:'Guide',
+        date:'2026-10-25', updated:'2026-10-25', read:'6 min read',
+        excerpt:'Start from the job, not the tool name. Name the task in one sentence, shortlist by pricing model, test on a real piece of work, and keep the subscription only if it survives a week of real use.',
+        answer:'Choose an AI tool by starting from the job, not the tool name. Write the task down in one sentence, pick the category that owns that task, shortlist two or three tools by pricing model, then run each one on a real piece of your own work. Keep whichever finishes the job fastest at a price you can justify — and cancel anything that only impressed you in a demo.',
+        takeaways:[
+          'Name the job in one sentence before you look at a single tool.',
+          'Shortlist by pricing model first: free tier, freemium, or paid — it filters out half the noise.',
+          'Test on a real task from your actual week, never on the tool\u2019s demo prompts.',
+          'Give it one week of real use. If you didn\u2019t reach for it twice, cancel it.'
+        ],
+        sections:[
+          {h:'What job are you actually hiring the tool to do?', body:[
+            'Most bad AI purchases start with a category instead of a task: \u201CI need an AI writer\u201D instead of \u201CI need to turn one product page into five ad variants every week.\u201D The second sentence tells you the category, the features that matter, and how you\u2019ll know if the tool works. Write that sentence first — it is the entire selection process in miniature.',
+            'On RighTool the directory is organised the same way: ten categories named after jobs — writing, video, meetings, automation — because that is how people actually search for help.'
+          ]},
+          {h:'Free, freemium or paid: which pricing model fits?', body:[
+            'Free tools (like Stable Diffusion run locally) cost nothing but usually cost you time in setup and learning. Freemium tools — ChatGPT, Claude, Canva, most of this directory — let you test the real product before paying, which is why they dominate our picks. Paid-only tools such as Midjourney or Jasper make sense once the job is proven and recurring.',
+            'The trap is the free tier that exists only to collect your email. Our rule: if a free tier can\u2019t complete your actual task end-to-end, it isn\u2019t a free tier, it\u2019s a demo.'
+          ]},
+          {h:'How should you test a tool before paying?', body:[
+            'Run your one-sentence job on the tool three times with real inputs — your document, your footage, your customer email. Score each attempt on three things only: output quality, time saved versus doing it manually, and how many edits you had to make. The tool with the fewest edits wins, even if another one demos better.',
+            'Then check the exit: can you export your work in a normal format, and does cancelling actually stop the billing? A tool that holds your output hostage has told you everything about how it will treat you later.'
+          ]},
+          {h:'How many AI tools do you actually need?', body:[
+            'Fewer than the internet wants to sell you. For most people the honest stack is one general assistant (ChatGPT, Claude or Gemini), one tool for your main creative job, and one automation tool if you repeat the same handoffs weekly. Everything else is a subscription quietly renewing.',
+            'Re-run this process whenever a tool raises prices or a rival clearly overtakes it — categories move fast, and loyalty to a tool is not a strategy.'
+          ]}
+        ],
+        faqs:[
+          {q:'What is the best way to choose an AI tool?', a:'Start from the job in one sentence, pick the category that owns it, shortlist two or three tools by pricing model, and test each on a real task from your own work. Keep the one that needs the fewest edits — not the one with the best demo.'},
+          {q:'Should I pay for an AI tool or use a free one?', a:'Use a free or freemium tier until the job becomes recurring. Pay when the tool saves you measurable time every week — at that point the subscription is cheaper than your hours. Paid-only tools make sense for proven, repeated jobs.'},
+          {q:'How many AI subscriptions do I need?', a:'Most people need two or three: one general assistant, one specialist for their main creative or technical job, and optionally one automation tool. More than that usually means overlapping tools doing the same job.'},
+          {q:'How do I know if an AI tool is worth keeping?', a:'After one week of real use, count how many times you reached for it and how much editing its output needed. If you didn\u2019t use it twice, or its output needs as much work as doing it yourself, cancel it.'}
+        ],
+        tools:['chatgpt','claude','gemini','canva','zapier']
+      },
+      {
+        slug:'chatgpt-vs-claude-vs-gemini',
+        title:'ChatGPT vs Claude vs Gemini: which AI assistant should you use?',
+        kicker:'Comparison',
+        date:'2026-10-21', updated:'2026-10-25', read:'7 min read',
+        excerpt:'ChatGPT is the best all-rounder, Claude writes the most naturally and handles the longest documents, and Gemini wins if your work already lives in Google Workspace. Here is the honest breakdown.',
+        answer:'Pick ChatGPT if you want one assistant for everything — writing, coding, images and voice in a single chat. Pick Claude if your work is long documents and writing that must sound human. Pick Gemini if your day already runs on Gmail, Docs and Google Search, because it works inside those apps. All three have capable free tiers, and the paid plans all land around $20 a month.',
+        takeaways:[
+          'Best all-rounder: ChatGPT — the widest feature set in one place.',
+          'Best for writing and long documents: Claude — natural tone, huge context window.',
+          'Best for Google Workspace users: Gemini — built into Gmail, Docs and Search.',
+          'All three cost about $20/mo paid; try the free tiers on your own work before choosing.'
+        ],
+        sections:[
+          {h:'Which assistant is best overall?', body:[
+            'ChatGPT, for most people, most of the time. It drafts, edits, codes, analyses files, generates images and holds voice conversations in one window, and its Custom GPTs ecosystem covers niche jobs the others don\u2019t attempt. It is the default recommendation we give anyone who asks for \u201Can AI\u201D without a specific job in mind.',
+            'Its weakness is the flip side of breadth: the best models are capped on the free tier, and it can deliver a wrong answer with total confidence — verify anything that matters.'
+          ]},
+          {h:'Which assistant writes best?', body:[
+            'Claude. Its long-form writing reads like a person wrote it, and it handles very long inputs — contracts, manuscripts, whole codebases — in a single conversation, which makes it the favourite for document-heavy work and careful coding help.',
+            'The trade-offs: usage limits bite on heavy days even on the paid plan, and it has fewer built-in extras than ChatGPT — no native image generation, for example.'
+          ]},
+          {h:'Which assistant is best if I use Google apps?', body:[
+            'Gemini, and it isn\u2019t close. It drafts inside Gmail and Docs, summarises YouTube videos, and answers with live web grounding. If your work already lives in Google Workspace, Gemini meets you where you are instead of asking you to switch tabs.',
+            'Answer quality varies more between tasks than its rivals, and the strongest features sit behind the paid Google AI plan — but the free tier is generous enough to judge it properly.'
+          ]},
+          {h:'What about research and cited answers?', body:[
+            'That is Perplexity\u2019s job rather than any of the big three\u2019s: it searches the live web and returns a written answer with numbered citations you can check. If your questions are mostly \u201Cwhat is true about X\u201D rather than \u201Cmake me a Y\u201D, it beats all three for speed and verifiability.'
+          ]}
+        ],
+        faqs:[
+          {q:'Is ChatGPT better than Claude?', a:'For breadth, yes — ChatGPT does more things in one place, including images and voice. For writing quality and long documents, Claude is better. Most people should start with whichever free tier matches their main job and switch only if it disappoints.'},
+          {q:'Which AI assistant is best for free?', a:'All three free tiers are genuinely usable. Gemini\u2019s is the most generous, ChatGPT\u2019s gives the widest feature set, and Claude\u2019s is enough to judge its writing quality. Perplexity\u2019s free tier is the best free option purely for research.'},
+          {q:'Which AI assistant is best for coding?', a:'ChatGPT and Claude are both strong; Claude is a favourite of developers for careful, well-explained code. For coding inside an editor, a specialist like Cursor or GitHub Copilot will serve you better than any chat window.'},
+          {q:'Can I use more than one AI assistant?', a:'Yes, and many people do — one paid plan for your main job and free tiers elsewhere. Just watch for subscription creep: two $20 plans doing the same job is one too many.'}
+        ],
+        tools:['chatgpt','claude','gemini','perplexity']
+      },
+      {
+        slug:'best-free-ai-tools',
+        title:'The best free AI tools in 2026 (that are actually free)',
+        kicker:'Roundup',
+        date:'2026-10-14', updated:'2026-10-25', read:'6 min read',
+        excerpt:'A real free tier lets you finish the job, not just watch a demo. These directory tools pass that test — from a completely free image generator to free meeting notes, CRM and design.',
+        answer:'The best free AI tools are the ones whose free tier finishes a real job: Stable Diffusion generates images for free with no per-image cost, CapCut edits short video free, Canva covers design, Otter takes meeting notes, and HubSpot\u2019s free CRM runs a small business\u2019s customer list. ChatGPT, Claude and Gemini all have free tiers strong enough for everyday questions.',
+        takeaways:[
+          'Completely free: Stable Diffusion — free, open-source image generation you run yourself.',
+          'Best free tiers: ChatGPT, Claude, Gemini for chat; CapCut for video; Canva for design.',
+          'Free for business basics: HubSpot\u2019s free CRM and Otter\u2019s free meeting transcription.',
+          'Judge a free tier by one test: can it complete your actual task end-to-end?'
+        ],
+        sections:[
+          {h:'What does \u201Cactually free\u201D mean?', body:[
+            'Two things. Either the tool is free outright — open source, or a free product tier with no expiry — or its free tier is generous enough to complete real work repeatedly. A 7-day trial with a credit card up front fails this test, which is why several famous names are not on this list.',
+            'Every tool below is in our directory with its real pricing model shown, and you can browse the full set with the directory\u2019s Free and Freemium filters.'
+          ]},
+          {h:'Which free AI tools are worth your time?', body:[
+            'For images, Stable Diffusion is the standout: free, open source, unlimited generations, runs privately on your own computer — the cost is a steeper learning curve and a decent graphics card. For video, CapCut\u2019s core editor is genuinely free and powerful, with fast, accurate auto-captions.',
+            'For everyday design, Canva\u2019s free tier produces decent social and print work in minutes. For meetings, Otter\u2019s free tier transcribes with speaker labels and summaries. And for running a business, HubSpot\u2019s free CRM is the on-ramp most small businesses actually stay on.'
+          ]},
+          {h:'Where do free tiers stop being enough?', body:[
+            'Usually at volume, privacy or polish: generation credits run out mid-month, free outputs carry watermarks or are public by default, and the strongest models sit behind the paid plan. That is a fair trade — as long as the limit is visible before you build a workflow on top of it.',
+            'Our advice: build the habit on the free tier, and upgrade the one tool you reach for daily. The full reasoning is in our guide to choosing the right AI tool.'
+          ]}
+        ],
+        faqs:[
+          {q:'What is the best completely free AI tool?', a:'Stable Diffusion — it is open source and free to run locally with no per-image cost. Among hosted tools, CapCut\u2019s free video editor and HubSpot\u2019s free CRM give the most real capability without paying.'},
+          {q:'Are free AI tools safe to use?', a:'The established tools on this list are. Two checks before uploading anything sensitive: whether free-tier creations are public by default (some image tools do this), and whether the tool trains on your inputs — both are stated in the tool\u2019s terms.'},
+          {q:'Do free AI tools require a credit card?', a:'The ones listed here do not for their free tiers. If a \u201Cfree\u201D tool demands a card before you can do anything, treat it as a trial, not a free tier, and judge it accordingly.'},
+          {q:'When should I upgrade to a paid AI plan?', a:'When you hit the same limit twice in a week on a job you do repeatedly. Paying for the tool you use daily beats spreading money across five tools you open monthly.'}
+        ],
+        tools:['stable-diffusion','capcut','canva','otter','hubspot','chatgpt']
+      },
+      {
+        slug:'ai-tools-for-small-business-owners',
+        title:'AI tools for small business owners: where to start',
+        kicker:'Small business',
+        date:'2026-10-07', updated:'2026-10-25', read:'5 min read',
+        excerpt:'A local business doesn\u2019t need forty subscriptions. Start with design, a free CRM, and one automation — the three that give an owner their evenings back first.',
+        answer:'A small business owner should start with three AI tools: Canva for design you\u2019d otherwise pay for or skip, HubSpot\u2019s free CRM so no lead ever lives in a notebook again, and Zapier to automate the follow-ups between them. Add a writing assistant for posts and emails only after those three are habits. Total starting cost: $0.',
+        takeaways:[
+          'Start with Canva: every poster, post and quote sheet stops needing a designer.',
+          'Put every lead in HubSpot\u2019s free CRM — its AI drafts the follow-up emails.',
+          'Automate one handoff with Zapier before buying anything else.',
+          'Skip the rest until a specific weekly pain shows up.'
+        ],
+        sections:[
+          {h:'What is the first AI tool a small business should get?', body:[
+            'Canva. A local business produces design constantly — social posts, flyers, menus, quote sheets, vehicle signage — and either pays a designer per piece or publishes something that looks homemade. Canva\u2019s free tier plus its AI tools (background removal, one-click resize, image generation) cover most of it in minutes.',
+            'It is also the easiest win to judge: the next post you publish either looks professional or it doesn\u2019t.'
+          ]},
+          {h:'How does a CRM help a business with no sales team?', body:[
+            'HubSpot\u2019s free CRM replaces the notebook, the spreadsheet and the \u201CI meant to call them back.\u201D Every enquiry lands in one place, and its AI drafts follow-up emails and summarises customer history, so the follow-up that wins the job actually happens.',
+            'This pairs with our marketing roundup, where HubSpot is pick number two for exactly this reason.'
+          ]},
+          {h:'What should a small business automate first?', body:[
+            'The handoff you do most: new enquiry in, follow-up task and review request out. Zapier connects the apps you already pay for — 7,000-plus of them — so a website form can create a CRM contact, a task, and a spreadsheet row without you touching it. Make does the same job with more power per dollar once you outgrow simple automations.',
+            'Automate one flow, live with it for a month, then automate the next. Businesses that automate everything in week one automate nothing by week three.'
+          ]}
+        ],
+        faqs:[
+          {q:'How much do AI tools cost a small business to start?', a:'Zero. Canva, HubSpot\u2019s CRM and Zapier all have free tiers that cover a small business\u2019s starting needs. Paid plans enter the picture only when volume grows — typically design output first.'},
+          {q:'What AI tool saves a business owner the most time?', a:'Automation, once the basics are in place. A single Zapier flow that handles enquiry follow-up can return an hour a week. Before that, a CRM saves the most pain by making sure no lead is ever lost or forgotten.'},
+          {q:'Do I need an AI chatbot on my website?', a:'Not first. A chatbot answers questions; a CRM and follow-up automation win jobs. Add a website chatbot once your enquiry volume is high enough that answering the same five questions is a real cost.'}
+        ],
+        tools:['canva','hubspot','zapier','make','chatgpt']
+      }
+    ];
+    function postBySlug(slug){ for (var i=0;i<POSTS.length;i++) if (POSTS[i].slug===slug) return POSTS[i]; return null; }
+
+    function toolById(id){ for (var i=0;i<TOOLS.length;i++) if (TOOLS[i].id===id) return TOOLS[i]; return null; }
+    function toolsInCat(slug){ return TOOLS.filter(function(t){return t.cat===slug;}); }
+    </script>
+
+    <script>
+    /* ================= APP ================= */
+    var app = document.getElementById('app');
+
+    /* ---------- SEO / AEO helpers ----------
+       Every view sets its own title, meta description, canonical and
+       Open Graph tags, and injects page-specific JSON-LD schema, so each
+       route is self-describing for search engines and AI answer engines. */
+    var SITE_URL = 'https://rightool.ai';
+    var pageSchemaEl = null;
+    function absUrl(path){ return SITE_URL + path; }
+    function setMeta(title, desc, path){
+      document.title = title;
+      var m = document.querySelector('meta[name="description"]');
+      if (m) m.setAttribute('content', desc);
+      var c = document.getElementById('canonicalLink');
+      if (c) c.setAttribute('href', absUrl(path));
+      [['ogTitle',title],['ogDesc',desc],['twTitle',title],['twDesc',desc]].forEach(function(pair){
+        var el = document.getElementById(pair[0]);
+        if (el) el.setAttribute('content', pair[1]);
+      });
+      var ogU = document.getElementById('ogUrl');
+      if (ogU) ogU.setAttribute('content', absUrl(path));
+    }
+    function setSchema(items){
+      if (!pageSchemaEl){
+        pageSchemaEl = document.createElement('script');
+        pageSchemaEl.type = 'application/ld+json';
+        pageSchemaEl.id = 'pageSchema';
+        document.head.appendChild(pageSchemaEl);
+      }
+      pageSchemaEl.textContent = JSON.stringify({'@context':'https://schema.org','@graph':items});
+    }
+    function crumbSchema(items){
+      return {'@type':'BreadcrumbList','itemListElement':items.map(function(it,i){
+        return {'@type':'ListItem','position':i+1,'name':it.name,'item':absUrl(it.path)};
+      })};
+    }
+    function faqSchema(faqs){
+      return {'@type':'FAQPage','mainEntity':faqs.map(function(f){
+        return {'@type':'Question','name':f.q,'acceptedAnswer':{'@type':'Answer','text':f.a}};
+      })};
+    }
+    function itemListSchema(items){
+      return {'@type':'ItemList','itemListElement':items.map(function(it,i){
+        return {'@type':'ListItem','position':i+1,'name':it.name,'url':absUrl(it.path)};
+      })};
+    }
+    function faqBlock(faqs, heading){
+      return '<section class="faq-block">' + (heading === null ? '' : '<h2>' + esc(heading || 'Frequently asked questions') + '</h2>')
+        + faqs.map(function(f){
+            return '<details class="faq-item"><summary>' + esc(f.q) + '</summary><p>' + esc(f.a) + '</p></details>';
+          }).join('') + '</section>';
+    }
+    function answerBox(text){
+      return '<div class="answer-box"><span class="ab-label">Short answer</span><p>' + text + '</p></div>';
+    }
+    function fmtDate(iso){
+      var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      var p = iso.split('-');
+      return months[parseInt(p[1],10)-1] + ' ' + parseInt(p[2],10) + ', ' + p[0];
+    }
+
+    function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+    function initials(name){
+      var parts = name.replace(/\.ai$/i,'').split(/[\s-]+/).filter(Boolean);
+      if (parts.length === 1) return parts[0].slice(0,2);
+      return (parts[0][0] + parts[1][0]).toUpperCase();
+    }
+    var ICONS = {
+      chat:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>',
+      pen:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>',
+      image:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>',
+      play:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg>',
+      wave:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/></svg>',
+      code:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>',
+      check:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m8.5 12.5 2.5 2.5 5-5.5"/></svg>',
+      mega:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>',
+      penTool:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg>',
+      gear:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>'
+    };
+
+    function priceBadge(t){
+      return '<span class="badge ' + t.price.toLowerCase() + '">' + esc(t.price) + '</span>';
+    }
+    function logoMark(t, cls){
+      return '<span class="logo-mark ' + (cls || '') + '" style="background:' + t.hue + '">'
+        + '<i class="fb" aria-hidden="true">' + esc(initials(t.name)) + '</i>'
+        + '<img src="assets/logos/' + t.id + '.png" alt="' + esc(t.name) + ' logo" loading="lazy" onerror="this.remove()" />'
+        + '</span>';
+    }
+    /* Affiliate links: every tool record carries an `affiliate` field in the
+       TOOLS data above. It stays empty until the site owner supplies that
+       tool's real affiliate URL; while empty, Visit buttons use the tool's
+       plain homepage. Never guess or fabricate an affiliate URL. */
+    function visitUrl(t){ return t.affiliate || t.url; }
+    function visitRel(t){ return t.affiliate ? 'noopener sponsored' : 'noopener'; }
+    function toolCard(t, opts){
+      opts = opts || {};
+      return '<a class="tool-card" href="#/tool/' + t.id + '">'
+        + '<div class="tool-top">'
+        +   logoMark(t)
+        +   '<div><h3>' + esc(t.name) + '</h3><div class="cat-name">' + esc(catName(t.cat)) + '</div></div>'
+        +   (opts.featured ? '<span class="featured-flag">Featured</span>' : '')
+        + '</div>'
+        + '<p class="tag">' + esc(t.tag) + '</p>'
+        + '<div class="badge-row">' + priceBadge(t) + '<span class="price-note">' + esc(t.priceNote) + '</span></div>'
+        + '</a>';
+    }
+    function catCard(c){
+      var n = toolsInCat(c.slug).length;
+      return '<a class="cat-card" href="#/category/' + c.slug + '">'
+        + '<span class="cat-ic">' + ICONS[c.icon] + '</span>'
+        + '<span><b>' + esc(c.name) + '</b><span>' + esc(c.blurb) + ' · ' + n + ' tools</span></span></a>';
+    }
+
+    /* ---------- HOME ---------- */
+    var HOME_FAQS = [
+      {q:'What is RighTool.ai?', a:'RighTool.ai is a curated directory of AI tools organised by the job you need done — writing, video, image generation, coding, meetings, marketing and more. Every listing is picked by a human editor and shows honest pros, cons and the real pricing model.'},
+      {q:'Are the rankings on RighTool paid?', a:'No. Rankings, roundups and category order are editorial and cannot be bought at any price. Paid placements exist only in clearly labelled Featured slots, and they never affect a ranking or a review.'},
+      {q:'How many AI tools are listed?', a:'The directory currently lists ' + TOOLS.length + ' hand-picked tools across ' + CATEGORIES.length + ' categories. We add tools when they earn a place, not to grow the count — several well-known names didn\u2019t make the cut.'},
+      {q:'What does the \u201CFeatured\u201D label mean?', a:'A Featured tool paid for that labelled slot — for visibility, never for position. Featured tools are reviewed against the same bar as every other listing, and their pros and cons are written the same honest way.'},
+      {q:'Are the tools on RighTool free?', a:'Many are free or freemium, and every listing shows its pricing model up front. Use the directory\u2019s Free filter to see only tools with a genuinely free tier.'}
+    ];
+    function viewHome(){
+      setMeta(
+        'RighTool.ai — Find the right AI tool for the job',
+        'A curated, honest directory of ' + TOOLS.length + ' AI tools across ' + CATEGORIES.length + ' categories, organised by the job you need done. Honest pros, cons and pricing — sponsored placements always labelled, rankings never for sale.',
+        '/'
+      );
+      setSchema([
+        {'@type':'WebPage','name':'RighTool.ai — Find the right AI tool for the job','url':absUrl('/'),'isPartOf':{'@id':SITE_URL + '/#website'}},
+        itemListSchema(CATEGORIES.map(function(c){return {name:c.name, path:'/category/' + c.slug};})),
+        faqSchema(HOME_FAQS)
+      ]);
+      var featured = TOOLS.filter(function(t){return t.featured;});
+      var trending = TOOLS.filter(function(t){return t.trend;});
+      var html = ''
+      + '<div class="wrap">'
+      +   '<div class="hero">'
+      +     '<h1>Find the <em>right</em> AI tool for the job.</h1>'
+      +     '<p class="sub">There are thousands of AI tools and most directories list all of them. We curate the ones actually worth your time — organised by the job you need done, with honest pros, cons and pricing.</p>'
+      +     '<form class="searchbar" id="heroSearch"><input id="heroQ" type="search" placeholder="What do you need to get done?" aria-label="Search tools" autocomplete="off" /><button type="submit">Search</button></form>'
+      +     '<p class="quick">Popular: <a href="#/directory?q=video%20captions">video captions</a> · <a href="#/directory?q=logo">logo</a> · <a href="#/directory?q=meeting%20notes">meeting notes</a> · <a href="#/directory?q=voiceover">voiceover</a> · <a href="#/directory?q=seo">SEO writing</a></p>'
+      +     '<div class="trust-row">'
+      +       '<div><b>' + TOOLS.length + ' tools</b> hand-picked, not scraped</div>'
+      +       '<div><b>10 categories</b> organised by job, not hype</div>'
+      +       '<div><b>Zero</b> paid rankings — <a href="#/how-we-rank">how we rank</a></div>'
+      +     '</div>'
+      +   '</div>'
+
+      +   '<section class="block"><div class="sec-head"><h2>Browse by job</h2><span class="note">Start with the task, not the tool name.</span></div>'
+      +   '<div class="cat-grid">' + CATEGORIES.map(catCard).join('') + '</div></section>'
+
+      +   '<section class="block"><div class="featured-strip">'
+      +     '<span class="featured-label">★ Featured tools</span>'
+      +     '<p style="font-size:14px;color:var(--muted);margin:6px 0 18px">Paid placements, clearly labelled — that\u2019s the deal. Featured tools pay for this slot; they never buy a ranking, a review or a roundup spot. <a href="#/how-we-rank">How we rank</a></p>'
+      +     '<div class="tool-grid">' + featured.map(function(t){return toolCard(t,{featured:true});}).join('') + '</div>'
+      +   '</div></section>'
+
+      +   '<section class="block"><div class="sec-head"><h2>Trending now</h2><span class="note">The tools making the most noise right now.</span><a class="more" href="#/directory">Full directory →</a></div>'
+      +   '<div class="tool-grid">' + trending.map(function(t){return toolCard(t);}).join('') + '</div></section>'
+
+      +   '<section class="block"><div class="sec-head"><h2>Best AI tools for…</h2><span class="note">Ranked roundups, written from the same directory data.</span><a class="more" href="#/roundups">All roundups →</a></div>'
+      +   '<div class="teaser-grid">'
+      +     ROUNDUPS.map(function(r){
+            return '<a class="teaser" href="#/roundup/' + r.slug + '"><span class="kicker">' + esc(r.kicker) + '</span><h3>' + esc(r.title) + '</h3><p>' + esc(r.intro.slice(0,130)) + '…</p><span class="go">See the ' + r.picks.length + ' picks →</span></a>';
+          }).join('')
+      +     '<a class="teaser" href="#/directory?pricing=Free"><span class="kicker">No budget?</span><h3>Best free AI tools</h3><p>Every tool in the directory with a genuinely free tier — no credit card, no trial countdown.</p><span class="go">Browse free tools →</span></a>'
+      +   '</div></section>'
+
+      +   '<section class="block"><div class="sec-head"><h2>From the blog</h2><span class="note">Guides and comparisons, written answer-first.</span><a class="more" href="#/blog">All articles →</a></div>'
+      +   '<div class="teaser-grid">'
+      +     POSTS.map(function(p){
+            return '<a class="teaser" href="#/blog/' + p.slug + '"><span class="kicker">' + esc(p.kicker) + '</span><h3>' + esc(p.title) + '</h3><p>' + esc(p.excerpt.slice(0,130)) + '…</p><span class="go">Read the guide →</span></a>';
+          }).join('')
+      +   '</div></section>'
+
+      +   '<section class="block"><h2 style="font-size:26px;font-weight:700">Questions, answered straight</h2>'
+      +   faqBlock(HOME_FAQS, null)
+      +   '</section>'
+
+      +   '<div class="band" id="newsletterBand"><h2>The Right Tool, weekly</h2>'
+      +   '<p>One email a week: the 3–5 new AI tools actually worth trying, the ones to skip, and one workflow worth stealing. No spam, no paid placements in the picks.</p>'
+      +   '<form id="newsForm"><input type="email" required placeholder="you@example.com" aria-label="Email address" /><button type="submit">Subscribe free</button></form>'
+      +   '<p class="fine">Join the waitlist for launch — first issue goes out when the directory opens publicly.</p></div>'
+
+      +   '<div class="band light"><h2>Built something worth listing?</h2>'
+      +   '<p>Get in front of people searching for exactly what your tool does. Free listings are always free — paid tiers only buy speed and a labelled featured slot, never a ranking.</p>'
+      +   '<form onsubmit="return false"><a href="#/submit" style="display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:12px 24px;border-radius:10px">Submit your tool →</a></form></div>'
+      + '</div>';
+      app.innerHTML = html;
+      document.getElementById('heroSearch').addEventListener('submit', function(e){
+        e.preventDefault();
+        var q = document.getElementById('heroQ').value.trim();
+        location.hash = '#/directory' + (q ? '?q=' + encodeURIComponent(q) : '');
+      });
+      bindNewsletter();
+    }
+    function bindNewsletter(){
+      var f = document.getElementById('newsForm');
+      if (!f) return;
+      f.addEventListener('submit', function(e){
+        e.preventDefault();
+        f.outerHTML = '<div class="form-done">You\u2019re on the list — first issue lands in your inbox when we launch. Welcome aboard.</div>';
+      });
+    }
+
+    /* ---------- DIRECTORY ---------- */
+    function viewDirectory(params){
+      setMeta(
+        'AI Tools Directory — ' + TOOLS.length + ' Curated Tools by Job | RighTool.ai',
+        'Browse all ' + TOOLS.length + ' curated AI tools in one directory. Filter by job and pricing model, and check honest pros, cons and real prices before you click out.',
+        '/directory'
+      );
+      setSchema([
+        {'@type':'CollectionPage','name':'AI Tools Directory','url':absUrl('/directory'),'isPartOf':{'@id':SITE_URL + '/#website'}},
+        crumbSchema([{name:'Home',path:'/'},{name:'Directory',path:'/directory'}]),
+        itemListSchema(TOOLS.map(function(t){return {name:t.name, path:'/tool/' + t.id};}))
+      ]);
+      var html = '<div class="wrap">'
+      + '<div class="page-head"><h1>AI tools directory</h1>'
+      + '<p class="sub">Every tool we list, in one place. Filter by the job, search by the task you\u2019re trying to get done, and check the real pricing model before you click out.</p></div>'
+      + '<div class="filters">'
+      +   '<div class="row"><div class="search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="dirQ" type="search" placeholder="Search by name or task — try \u201Cvoiceover\u201D or \u201Clogo\u201D" aria-label="Search tools" /></div>'
+      +   '<select class="sortsel" id="dirSort" aria-label="Sort tools"><option value="az">Sort: A–Z</option><option value="free">Sort: Free first</option><option value="cat">Sort: By category</option></select></div>'
+      +   '<div class="chip-row" id="catChips"><span class="lbl">Category</span></div>'
+      +   '<div class="chip-row" id="priceChips"><span class="lbl">Pricing</span></div>'
+      + '</div>'
+      + '<p class="result-count" id="dirCount"></p>'
+      + '<div class="tool-grid" id="dirGrid"></div>'
+      + '<div class="empty hidden" id="dirEmpty"><b>No tools match that</b>Try a broader word — \u201Cwriting\u201D, \u201Cvideo\u201D, \u201Cmusic\u201D — or clear the pricing filter.<br /><br /><a href="#/directory">Reset the directory</a></div>'
+      + '</div>';
+      app.innerHTML = html;
+
+      var state = {
+        q: params.q || '',
+        cat: params.cat || 'all',
+        pricing: params.pricing || 'all',
+        sort: 'az'
+      };
+      var qInput = document.getElementById('dirQ');
+      qInput.value = state.q;
+
+      var catChips = document.getElementById('catChips');
+      var chipData = [{slug:'all',name:'All categories'}].concat(CATEGORIES);
+      chipData.forEach(function(c){
+        var b = document.createElement('button');
+        b.className = 'chip' + (state.cat === c.slug ? ' on' : '');
+        b.textContent = c.name;
+        b.addEventListener('click', function(){ state.cat = c.slug; syncChips(); render(); });
+        b.dataset.slug = c.slug;
+        catChips.appendChild(b);
+      });
+      var priceChips = document.getElementById('priceChips');
+      ['all','Free','Freemium','Paid'].forEach(function(p){
+        var b = document.createElement('button');
+        b.className = 'chip' + (state.pricing === p ? ' on' : '');
+        b.textContent = p === 'all' ? 'Any pricing' : p;
+        b.addEventListener('click', function(){ state.pricing = p; syncChips(); render(); });
+        b.dataset.price = p;
+        priceChips.appendChild(b);
+      });
+      function syncChips(){
+        Array.prototype.forEach.call(catChips.querySelectorAll('.chip'), function(b){ b.classList.toggle('on', b.dataset.slug === state.cat); });
+        Array.prototype.forEach.call(priceChips.querySelectorAll('.chip'), function(b){ b.classList.toggle('on', b.dataset.price === state.pricing); });
+      }
+      function matches(t){
+        if (state.cat !== 'all' && t.cat !== state.cat) return false;
+        if (state.pricing !== 'all' && t.price !== state.pricing) return false;
+        if (state.q){
+          var hay = (t.name + ' ' + t.tag + ' ' + t.desc + ' ' + catName(t.cat) + ' ' + t.tags.join(' ')).toLowerCase();
+          var words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+          for (var i=0;i<words.length;i++) if (hay.indexOf(words[i]) === -1) return false;
+        }
+        return true;
+      }
+      function render(){
+        var list = TOOLS.filter(matches);
+        if (state.sort === 'az') list.sort(function(a,b){return a.name.localeCompare(b.name);});
+        if (state.sort === 'cat') list.sort(function(a,b){return catName(a.cat).localeCompare(catName(b.cat)) || a.name.localeCompare(b.name);});
+        if (state.sort === 'free'){
+          var rank = {Free:0, Freemium:1, Paid:2};
+          list.sort(function(a,b){return rank[a.price]-rank[b.price] || a.name.localeCompare(b.name);});
+        }
+        document.getElementById('dirGrid').innerHTML = list.map(function(t){return toolCard(t);}).join('');
+        document.getElementById('dirCount').textContent = 'Showing ' + list.length + ' of ' + TOOLS.length + ' tools';
+        document.getElementById('dirEmpty').classList.toggle('hidden', list.length > 0);
+      }
+      qInput.addEventListener('input', function(){ state.q = qInput.value; render(); });
+      document.getElementById('dirSort').addEventListener('change', function(e){ state.sort = e.target.value; render(); });
+      render();
+    }
+
+    /* ---------- CATEGORY ---------- */
+    function viewCategory(slug){
+      var c = null;
+      CATEGORIES.forEach(function(x){ if (x.slug===slug) c = x; });
+      if (!c){ viewDirectory({}); return; }
+      var list = toolsInCat(slug);
+      var freeCount = list.filter(function(t){return t.price !== 'Paid';}).length;
+      var catFaqs = [
+        {q:'What is the best ' + c.name.toLowerCase() + ' AI tool?', a:'Our top picks for ' + c.blurb.toLowerCase() + ' are ' + list.slice(0,3).map(function(t){return t.name;}).join(', ') + '. Which one is best for you depends on the exact job — each listing shows honest pros, cons and pricing so you can match it to your task.'},
+        {q:'Are there free ' + c.name.toLowerCase() + ' AI tools?', a: freeCount > 0 ? 'Yes — ' + freeCount + ' of the ' + list.length + ' tools in this category are free or have a free tier. Every card shows the pricing model before you click through.' : 'The tools in this category are paid products, though most offer a free trial. Every card shows the pricing model before you click through.'},
+        {q:'How does RighTool rank ' + c.name.toLowerCase() + ' tools?', a:'Editorially, on merit for the job: output quality, honest pricing, and whether we would hand the tool to a friend. No tool can pay for a ranking or a better review — paid placements are labelled Featured and never affect order.'}
+      ];
+      setMeta(
+        'Best ' + c.name + ' AI Tools (' + list.length + ' Curated Picks) | RighTool.ai',
+        'The ' + list.length + ' best ' + c.name.toLowerCase() + ' AI tools for ' + c.blurb.toLowerCase() + ', hand-picked with honest pros, cons and real pricing. Rankings are editorial — never paid.',
+        '/category/' + c.slug
+      );
+      setSchema([
+        {'@type':'CollectionPage','name':'Best ' + c.name + ' AI Tools','url':absUrl('/category/' + c.slug),'isPartOf':{'@id':SITE_URL + '/#website'}},
+        crumbSchema([{name:'Home',path:'/'},{name:'Directory',path:'/directory'},{name:c.name,path:'/category/' + c.slug}]),
+        itemListSchema(list.map(function(t){return {name:t.name, path:'/tool/' + t.id};})),
+        faqSchema(catFaqs)
+      ]);
+      var others = CATEGORIES.filter(function(x){return x.slug!==slug;});
+      app.innerHTML = '<div class="wrap">'
+      + '<p class="crumb"><a href="#/">Home</a> · <a href="#/directory">Directory</a> · ' + esc(c.name) + '</p>'
+      + '<div class="page-head" style="padding-top:14px"><h1>' + esc(c.name) + '</h1>'
+      + '<p class="sub">' + list.length + ' curated tools for ' + esc(c.blurb.toLowerCase()) + '. Every listing shows the real pricing model and honest trade-offs — no pay-to-rank, ever.</p></div>'
+      + '<div class="tool-grid" style="margin-top:18px">' + list.map(function(t){return toolCard(t);}).join('') + '</div>'
+      + faqBlock(catFaqs)
+      + '<section class="block"><div class="sec-head"><h2>Other categories</h2></div><div class="cat-grid">'
+      + others.slice(0,5).map(catCard).join('') + '</div></section>'
+      + '</div>';
+    }
+
+    /* ---------- TOOL DETAIL ---------- */
+    function toolFaqs(t){
+      var priceA;
+      if (t.price === 'Free') priceA = 'Yes — ' + t.name + ' is free. ' + t.priceNote + '.';
+      else if (t.price === 'Freemium') priceA = t.name + ' has a free tier, with paid plans when you need more. ' + t.priceNote + '.';
+      else priceA = t.name + ' is a paid tool with no ongoing free tier. ' + t.priceNote + '. Check its site for any current free trial.';
+      return [
+        {q:'What is ' + t.name + ' best for?', a:'Best for: ' + t.best + '.'},
+        {q:'Is ' + t.name + ' free?', a:priceA},
+        {q:'What are the pros and cons of ' + t.name + '?', a:'Pros: ' + t.pros.join('; ') + '. Cons: ' + t.cons.join('; ') + '.'}
+      ];
+    }
+    function viewTool(id){
+      var t = toolById(id);
+      if (!t){ viewDirectory({}); return; }
+      var faqs = toolFaqs(t);
+      setMeta(
+        t.name + ' Review — Pricing, Pros & Cons | RighTool.ai',
+        t.name + ': ' + t.tag + '. Honest pros, cons, best-for and real pricing (' + t.priceNote + ') from the RighTool directory.',
+        '/tool/' + t.id
+      );
+      setSchema([
+        {'@type':'SoftwareApplication','name':t.name,'applicationCategory':catName(t.cat),'operatingSystem':'Web','url':t.url,'description':t.desc,
+         'offers':{'@type':'Offer','price':(t.price === 'Paid' ? undefined : '0'),'priceCurrency':'USD','description':t.priceNote}},
+        crumbSchema([{name:'Home',path:'/'},{name:'Directory',path:'/directory'},{name:catName(t.cat),path:'/category/' + t.cat},{name:t.name,path:'/tool/' + t.id}]),
+        faqSchema(faqs)
+      ]);
+      var related = toolsInCat(t.cat).filter(function(x){return x.id!==t.id;}).slice(0,3);
+      app.innerHTML = '<div class="wrap">'
+      + '<p class="crumb"><a href="#/">Home</a> · <a href="#/directory">Directory</a> · <a href="#/category/' + t.cat + '">' + esc(catName(t.cat)) + '</a> · ' + esc(t.name) + '</p>'
+      + '<div class="detail-head">'
+      +   logoMark(t)
+      +   '<div><h1>' + esc(t.name) + '</h1><p class="tag">' + esc(t.tag) + '</p></div>'
+      +   '<a class="visit-btn" href="' + visitUrl(t) + '" target="_blank" rel="' + visitRel(t) + '">Visit ' + esc(t.name) + ' ↗</a>'
+      + '</div>'
+      + '<div class="detail-grid">'
+      +   '<div><h2>What it does</h2><p class="body">' + esc(t.desc) + '</p>'
+      +   '<div class="pc">'
+      +     '<div class="col pros"><h3>Pros</h3><ul>' + t.pros.map(function(p){return '<li>' + esc(p) + '</li>';}).join('') + '</ul></div>'
+      +     '<div class="col cons"><h3>Cons</h3><ul>' + t.cons.map(function(p){return '<li>' + esc(p) + '</li>';}).join('') + '</ul></div>'
+      +   '</div>'
+      +   '<div class="tagchips">' + t.tags.map(function(x){return '<span>' + esc(x) + '</span>';}).join('') + '</div>'
+      +   '</div>'
+      +   '<aside class="fact-box"><dl>'
+      +     '<div><dt>Best for</dt><dd>' + esc(t.best) + '</dd></div>'
+      +     '<div><dt>Category</dt><dd><a href="#/category/' + t.cat + '">' + esc(catName(t.cat)) + '</a></dd></div>'
+      +     '<div><dt>Pricing model</dt><dd>' + priceBadge(t) + '</dd></div>'
+      +     '<div><dt>Price detail</dt><dd>' + esc(t.priceNote) + '</dd></div>'
+      +     '<div><dt>Website</dt><dd><a href="' + visitUrl(t) + '" target="_blank" rel="' + visitRel(t) + '">' + esc(t.url.replace('https://','').replace('www.','')) + ' ↗</a></dd></div>'
+      +   '</dl>'
+      +   '<p style="font-size:13px;color:var(--muted);margin-top:16px">Prices change — always check the tool\u2019s own site before you buy.</p>'
+      +   '</aside>'
+      + '</div>'
+      + faqBlock(faqs, t.name + ' — quick answers')
+      + (related.length ? '<section class="block"><div class="sec-head"><h2>Also in ' + esc(catName(t.cat)) + '</h2><a class="more" href="#/category/' + t.cat + '">See all →</a></div><div class="tool-grid">' + related.map(function(r){return toolCard(r);}).join('') + '</div></section>' : '')
+      + '</div>';
+    }
+
+    /* ---------- ROUNDUPS ---------- */
+    function viewRoundups(){
+      setMeta(
+        'Best AI Tools Roundups — Ranked by Job | RighTool.ai',
+        'Ranked best-of roundups for specific jobs, built from our curated directory. Picks are editorial — appearing in a roundup cannot be bought.',
+        '/roundups'
+      );
+      setSchema([
+        {'@type':'CollectionPage','name':'Best AI Tools Roundups','url':absUrl('/roundups'),'isPartOf':{'@id':SITE_URL + '/#website'}},
+        crumbSchema([{name:'Home',path:'/'},{name:'Roundups',path:'/roundups'}]),
+        itemListSchema(ROUNDUPS.map(function(r){return {name:r.title, path:'/roundup/' + r.slug};}))
+      ]);
+      app.innerHTML = '<div class="wrap">'
+      + '<div class="page-head"><h1>Best AI tools for…</h1>'
+      + '<p class="sub">Ranked roundups for a specific job, built from the same tools in our directory. Picks are editorial — appearing here cannot be bought. <a href="#/how-we-rank">How we rank</a></p></div>'
+      + '<div class="teaser-grid" style="margin-top:22px">'
+      + ROUNDUPS.map(function(r){
+          return '<a class="teaser" href="#/roundup/' + r.slug + '"><span class="kicker">' + esc(r.kicker) + '</span><h3>' + esc(r.title) + '</h3><p>' + esc(r.intro.slice(0,150)) + '…</p><span class="go">See the ' + r.picks.length + ' picks →</span></a>';
+        }).join('')
+      + '<a class="teaser" href="#/directory?pricing=Free"><span class="kicker">Budget roundup</span><h3>Best free AI tools</h3><p>Every directory tool with a real free tier, filterable by category. No trials, no credit cards.</p><span class="go">Browse free tools →</span></a>'
+      + '</div></div>';
+    }
+    function viewRoundup(slug){
+      var r = null;
+      ROUNDUPS.forEach(function(x){ if (x.slug===slug) r = x; });
+      if (!r){ viewRoundups(); return; }
+      var topPick = toolById(r.picks[0].id);
+      var roundupFaqs = [
+        {q:'What is the best pick in this roundup?', a:'Our #1 pick is ' + topPick.name + ': ' + r.picks[0].why + ' The full ranked list is on this page, with pricing on every pick.'},
+        {q:'Are these roundup picks sponsored?', a:'No. Roundup picks are editorial and cannot be bought at any price. Paid placements on RighTool live only in clearly labelled Featured slots and never enter a roundup.'},
+        {q:'How was this list ranked?', a:'Each tool was judged on merit for this specific job — output quality, honest pricing, and whether we would hand it to a friend — using the same directory data as our full listings.'}
+      ];
+      setMeta(
+        r.title + ' — ' + r.picks.length + ' Ranked Picks | RighTool.ai',
+        r.intro.slice(0,155) + '…',
+        '/roundup/' + r.slug
+      );
+      setSchema([
+        {'@type':'Article','headline':r.title,'description':r.intro,'url':absUrl('/roundup/' + r.slug),'author':{'@id':SITE_URL + '/#org'},'publisher':{'@id':SITE_URL + '/#org'}},
+        crumbSchema([{name:'Home',path:'/'},{name:'Roundups',path:'/roundups'},{name:r.title,path:'/roundup/' + r.slug}]),
+        itemListSchema(r.picks.map(function(p){var t = toolById(p.id); return {name:t ? t.name : p.id, path:'/tool/' + p.id};})),
+        faqSchema(roundupFaqs)
+      ]);
+      app.innerHTML = '<div class="wrap"><div class="article">'
+      + '<p class="crumb"><a href="#/">Home</a> · <a href="#/roundups">Roundups</a> · ' + esc(r.title) + '</p>'
+      + '<div class="page-head" style="padding-top:14px"><span class="featured-label" style="color:var(--accent)">' + esc(r.kicker) + '</span><h1 style="margin-top:8px">' + esc(r.title) + '</h1>'
+      + '<p class="intro">' + esc(r.intro) + '</p></div>'
+      + answerBox('Our #1 pick is <b>' + esc(topPick.name) + '</b> — ' + esc(r.picks[0].why))
+      + r.picks.map(function(p, i){
+          var t = toolById(p.id); if (!t) return '';
+          return '<div class="pick"><div class="rank">' + (i+1) + '</div>'
+          + logoMark(t, 'sm')
+          + '<div style="flex:1"><h3><a href="#/tool/' + t.id + '">' + esc(t.name) + '</a></h3><p>' + esc(p.why) + '</p>'
+          + '<div class="badge-row">' + priceBadge(t) + '<span class="price-note">' + esc(t.priceNote) + '</span></div></div>'
+          + '<a class="visit" href="#/tool/' + t.id + '">Review →</a></div>';
+        }).join('')
+      + '<div class="callout"><b>How this list was made</b><p>Every pick comes from our curated directory and is ranked on merit for this specific job. No tool can pay to appear in a roundup — paid placements on this site are labelled \u201CFeatured\u201D and live in clearly marked slots only. <a href="#/how-we-rank">Read the full methodology</a></p></div>'
+      + faqBlock(roundupFaqs)
+      + '</div></div>';
+    }
+
+    /* ---------- SUBMIT ---------- */
+    var selectedTier = 'Fast-Track Review — $49';
+    function viewSubmit(){
+      setMeta(
+        'Submit Your AI Tool — Free Listing, $49 Fast-Track, $347 Featured | RighTool.ai',
+        'Get your AI tool listed in front of people searching for the job it does. Free listing, $49 Fast-Track review in 48 hours, or a $347 Featured Launch. Payment never buys a ranking.',
+        '/submit'
+      );
+      setSchema([
+        {'@type':'WebPage','name':'Submit Your AI Tool','url':absUrl('/submit'),'isPartOf':{'@id':SITE_URL + '/#website'}},
+        crumbSchema([{name:'Home',path:'/'},{name:'Submit a Tool',path:'/submit'}])
+      ]);
+      app.innerHTML = '<div class="wrap">'
+      + '<div class="page-head"><h1>Submit your tool</h1>'
+      + '<p class="sub">Get listed in front of people searching for the job your tool does. One rule, in writing: payment buys speed and a labelled featured slot — it never buys a ranking, a roundup spot or a kinder review. <a href="#/how-we-rank">How we rank</a></p></div>'
+      + '<div class="tiers">'
+      +   '<div class="tier"><div class="t-name">Free Listing</div><div class="t-price">$0</div><p class="t-sub">For patient launches</p><ul><li>Full directory listing with pros, cons &amp; pricing</li><li>Reviewed in the standard queue (typically 3–4 weeks)</li><li>Eligible for roundups on merit</li><li>Free forever — no renewal</li></ul><button type="button" data-tier="Free Listing — $0">Choose Free</button></div>'
+      +   '<div class="tier hot"><span class="flag">Most popular</span><div class="t-name">Fast-Track Review</div><div class="t-price">$49<small> one-time</small></div><p class="t-sub">Skip the queue</p><ul><li>Everything in Free Listing</li><li>Reviewed and live within 48 hours</li><li>Category placement checked by a human editor</li><li>One revision round included</li></ul><button type="button" data-tier="Fast-Track Review — $49">Choose Fast-Track</button></div>'
+      +   '<div class="tier"><div class="t-name">Featured Launch</div><div class="t-price">$347<small> one-time</small></div><p class="t-sub">Launch with a spotlight</p><ul><li>Everything in Fast-Track Review</li><li>30 days in the labelled Featured slot on the homepage</li><li>Mention in the weekly newsletter</li><li>Clearly labelled as a paid placement, always</li></ul><button type="button" data-tier="Featured Launch — $347">Choose Featured Launch</button></div>'
+      + '</div>'
+      + '<div class="submit-form"><h2>Listing details</h2><p style="color:var(--muted);font-size:14.5px;margin-top:6px">Draft form for launch — tell us about the tool and we\u2019ll take it from there.</p>'
+      + '<form id="submitForm"><div class="f-grid">'
+      +   '<div><label for="fName">Tool name *</label><input id="fName" required placeholder="e.g. ClipSmith" /></div>'
+      +   '<div><label for="fUrl">Website *</label><input id="fUrl" required type="url" placeholder="https://…" /></div>'
+      +   '<div><label for="fCat">Category *</label><select id="fCat">' + CATEGORIES.map(function(c){return '<option value="' + c.slug + '">' + esc(c.name) + '</option>';}).join('') + '</select></div>'
+      +   '<div><label for="fPrice">Pricing model *</label><select id="fPrice"><option>Free</option><option selected>Freemium</option><option>Paid</option></select></div>'
+      +   '<div class="full"><label for="fTag">One line: what job does it do? *</label><input id="fTag" required placeholder="e.g. Turns support tickets into a searchable help centre" /></div>'
+      +   '<div class="full"><label for="fDesc">Anything we should know?</label><textarea id="fDesc" rows="3" placeholder="Free plan limits, standout feature, who it\u2019s for…"></textarea></div>'
+      +   '<div><label for="fEmail">Your email *</label><input id="fEmail" required type="email" placeholder="you@company.com" /></div>'
+      +   '<div><label for="fTier">Selected tier</label><input id="fTier" readonly /></div>'
+      + '</div><button class="send" type="submit">Submit for review</button>'
+      + '<p style="font-size:13px;color:var(--muted);margin-top:12px">Submitting doesn\u2019t guarantee a listing — every tool is reviewed against the same bar, paid tier or not.</p></form>'
+      + '<div class="form-done hidden" id="submitDone" style="margin-top:18px"></div>'
+      + '</div></div>';
+
+      var tierInput = document.getElementById('fTier');
+      tierInput.value = selectedTier;
+      Array.prototype.forEach.call(document.querySelectorAll('.tier button'), function(b){
+        if (b.dataset.tier === selectedTier) b.classList.add('pick-on');
+        b.addEventListener('click', function(){
+          selectedTier = b.dataset.tier;
+          tierInput.value = selectedTier;
+          Array.prototype.forEach.call(document.querySelectorAll('.tier button'), function(x){ x.classList.toggle('pick-on', x === b); });
+          document.querySelector('.submit-form').scrollIntoView({behavior:'smooth', block:'start'});
+        });
+      });
+      document.getElementById('submitForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        var name = document.getElementById('fName').value.trim();
+        var done = document.getElementById('submitDone');
+        done.innerHTML = 'Thanks — <b>' + esc(name || 'your tool') + '</b> is in the ' + esc(selectedTier.split(' — ')[0]) + ' queue. We\u2019ll email you at the address you gave us when the review is done.';
+        done.classList.remove('hidden');
+        done.scrollIntoView({behavior:'smooth', block:'center'});
+        e.target.reset();
+        tierInput.value = selectedTier;
+      });
+    }
+
+    /* ---------- HOW WE RANK ---------- */
+    function viewRank(){
+      setMeta(
+        'How We Rank AI Tools — Our Methodology | RighTool.ai',
+        'Tools earn their place on RighTool. Money can buy speed and a labelled Featured slot — never a ranking, a roundup spot or a softer review. Here is exactly how we judge.',
+        '/how-we-rank'
+      );
+      setSchema([
+        {'@type':'AboutPage','name':'How We Rank AI Tools','url':absUrl('/how-we-rank'),'isPartOf':{'@id':SITE_URL + '/#website'}},
+        crumbSchema([{name:'Home',path:'/'},{name:'How We Rank',path:'/how-we-rank'}])
+      ]);
+      app.innerHTML = '<div class="wrap"><div class="prose">'
+      + '<div class="page-head" style="padding-bottom:0"><h1>How we rank</h1>'
+      + '<p class="sub">Short version: tools earn their place here. Money can buy speed and a labelled spotlight — never a ranking.</p></div>'
+      + '<h2>Picked on merit</h2>'
+      + '<p>Every tool in this directory was chosen by a human editor because it is genuinely good at the job it claims to do. We test tools ourselves where we can, read what real users say, and check that the product is actively maintained. If a tool stops being good, it comes off the list — several well-known names didn\u2019t make the launch cut.</p>'
+      + '<h2>What we judge</h2>'
+      + '<ul><li><b>Does it do the job?</b> Quality of output for its core task, tested against rivals in the same category.</li>'
+      + '<li><b>Is the pricing honest?</b> A \u201Cfree\u201D tier that exists only to collect an email scores worse than a paid tool that\u2019s upfront.</li>'
+      + '<li><b>Would we hand it to a friend?</b> Setup friction, support, and whether the free experience respects the user.</li>'
+      + '<li><b>Is it still alive?</b> Recent updates, a working product, a company that answers its email.</li></ul>'
+      + '<h2>Sponsors never buy rankings</h2>'
+      + '<p>Roundups and category order are editorial, full stop. No payment — at any tier, in any amount — moves a tool up a ranking, into a roundup, or softens a con in its review. If a tool is excellent, it ranks well whether or not it has ever paid us a cent; most of our top picks haven\u2019t.</p>'
+      + '<h2>Paid placements are labelled</h2>'
+      + '<p>We do sell two things, openly: faster review (Fast-Track) and a Featured slot. Featured placements always carry a visible \u201CFeatured\u201D label and sit in clearly marked sections, so you can weigh them accordingly. That transparency is the whole brand — a directory you can\u2019t trust is just an ad board.</p>'
+      + '<div class="callout"><b>Found an error?</b><p>Prices and features change constantly. If a listing here is wrong or out of date, that\u2019s on us — and the footer of every page carries the same reminder we work by: prices change, always check the tool\u2019s own site.</p></div>'
+      + '<h2>Affiliate links</h2>'
+      + '<p>Some outbound links may earn us a commission at no cost to you. Commissions never influence which tools we list or how we rank them — in several cases our top-ranked pick in a category pays us nothing at all.</p>'
+      + '</div></div>';
+    }
+
+    /* ---------- BLOG ---------- */
+    function viewBlog(){
+      setMeta(
+        'Blog — AI Tool Guides, Comparisons & Roundups | RighTool.ai',
+        'Guides, comparisons and roundups from the RighTool directory — written answer-first, with the short answer up top and the evidence after it.',
+        '/blog'
+      );
+      setSchema([
+        {'@type':'Blog','name':'RighTool.ai Blog','url':absUrl('/blog'),'isPartOf':{'@id':SITE_URL + '/#website'},'publisher':{'@id':SITE_URL + '/#org'}},
+        crumbSchema([{name:'Home',path:'/'},{name:'Blog',path:'/blog'}]),
+        itemListSchema(POSTS.map(function(p){return {name:p.title, path:'/blog/' + p.slug};}))
+      ]);
+      app.innerHTML = '<div class="wrap">'
+      + '<p class="crumb"><a href="#/">Home</a> · Blog</p>'
+      + '<div class="page-head" style="padding-top:14px"><h1>The RighTool blog</h1>'
+      + '<p class="sub">Guides and comparisons for choosing AI tools well. Every article leads with the short answer, then shows its working — the same honesty rules as the directory.</p></div>'
+      + '<div class="teaser-grid" style="margin-top:22px">'
+      + POSTS.map(function(p){
+          return '<a class="post-card" href="#/blog/' + p.slug + '"><span class="kicker">' + esc(p.kicker) + '</span><h3>' + esc(p.title) + '</h3><p>' + esc(p.excerpt) + '</p><span class="pmeta">' + fmtDate(p.date) + ' · ' + esc(p.read) + '</span></a>';
+        }).join('')
+      + '</div>'
+      + '<div class="band" id="newsletterBand"><h2>The Right Tool, weekly</h2>'
+      + '<p>One email a week: the 3–5 new AI tools actually worth trying, the ones to skip, and one workflow worth stealing. No spam, no paid placements in the picks.</p>'
+      + '<form id="newsForm"><input type="email" required placeholder="you@example.com" aria-label="Email address" /><button type="submit">Subscribe free</button></form>'
+      + '<p class="fine">Join the waitlist for launch — first issue goes out when the directory opens publicly.</p></div>'
+      + '</div>';
+      bindNewsletter();
+    }
+    function viewPost(slug){
+      var p = postBySlug(slug);
+      if (!p){ viewBlog(); return; }
+      setMeta(
+        p.title + ' | RighTool.ai Blog',
+        p.excerpt,
+        '/blog/' + p.slug
+      );
+      setSchema([
+        {'@type':'BlogPosting','headline':p.title,'description':p.excerpt,'url':absUrl('/blog/' + p.slug),
+         'datePublished':p.date,'dateModified':p.updated,'author':{'@id':SITE_URL + '/#org'},'publisher':{'@id':SITE_URL + '/#org'},
+         'mainEntityOfPage':absUrl('/blog/' + p.slug),
+         'about':p.tools.map(function(id){var t = toolById(id); return {'@type':'SoftwareApplication','name':t ? t.name : id};})},
+        crumbSchema([{name:'Home',path:'/'},{name:'Blog',path:'/blog'},{name:p.title,path:'/blog/' + p.slug}]),
+        faqSchema(p.faqs)
+      ]);
+      var related = p.tools.map(toolById).filter(Boolean);
+      app.innerHTML = '<div class="wrap"><article class="post-body">'
+      + '<p class="crumb"><a href="#/">Home</a> · <a href="#/blog">Blog</a> · ' + esc(p.title) + '</p>'
+      + '<div class="page-head" style="padding-top:14px"><span class="featured-label" style="color:var(--accent)">' + esc(p.kicker) + '</span><h1 style="margin-top:8px">' + esc(p.title) + '</h1>'
+      + '<div class="post-meta"><span>Published ' + fmtDate(p.date) + '</span><span>Updated ' + fmtDate(p.updated) + '</span><span>' + esc(p.read) + '</span><span>By the RighTool editors</span></div></div>'
+      + answerBox(esc(p.answer))
+      + '<div class="takeaways"><h2>Key takeaways</h2><ul>' + p.takeaways.map(function(x){return '<li>' + esc(x) + '</li>';}).join('') + '</ul></div>'
+      + p.sections.map(function(s){
+          return '<h2>' + esc(s.h) + '</h2>'
+            + s.body.map(function(par){return '<p>' + esc(par) + '</p>';}).join('');
+        }).join('')
+      + faqBlock(p.faqs)
+      + '</article>'
+      + (related.length ? '<section class="block"><div class="sec-head"><h2>Tools mentioned in this article</h2></div><div class="tool-grid">' + related.map(function(t){return toolCard(t);}).join('') + '</div></section>' : '')
+      + '</div>';
+    }
+
+    /* ---------- ROUTER ---------- */
+    function parseRouteString(str){
+      var parts = str.split('?');
+      var params = {};
+      if (parts[1]){
+        parts[1].split('&').forEach(function(kv){
+          var p = kv.split('=');
+          params[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || '');
+        });
+      }
+      return {path: parts[0], params: params};
+    }
+    function parseHash(){
+      var h = location.hash.replace(/^#\/?/, '');
+      if (h) return parseRouteString(h);
+      /* Clean-URL fallback: on the production host (Vercel) pages are also
+         reachable at /tool/<id>, /blog/<slug> etc. via rewrites in
+         vercel.json. In the preview shell the path belongs to the shell,
+         so only known route prefixes are honoured. */
+      var KNOWN = ['directory','category','tool','roundups','roundup','blog','submit','how-we-rank'];
+      var p = location.pathname.replace(/^\//, '');
+      if (KNOWN.indexOf(p.split('/')[0]) !== -1){
+        return parseRouteString(p + location.search);
+      }
+      return {path:'', params:{}};
+    }
+    function setNav(key){
+      Array.prototype.forEach.call(document.querySelectorAll('#mainNav a'), function(a){
+        a.classList.toggle('active', a.dataset.nav === key);
+      });
+    }
+    function route(){
+      var r = parseHash();
+      var seg = r.path.split('/').filter(Boolean);
+      window.scrollTo(0,0);
+      if (seg.length === 0){ setNav(''); viewHome(); }
+      else if (seg[0] === 'directory'){ setNav('directory'); viewDirectory(r.params); }
+      else if (seg[0] === 'category' && seg[1]){ setNav('directory'); viewCategory(seg[1]); }
+      else if (seg[0] === 'tool' && seg[1]){ setNav('directory'); viewTool(seg[1]); }
+      else if (seg[0] === 'roundups'){ setNav('roundups'); viewRoundups(); }
+      else if (seg[0] === 'roundup' && seg[1]){ setNav('roundups'); viewRoundup(seg[1]); }
+      else if (seg[0] === 'blog' && seg[1]){ setNav('blog'); viewPost(seg[1]); }
+      else if (seg[0] === 'blog'){ setNav('blog'); viewBlog(); }
+      else if (seg[0] === 'submit'){ setNav('submit'); viewSubmit(); }
+      else if (seg[0] === 'how-we-rank'){ setNav('rank'); viewRank(); }
+      else { setNav(''); viewHome(); }
+      document.getElementById('mobileNav').classList.remove('open');
+    }
+    window.addEventListener('hashchange', route);
+
+    /* footer category links */
+    document.getElementById('footCats').innerHTML = CATEGORIES.slice(0,6).map(function(c){
+      return '<li><a href="#/category/' + c.slug + '">' + esc(c.name) + '</a></li>';
+    }).join('') + '<li><a href="#/directory">All categories →</a></li>';
+
+    /* mobile nav */
+    var burger = document.getElementById('burger');
+    burger.addEventListener('click', function(){
+      var nav = document.getElementById('mobileNav');
+      var open = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('#mobileNav a'), function(a){
+      a.addEventListener('click', function(){ document.getElementById('mobileNav').classList.remove('open'); });
+    });
+
+    route();
+    </script>
+  </body>
+</html>

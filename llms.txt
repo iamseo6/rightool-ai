@@ -1,0 +1,90 @@
+# RighTool.ai
+
+Find the right AI tool for the job. A curated directory of AI tools with honest rankings, pricing, and use cases. Sponsored listings are always labelled; rankings are never for sale.
+
+## Chatbots & Assistants
+
+- [ChatGPT](https://chatgpt.com): The all-round AI assistant for writing, analysis, coding and images (Freemium)
+- [Claude](https://claude.ai): Thoughtful AI assistant that excels at long documents and natural writing (Freemium)
+- [Gemini](https://gemini.google.com): Google’s AI assistant, woven into Search, Gmail, Docs and Android (Freemium)
+- [Perplexity](https://www.perplexity.ai): An answer engine that searches the live web and cites its sources (Freemium)
+- [Microsoft Copilot](https://copilot.microsoft.com): AI built into Windows, Edge and Microsoft 365 apps (Freemium)
+
+## Writing
+
+- [Grammarly](https://www.grammarly.com): Writing assistant that checks grammar, clarity and tone everywhere you type (Freemium)
+- [Jasper](https://www.jasper.ai): AI writing platform built for marketing teams and brand voice (Paid)
+- [Writesonic](https://writesonic.com): Affordable AI writer for SEO articles and marketing copy (Freemium)
+- [QuillBot](https://quillbot.com): Paraphrasing and rewriting tool loved by students and ESL writers (Freemium)
+
+## Image Generation
+
+- [Midjourney](https://www.midjourney.com): The benchmark for beautiful, artistic AI images (Paid)
+- [Ideogram](https://ideogram.ai): AI image generator that actually gets text in images right (Freemium)
+- [Leonardo AI](https://leonardo.ai): Image platform for game assets, textures and production art (Freemium)
+- [Adobe Firefly](https://firefly.adobe.com): Generative AI inside Photoshop and Express, trained on licensed content (Freemium)
+- [Stable Diffusion](https://stability.ai): Free, open-source image generation you can run on your own computer (Free)
+
+## Video
+
+- [Runway](https://runwayml.com): Professional AI video generation and editing suite (Freemium)
+- [Descript](https://www.descript.com): Edit video and audio by editing the transcript (Freemium)
+- [Opus Clip](https://www.opus.pro): Turns long videos into captioned short clips automatically (Freemium)
+- [HeyGen](https://www.heygen.com): Realistic AI avatar videos and automatic video translation (Freemium)
+- [Synthesia](https://www.synthesia.io): Enterprise AI avatar videos for training and internal comms (Paid)
+- [CapCut](https://www.capcut.com): Free, friendly video editor with strong AI captions and cleanup tools (Freemium)
+
+## Audio & Voice
+
+- [ElevenLabs](https://elevenlabs.io): The most natural AI voices — text-to-speech and voice cloning (Freemium)
+- [Suno](https://suno.com): Generate complete songs — vocals included — from a text prompt (Freemium)
+- [Udio](https://www.udio.com): High-fidelity AI music generation with remix and extend tools (Freemium)
+- [Murf AI](https://murf.ai): Voiceover studio with a large voice library and timeline editing (Paid)
+
+## Coding
+
+- [GitHub Copilot](https://github.com/features/copilot): AI pair programmer inside your editor and across GitHub (Freemium)
+- [Cursor](https://cursor.com): AI-first code editor that edits whole features, not just lines (Freemium)
+- [Windsurf](https://windsurf.com): Agentic code editor with a generous free tier (Freemium)
+- [Replit](https://replit.com): Describe an app and watch it get built and deployed in your browser (Freemium)
+
+## Productivity
+
+- [Notion AI](https://www.notion.com/product/ai): AI that searches, summarises and drafts across your Notion workspace (Paid)
+- [Otter.ai](https://otter.ai): Meeting transcription with live notes, summaries and action items (Freemium)
+- [Fireflies.ai](https://fireflies.ai): AI meeting notetaker that plugs notes straight into your CRM (Freemium)
+- [Motion](https://www.usemotion.com): AI calendar that schedules your tasks around your meetings automatically (Paid)
+- [Gamma](https://gamma.app): Generate polished presentations, documents and sites from a prompt (Freemium)
+
+## Marketing
+
+- [Copy.ai](https://www.copy.ai): Go-to-market AI: workflows that automate sales and marketing busywork (Freemium)
+- [AdCreative.ai](https://www.adcreative.ai): Generate conversion-focused ad creatives in bulk (Paid)
+- [Surfer SEO](https://surferseo.com): SEO content editor that tells you exactly what a ranking page needs (Paid)
+- [Anyword](https://www.anyword.com): Marketing copy scored by predicted performance before you publish (Paid)
+
+## Design
+
+- [Canva](https://www.canva.com): Design for everyone, now with a full AI studio built in (Freemium)
+- [Figma](https://www.figma.com): The standard for UI design, adding AI prototyping with Figma Make (Freemium)
+- [Framer](https://www.framer.com): Design and publish real websites — with AI to start the page (Freemium)
+- [Looka](https://looka.com): AI logo maker that hands you a full brand kit (Freemium)
+
+## Business & Automation
+
+- [Zapier](https://zapier.com): Connects 7,000+ apps so your tools do the busywork for you (Freemium)
+- [Make](https://www.make.com): Visual automation builder with more power per dollar than rivals (Freemium)
+- [HubSpot](https://www.hubspot.com): CRM platform with AI (Breeze) across marketing, sales and service (Freemium)
+- [Airtable](https://www.airtable.com): Spreadsheet-database hybrid for running operations, now with AI fields (Freemium)
+
+## Blog
+
+- [How to choose the right AI tool (without trying all of them)](https://rightool.ai/blog/how-to-choose-the-right-ai-tool)
+- [ChatGPT vs Claude vs Gemini: which AI assistant should you use?](https://rightool.ai/blog/chatgpt-vs-claude-vs-gemini)
+- [The best free AI tools in 2026 (that are actually free)](https://rightool.ai/blog/best-free-ai-tools)
+- [AI tools for small business owners: where to start](https://rightool.ai/blog/ai-tools-for-small-business-owners)
+
+## Roundups
+
+- [Best AI tools for small business marketing](https://rightool.ai/roundup/best-ai-tools-for-small-business-marketing)
+- [Best AI tools for video creation](https://rightool.ai/roundup/best-ai-tools-for-video-creation)

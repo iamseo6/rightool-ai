@@ -1,0 +1,217 @@
+{
+  "headers": [
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/assets/logos/chatgpt.png",
+      "destination": "https://logo.clearbit.com/chatgpt.com"
+    },
+    {
+      "source": "/assets/logos/claude.png",
+      "destination": "https://logo.clearbit.com/claude.ai"
+    },
+    {
+      "source": "/assets/logos/gemini.png",
+      "destination": "https://logo.clearbit.com/gemini.google.com"
+    },
+    {
+      "source": "/assets/logos/perplexity.png",
+      "destination": "https://logo.clearbit.com/perplexity.ai"
+    },
+    {
+      "source": "/assets/logos/microsoft-copilot.png",
+      "destination": "https://logo.clearbit.com/copilot.microsoft.com"
+    },
+    {
+      "source": "/assets/logos/grammarly.png",
+      "destination": "https://logo.clearbit.com/grammarly.com"
+    },
+    {
+      "source": "/assets/logos/jasper.png",
+      "destination": "https://logo.clearbit.com/jasper.ai"
+    },
+    {
+      "source": "/assets/logos/writesonic.png",
+      "destination": "https://logo.clearbit.com/writesonic.com"
+    },
+    {
+      "source": "/assets/logos/quillbot.png",
+      "destination": "https://logo.clearbit.com/quillbot.com"
+    },
+    {
+      "source": "/assets/logos/midjourney.png",
+      "destination": "https://logo.clearbit.com/midjourney.com"
+    },
+    {
+      "source": "/assets/logos/ideogram.png",
+      "destination": "https://logo.clearbit.com/ideogram.ai"
+    },
+    {
+      "source": "/assets/logos/leonardo.png",
+      "destination": "https://logo.clearbit.com/leonardo.ai"
+    },
+    {
+      "source": "/assets/logos/adobe-firefly.png",
+      "destination": "https://logo.clearbit.com/firefly.adobe.com"
+    },
+    {
+      "source": "/assets/logos/stable-diffusion.png",
+      "destination": "https://logo.clearbit.com/stability.ai"
+    },
+    {
+      "source": "/assets/logos/runway.png",
+      "destination": "https://logo.clearbit.com/runwayml.com"
+    },
+    {
+      "source": "/assets/logos/descript.png",
+      "destination": "https://logo.clearbit.com/descript.com"
+    },
+    {
+      "source": "/assets/logos/opus-clip.png",
+      "destination": "https://logo.clearbit.com/opus.pro"
+    },
+    {
+      "source": "/assets/logos/heygen.png",
+      "destination": "https://logo.clearbit.com/heygen.com"
+    },
+    {
+      "source": "/assets/logos/synthesia.png",
+      "destination": "https://logo.clearbit.com/synthesia.io"
+    },
+    {
+      "source": "/assets/logos/capcut.png",
+      "destination": "https://logo.clearbit.com/capcut.com"
+    },
+    {
+      "source": "/assets/logos/elevenlabs.png",
+      "destination": "https://logo.clearbit.com/elevenlabs.io"
+    },
+    {
+      "source": "/assets/logos/suno.png",
+      "destination": "https://logo.clearbit.com/suno.com"
+    },
+    {
+      "source": "/assets/logos/udio.png",
+      "destination": "https://logo.clearbit.com/udio.com"
+    },
+    {
+      "source": "/assets/logos/murf.png",
+      "destination": "https://logo.clearbit.com/murf.ai"
+    },
+    {
+      "source": "/assets/logos/github-copilot.png",
+      "destination": "https://logo.clearbit.com/github.com"
+    },
+    {
+      "source": "/assets/logos/cursor.png",
+      "destination": "https://logo.clearbit.com/cursor.com"
+    },
+    {
+      "source": "/assets/logos/windsurf.png",
+      "destination": "https://logo.clearbit.com/windsurf.com"
+    },
+    {
+      "source": "/assets/logos/replit.png",
+      "destination": "https://logo.clearbit.com/replit.com"
+    },
+    {
+      "source": "/assets/logos/notion-ai.png",
+      "destination": "https://logo.clearbit.com/notion.com"
+    },
+    {
+      "source": "/assets/logos/otter.png",
+      "destination": "https://logo.clearbit.com/otter.ai"
+    },
+    {
+      "source": "/assets/logos/fireflies.png",
+      "destination": "https://logo.clearbit.com/fireflies.ai"
+    },
+    {
+      "source": "/assets/logos/motion.png",
+      "destination": "https://logo.clearbit.com/usemotion.com"
+    },
+    {
+      "source": "/assets/logos/gamma.png",
+      "destination": "https://logo.clearbit.com/gamma.app"
+    },
+    {
+      "source": "/assets/logos/copy-ai.png",
+      "destination": "https://logo.clearbit.com/copy.ai"
+    },
+    {
+      "source": "/assets/logos/adcreative.png",
+      "destination": "https://logo.clearbit.com/adcreative.ai"
+    },
+    {
+      "source": "/assets/logos/surfer.png",
+      "destination": "https://logo.clearbit.com/surferseo.com"
+    },
+    {
+      "source": "/assets/logos/anyword.png",
+      "destination": "https://logo.clearbit.com/anyword.com"
+    },
+    {
+      "source": "/assets/logos/canva.png",
+      "destination": "https://logo.clearbit.com/canva.com"
+    },
+    {
+      "source": "/assets/logos/figma.png",
+      "destination": "https://logo.clearbit.com/figma.com"
+    },
+    {
+      "source": "/assets/logos/framer.png",
+      "destination": "https://logo.clearbit.com/framer.com"
+    },
+    {
+      "source": "/assets/logos/looka.png",
+      "destination": "https://logo.clearbit.com/looka.com"
+    },
+    {
+      "source": "/assets/logos/zapier.png",
+      "destination": "https://logo.clearbit.com/zapier.com"
+    },
+    {
+      "source": "/assets/logos/make.png",
+      "destination": "https://logo.clearbit.com/make.com"
+    },
+    {
+      "source": "/assets/logos/hubspot.png",
+      "destination": "https://logo.clearbit.com/hubspot.com"
+    },
+    {
+      "source": "/assets/logos/airtable.png",
+      "destination": "https://logo.clearbit.com/airtable.com"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
