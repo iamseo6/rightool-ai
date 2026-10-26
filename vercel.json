@@ -124,7 +124,7 @@
   ],
   "rewrites": [
     {
-      "source": "/",
+      "source": "/(.*)",
       "has": [
         {
           "type": "header",
