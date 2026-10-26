@@ -27,6 +27,18 @@
       {"@type":"Organization","@id":"https://rightool.ai/#org","name":"RighTool.ai","url":"https://rightool.ai/","logo":"https://rightool.ai/icon.webp","slogan":"Find the right AI tool for the job."}
     ]}
     </script>
+    <!-- Google Analytics (GA4) — Measurement ID: G-HQ93036WSC.
+         This site is a single-page app: send_page_view is off here and
+         setMeta() sends one page_view per route instead, so every page
+         (home, directory, categories, tools, roundups, blog, submit,
+         how-we-rank and the footer pages) is tracked without duplicates. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQ93036WSC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-HQ93036WSC', { send_page_view: false });
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -353,6 +365,12 @@
         border:1.5px solid var(--ink);background:var(--panel);color:var(--ink);
       }
       .tier button.pick-on,.tier.hot button{background:var(--accent);border-color:var(--accent);color:#fff}
+      .tier a.tier-cta{
+        border-radius:10px;padding:12px;font-weight:700;font-size:15px;text-align:center;
+        border:1.5px solid var(--ink);background:var(--panel);color:var(--ink);
+      }
+      .tier a.tier-cta:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}
+      .tier.hot a.tier-cta{background:var(--accent);border-color:var(--accent);color:#fff}
       .tier .flag{
         position:absolute;top:-13px;left:22px;background:var(--accent);color:#fff;
         font-size:11.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
@@ -391,7 +409,7 @@
 
       /* ---------- footer ---------- */
       footer.site{margin-top:70px;border-top:1px solid var(--line);background:var(--bg-soft)}
-      .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;padding:42px 0 30px}
+      .foot-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr 1fr;gap:28px;padding:42px 0 30px}
       @media (max-width:820px){.foot-grid{grid-template-columns:1fr 1fr}}
       .foot-grid h4{font-family:"Sora",sans-serif;font-size:14px;font-weight:700;margin:0 0 12px}
       .foot-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
@@ -494,16 +512,26 @@
               <li><a href="#/directory">Full directory</a></li>
               <li><a href="#/roundups">Best-of roundups</a></li>
               <li><a href="#/blog">Blog &amp; guides</a></li>
-              <li><a href="#/directory?pricing=Free">Free AI tools</a></li>
-              <li><a href="#/directory?pricing=Freemium">Freemium AI tools</a></li>
+              <li><a href="#/free-ai-tools">Free AI tools</a></li>
+              <li><a href="#/freemium-ai-tools">Freemium AI tools</a></li>
             </ul>
           </div>
           <div>
             <h4>For tool makers</h4>
             <ul>
               <li><a href="#/submit">Submit a tool</a></li>
-              <li><a href="#/submit">Listing &amp; launch pricing</a></li>
+              <li><a href="#/listing-pricing">Listing &amp; launch pricing</a></li>
+              <li><a href="#/advertise">Advertise &amp; sponsorships</a></li>
               <li><a href="#/how-we-rank">How we rank</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#/about">About RighTool</a></li>
+              <li><a href="#/contact">Contact</a></li>
+              <li><a href="#/privacy">Privacy policy</a></li>
+              <li><a href="#/terms">Terms of use</a></li>
             </ul>
           </div>
         </div>
@@ -1129,6 +1157,16 @@
       });
       var ogU = document.getElementById('ogUrl');
       if (ogU) ogU.setAttribute('content', absUrl(path));
+      /* GA4: every view calls setMeta exactly once, so this sends exactly
+         one page_view per page — initial load included (the gtag config
+         in <head> has send_page_view off to prevent a duplicate). */
+      if (typeof window.gtag === 'function'){
+        window.gtag('event', 'page_view', {
+          page_title: title,
+          page_path: path,
+          page_location: absUrl(path)
+        });
+      }
     }
     function setSchema(items){
       if (!pageSchemaEl){
@@ -1704,6 +1742,253 @@
       + '</div>';
     }
 
+    /* ---------- FOOTER PAGES ----------
+       Every footer link resolves to its own route with unique copy,
+       its own title, meta description, canonical and JSON-LD, so each
+       page can be indexed and ranked on its own. */
+    function pageShell(o){
+      setMeta(o.metaTitle, o.metaDesc, o.path);
+      var items = [
+        {'@type': o.schemaType || 'WebPage','name': o.title,'url': absUrl(o.path),'isPartOf':{'@id': SITE_URL + '/#website'}},
+        crumbSchema([{name:'Home', path:'/'},{name: o.title, path: o.path}])
+      ];
+      if (o.extraSchema) items = items.concat(o.extraSchema);
+      setSchema(items);
+      app.innerHTML = '<div class="wrap">'
+        + '<p class="crumb"><a href="#/">Home</a> · ' + esc(o.title) + '</p>'
+        + '<div class="page-head" style="padding-top:14px"><h1>' + esc(o.title) + '</h1>'
+        + (o.sub ? '<p class="sub">' + o.sub + '</p>' : '')
+        + '</div>'
+        + o.body
+        + '</div>';
+    }
+    function tierCards(){
+      return '<div class="tiers">'
+      + '<div class="tier"><div class="t-name">Free Listing</div><div class="t-price">$0</div><p class="t-sub">For patient launches</p><ul><li>Full directory listing with pros, cons &amp; pricing</li><li>Reviewed in the standard queue (typically 3\u20134 weeks)</li><li>Eligible for roundups on merit</li><li>Free forever \u2014 no renewal</li></ul><a class="tier-cta" href="#/submit">Choose Free</a></div>'
+      + '<div class="tier hot"><span class="flag">Most popular</span><div class="t-name">Fast-Track Review</div><div class="t-price">$49<small> one-time</small></div><p class="t-sub">Skip the queue</p><ul><li>Everything in Free Listing</li><li>Reviewed and live within 48 hours</li><li>Category placement checked by a human editor</li><li>One revision round included</li></ul><a class="tier-cta" href="#/submit">Choose Fast-Track</a></div>'
+      + '<div class="tier"><div class="t-name">Featured Launch</div><div class="t-price">$347<small> one-time</small></div><p class="t-sub">Launch with a spotlight</p><ul><li>Everything in Fast-Track Review</li><li>30 days in the labelled Featured slot on the homepage</li><li>Mention in the weekly newsletter</li><li>Clearly labelled as a paid placement, always</li></ul><a class="tier-cta" href="#/submit">Choose Featured Launch</a></div>'
+      + '</div>';
+    }
+
+    /* ---------- ABOUT ---------- */
+    function viewAbout(){
+      var faqs = [
+        {q:'Is RighTool independent?', a:'Yes. RighTool is an independent directory. Tools cannot pay for rankings, roundup spots or kinder reviews \u2014 paid placements exist only in clearly labelled Featured slots, and they never affect a ranking.'},
+        {q:'How does a tool get listed on RighTool?', a:'A human editor picks it, or its maker submits it through the submission page. Either way it is reviewed against the same bar: does it do the job, is the pricing honest, and would we hand it to a friend?'},
+        {q:'How does RighTool make money?', a:'Through listing tiers for tool makers (a free listing, a $49 Fast-Track review and a $347 Featured Launch) and labelled sponsorship placements. Some outbound links may also earn a commission at no cost to you. None of it buys position \u2014 see the advertising page for exactly what is and is not for sale.'}
+      ];
+      pageShell({
+        path:'/about', schemaType:'AboutPage',
+        title:'About RighTool.ai',
+        metaTitle:'About RighTool.ai \u2014 A Curated AI Tools Directory | RighTool.ai',
+        metaDesc:'RighTool.ai is a human-curated directory of ' + TOOLS.length + ' AI tools across ' + CATEGORIES.length + ' categories, organised by the job you need done \u2014 with honest pros, cons and pricing, labelled sponsorships, and rankings that are never for sale.',
+        sub:'A curated directory of AI tools, organised by the job you need done \u2014 not by whoever paid the most.',
+        body: '<div class="prose">'
+          + '<h2>What RighTool is</h2>'
+          + '<p>RighTool.ai is a directory of ' + TOOLS.length + ' AI tools across ' + CATEGORIES.length + ' categories, organised by the job you need done: writing, image generation, video, coding, meetings, marketing and more. Most directories rank tools by hype or by who advertises. We organise by task, because nobody wakes up wanting \u201Can AI tool\u201D \u2014 they wake up wanting a video edited, a deck built, or a support inbox emptied.</p>'
+          + '<h2>How listings are made</h2>'
+          + '<p>Every listing is written by a human editor. We test tools ourselves where we can, read what real users say, and check that the product is actively maintained. Each listing shows honest pros and cons and the real pricing model, so you can rule a tool in or out before you ever click through. If a tool stops being good, it comes off the list. Our full methodology is on the <a href="#/how-we-rank">How we rank</a> page.</p>'
+          + '<h2>Who it\u2019s for</h2>'
+          + '<p>People choosing AI tools for real work: small business owners, creators, marketers, developers and teams who would rather read one honest page than open forty tabs. The <a href="#/blog">blog</a> and <a href="#/roundups">best-of roundups</a> are written the same way \u2014 short answer first, evidence after.</p>'
+          + '<h2>How it makes money</h2>'
+          + '<p>Tool makers can pay for a faster review or a clearly labelled Featured slot, and some outbound links may earn us a commission. That is the whole model, and it has one hard rule: money never buys a ranking, a roundup spot or a softer review. The <a href="#/advertise">advertising page</a> spells out exactly what is and is not for sale.</p>'
+          + '</div>'
+          + faqBlock(faqs),
+        extraSchema:[faqSchema(faqs)]
+      });
+    }
+
+    /* ---------- CONTACT ---------- */
+    function viewContact(){
+      pageShell({
+        path:'/contact',
+        title:'Contact RighTool',
+        metaTitle:'Contact RighTool.ai \u2014 Corrections, Listings & Sponsorships | RighTool.ai',
+        metaDesc:'Get in touch with the RighTool editors: report a wrong price or stale listing, ask about a tool submission, or enquire about labelled sponsorship placements.',
+        sub:'Tell us what you need and we\u2019ll route it to the right place. The fastest channel for anything tool-related is the submission form \u2014 it lands directly with the editors who review listings.',
+        body: '<div class="prose">'
+          + '<h2>Listing corrections</h2>'
+          + '<p>Prices and features change constantly, and a stale listing helps nobody. If a price, plan or feature on any tool page is wrong or out of date, send the tool\u2019s name and what changed through the <a href="#/submit">submission form</a> and mark it as a correction \u2014 corrections jump the queue and are always free.</p>'
+          + '<h2>Tool makers</h2>'
+          + '<p>Want your tool listed, or your existing listing updated? Start on the <a href="#/submit">submit a tool</a> page. The three listing options and exactly what each includes are broken down on the <a href="#/listing-pricing">listing &amp; launch pricing</a> page.</p>'
+          + '<h2>Advertisers &amp; sponsors</h2>'
+          + '<p>Interested in a labelled Featured placement or a newsletter mention? Read the <a href="#/advertise">advertising page</a> first \u2014 it lists what is available, what it costs, and what is never for sale \u2014 then reach us through the submission form.</p>'
+          + '<h2>Everything else</h2>'
+          + '<p>Questions about how we rank, a tool you think we\u2019ve missed, or feedback on the directory itself: the <a href="#/how-we-rank">How we rank</a> page covers our methodology, and the submission form is the way to reach the editors about anything else. We read everything that comes in; listing reviews follow the queue published on the submit page.</p>'
+          + '</div>'
+      });
+    }
+
+    /* ---------- ADVERTISE ---------- */
+    function viewAdvertise(){
+      var faqs = [
+        {q:'Can I pay to rank higher on RighTool?', a:'No \u2014 never, at any price. Rankings, roundups and category order are editorial. Payment buys review speed and a clearly labelled Featured placement only.'},
+        {q:'How are sponsored placements labelled?', a:'Always, and visibly. Featured tools carry a \u201CFeatured\u201D label wherever they appear, and sponsored sections are marked as paid placements, so readers can weigh them accordingly.'},
+        {q:'How do I book a Featured Launch?', a:'Through the submit page: choose the Featured Launch tier when you submit your tool. It is a $347 one-time payment covering 30 days in the labelled Featured slot on the homepage plus a mention in the weekly newsletter.'}
+      ];
+      pageShell({
+        path:'/advertise',
+        title:'Advertise on RighTool',
+        metaTitle:'Advertise on RighTool.ai \u2014 Sponsorships & Featured Placements | RighTool.ai',
+        metaDesc:'Reach people actively choosing an AI tool for a specific job. Labelled Featured placements and newsletter mentions on RighTool \u2014 with rankings, roundups and reviews that are never for sale.',
+        sub:'RighTool readers arrive with a job to get done and a shortlist to build \u2014 the highest-intent moment in a tool\u2019s funnel. Here is what you can buy, and what you never can.',
+        body: '<div class="prose">'
+          + '<h2>What\u2019s available</h2>'
+          + '<ul><li><b>Featured Launch \u2014 $347 one-time.</b> 30 days in the labelled Featured slot on the homepage, plus a mention in the weekly newsletter. Your tool is reviewed against the same bar as every listing first.</li>'
+          + '<li><b>Fast-Track Review \u2014 $49 one-time.</b> Not advertising \u2014 speed. Your submission is reviewed and live within 48 hours instead of the standard queue.</li>'
+          + '<li><b>Free Listing \u2014 $0.</b> Eligible for roundups and category placement on merit, forever, at no cost.</li></ul>'
+          + '<h2>What is never for sale</h2>'
+          + '<p>Rankings. Roundup spots. Category order. Review scores, pros and cons. No payment, at any tier, in any amount, moves a tool up a ranking or softens a con in its review. Sponsored placements are always labelled, because a directory readers can\u2019t trust is just an ad board \u2014 and worthless to advertisers too.</p>'
+          + '<h2>How to start</h2>'
+          + '<p>Submit your tool and pick a tier. Full tier details are on the <a href="#/listing-pricing">listing &amp; launch pricing</a> page, and submissions run through the <a href="#/submit">submit page</a>.</p>'
+          + '</div>'
+          + tierCards()
+          + faqBlock(faqs),
+        extraSchema:[faqSchema(faqs)]
+      });
+    }
+
+    /* ---------- LISTING & LAUNCH PRICING ---------- */
+    function viewListingPricing(){
+      var faqs = [
+        {q:'Does paying improve my tool\u2019s ranking?', a:'No. Payment buys review speed (Fast-Track) and a labelled Featured placement (Featured Launch). Rankings, roundups and category order are editorial and cannot be bought at any price.'},
+        {q:'Does the free listing expire?', a:'No. The Free Listing is free forever, with no renewal. Your tool stays in the directory as long as it keeps meeting the bar every listing is reviewed against.'},
+        {q:'How fast is the Fast-Track Review?', a:'Reviewed and live within 48 hours of submission, compared with typically 3\u20134 weeks in the standard free queue. One revision round is included.'},
+        {q:'What does the Featured Launch include?', a:'Everything in Fast-Track, plus 30 days in the labelled Featured slot on the homepage and a mention in the weekly newsletter. The placement is always clearly labelled as paid.'}
+      ];
+      pageShell({
+        path:'/listing-pricing',
+        title:'Listing & launch pricing',
+        metaTitle:'Listing & Launch Pricing \u2014 Free, $49 Fast-Track, $347 Featured | RighTool.ai',
+        metaDesc:'The three ways to get an AI tool listed on RighTool: a free listing, a $49 Fast-Track review live within 48 hours, or a $347 Featured Launch. Payment buys speed and a labelled slot \u2014 never a ranking.',
+        sub:'Three ways to get listed, one rule in writing: payment buys speed and a labelled featured slot \u2014 it never buys a ranking, a roundup spot or a kinder review.',
+        body: tierCards()
+          + '<div class="prose">'
+          + '<h2>What every tier includes</h2>'
+          + '<ul><li>A full directory listing with honest pros, cons and your real pricing model</li>'
+          + '<li>Review by a human editor against the same bar, paid tier or not</li>'
+          + '<li>Eligibility for category pages and best-of roundups, on merit</li>'
+          + '<li>A listing that stays live as long as the tool keeps meeting that bar</li></ul>'
+          + '<h2>The fine print, up front</h2>'
+          + '<p>Submitting doesn\u2019t guarantee a listing \u2014 every tool is reviewed, and some don\u2019t make the cut. Featured placements always carry a visible label and sit in clearly marked sections. Prices on this page are one-time payments in US dollars; the free listing has no renewal and no expiry. Ready when you are: <a href="#/submit">submit your tool</a>.</p>'
+          + '</div>'
+          + faqBlock(faqs),
+        extraSchema:[faqSchema(faqs)]
+      });
+    }
+
+    /* ---------- ALL CATEGORIES ---------- */
+    function viewAllCategories(){
+      pageShell({
+        path:'/all-categories', schemaType:'CollectionPage',
+        title:'All AI tool categories',
+        metaTitle:'All AI Tool Categories \u2014 ' + CATEGORIES.length + ' Categories, ' + TOOLS.length + ' Tools | RighTool.ai',
+        metaDesc:'Every RighTool category in one index: chatbots, writing, image generation, video, audio, coding, productivity, marketing, design and business automation \u2014 ' + TOOLS.length + ' curated AI tools organised by job.',
+        sub:'The directory is organised by the job you need done. Pick the job and you\u2019ll find the handful of tools that actually earn a place in it.',
+        body: '<div class="cat-grid">' + CATEGORIES.map(catCard).join('') + '</div>'
+          + '<div class="prose"><h2>Not sure which job yours is?</h2>'
+          + '<p>Start from the task, not the tool name. Our guide on <a href="#/blog/how-to-choose-the-right-ai-tool">how to choose the right AI tool</a> walks through it, or browse the <a href="#/directory">full directory</a> and search by the thing you\u2019re trying to get done.</p></div>',
+        extraSchema:[itemListSchema(CATEGORIES.map(function(c){return {name:c.name, path:'/category/' + c.slug};}))]
+      });
+    }
+
+    /* ---------- FREE / FREEMIUM LANDING PAGES ---------- */
+    function viewPricing(kind){
+      var isFree = kind === 'Free';
+      var slug = isFree ? 'free-ai-tools' : 'freemium-ai-tools';
+      var list = TOOLS.filter(function(t){ return t.price === kind; });
+      var faqs, body;
+      if (isFree){
+        var freeTiers = TOOLS.filter(function(t){ return t.price === 'Freemium'; });
+        faqs = [
+          {q:'Which AI tools are completely free?', a:'Of the ' + TOOLS.length + ' tools in this directory, ' + list.map(function(t){return t.name;}).join(', ') + ' is completely free with no paid tier. The rest of this page lists freemium tools whose free tiers are generous enough to finish real jobs \u2014 we label them as free tiers, not free tools.'},
+          {q:'Are free tiers actually usable?', a:'The ones listed here are \u2014 that\u2019s why they made the directory. A free tier that exists only to collect an email address scores badly in our reviews and usually doesn\u2019t get listed at all.'},
+          {q:'Do free AI tools show ads or sell my data?', a:'Business models vary by tool, and each listing links to the tool\u2019s own site, where its current terms live. Prices and free-tier limits change often \u2014 always check the tool\u2019s own pricing page before you rely on it.'}
+        ];
+        body = answerBox('<b>' + list.map(function(t){return esc(t.name);}).join(', ') + '</b> is the one tool in this directory that is completely free, with no paid tier at all. Below it are the <b>' + freeTiers.length + ' best free tiers</b> \u2014 freemium tools whose free plans finish real jobs, not just demos.')
+          + '<section class="block"><div class="sec-head"><h2>Completely free</h2><span class="note">No paid tier, no catch in the pricing model</span></div>'
+          + '<div class="tool-grid">' + list.map(function(t){return toolCard(t);}).join('') + '</div></section>'
+          + '<section class="block"><div class="sec-head"><h2>Free tiers worth using</h2><span class="note">Freemium tools with a genuinely usable free plan</span></div>'
+          + '<div class="tool-grid">' + freeTiers.map(function(t){return toolCard(t);}).join('') + '</div></section>'
+          + '<div class="prose"><p>Only want tools you\u2019ll never pay for, in one searchable list? The <a href="#/directory">directory</a> filters by pricing model, and the blog rounds up <a href="#/blog/best-free-ai-tools">the best free AI tools</a> in more depth.</p></div>'
+          + faqBlock(faqs);
+      } else {
+        faqs = [
+          {q:'What does freemium mean?', a:'A freemium tool has a free tier you can use indefinitely, plus paid plans that unlock more capacity, better models or team features. Every tool on this page works that way \u2014 start free, pay only if the job outgrows the free tier.'},
+          {q:'How is this different from the free AI tools page?', a:'The free page leads with tools that are completely free and rounds up the best free tiers. This page is the full freemium list: every tool in the directory whose pricing model is free-to-start with paid upgrades.'},
+          {q:'When is a freemium tool worth paying for?', a:'When the free tier\u2019s limit \u2014 generations, minutes, seats or the best model \u2014 is the thing slowing down a job you do every week. Our guide to <a href="#/blog/how-to-choose-the-right-ai-tool">choosing the right AI tool</a> has a simple test for it.'}
+        ];
+        body = answerBox('<b>' + list.length + ' of the ' + TOOLS.length + ' tools</b> in this directory are freemium: free to start, with paid plans when you outgrow the free tier. Every card shows the real pricing model before you click through.')
+          + '<section class="block"><div class="tool-grid">' + list.map(function(t){return toolCard(t);}).join('') + '</div></section>'
+          + '<div class="prose"><p>Looking for tools with no paid tier at all? See <a href="#/free-ai-tools">free AI tools</a>, or filter the <a href="#/directory">full directory</a> by category and pricing together.</p></div>'
+          + faqBlock(faqs);
+      }
+      pageShell({
+        path:'/' + slug, schemaType:'CollectionPage',
+        title: isFree ? 'Free AI tools' : 'Freemium AI tools',
+        metaTitle: isFree
+          ? 'Free AI Tools \u2014 Completely Free & the Best Free Tiers | RighTool.ai'
+          : 'Freemium AI Tools \u2014 ' + list.length + ' Tools That Are Free to Start | RighTool.ai',
+        metaDesc: isFree
+          ? 'The AI tools in the RighTool directory that cost nothing: one completely free tool with no paid tier, plus the freemium free tiers generous enough to finish real jobs \u2014 honestly labelled.'
+          : list.length + ' freemium AI tools that are free to start, with honest notes on what the free tier includes and what the paid plans unlock. Curated by humans, organised by job.',
+        sub: isFree
+          ? 'AI tools you can use without paying \u2014 labelled honestly: completely free first, then the free tiers that are actually worth your time.'
+          : 'Free to start, paid only when you outgrow the free tier. Every tool below is freemium, with the real pricing model on its card.',
+        body: body,
+        extraSchema:[
+          itemListSchema(list.map(function(t){return {name:t.name, path:'/tool/' + t.id};})),
+          faqSchema(faqs)
+        ]
+      });
+    }
+
+    /* ---------- PRIVACY ---------- */
+    function viewPrivacy(){
+      pageShell({
+        path:'/privacy',
+        title:'Privacy policy',
+        metaTitle:'Privacy Policy | RighTool.ai',
+        metaDesc:'How RighTool.ai handles information: no user accounts, no selling personal data, and the details you send us are used only to review listings and reply to you.',
+        sub:'Last updated Oct 26, 2026. Short version: this site has no user accounts and we never sell personal data.',
+        body: '<div class="prose">'
+          + '<h2>Information you give us</h2>'
+          + '<p>RighTool is a directory, not a service you sign up for \u2014 there are no accounts and no passwords. The only personal information we receive is what you choose to send us: the details in a tool submission (such as your name, email and your tool\u2019s website) or an email address entered for the weekly newsletter.</p>'
+          + '<h2>How we use it</h2>'
+          + '<p>Submission details are used to review and manage your listing, and to reply to you about it. Newsletter addresses are used to send the newsletter you signed up for. That\u2019s all \u2014 we don\u2019t build profiles, and we don\u2019t use your information to rank, promote or demote any tool.</p>'
+          + '<h2>What we never do</h2>'
+          + '<ul><li>Sell or rent personal data to anyone</li><li>Share your details with the tools listed in the directory</li><li>Let advertisers see who submitted, subscribed or contacted us</li></ul>'
+          + '<h2>Third-party sites</h2>'
+          + '<p>Every listing links out to the tool\u2019s own website, and some of those links may earn us a commission (see <a href="#/how-we-rank">How we rank</a>). Once you leave RighTool, that site\u2019s own privacy policy applies \u2014 we don\u2019t control how third parties handle your data.</p>'
+          + '<h2>Changes and questions</h2>'
+          + '<p>If this policy changes, the updated version will be posted on this page with a new date. Questions about privacy \u2014 or a request to remove details you sent us \u2014 go through the <a href="#/contact">contact page</a>.</p>'
+          + '</div>'
+      });
+    }
+
+    /* ---------- TERMS ---------- */
+    function viewTerms(){
+      pageShell({
+        path:'/terms',
+        title:'Terms of use',
+        metaTitle:'Terms of Use | RighTool.ai',
+        metaDesc:'The terms for using RighTool.ai: directory information is provided as-is, prices change, paid tiers buy speed and labelled placement only, and submitting a tool never guarantees a listing.',
+        sub:'Last updated Oct 26, 2026. By using RighTool.ai you agree to these terms.',
+        body: '<div class="prose">'
+          + '<h2>The directory</h2>'
+          + '<p>RighTool.ai is an editorial directory. Listings, rankings, roundups and reviews are our editors\u2019 opinions, provided for general information. Tool names, logos and trademarks belong to their owners; a listing is not an endorsement by, or affiliation with, the tool\u2019s maker.</p>'
+          + '<h2>Prices and accuracy</h2>'
+          + '<p>Prices, plans and features change constantly, and we can\u2019t guarantee every listing is current. Always check the tool\u2019s own website before you buy \u2014 the footer of every page on this site carries the same reminder. We correct errors as soon as they\u2019re reported (see the <a href="#/contact">contact page</a>).</p>'
+          + '<h2>Submissions and paid tiers</h2>'
+          + '<p>Submitting a tool does not guarantee a listing; every tool is reviewed against the same editorial bar, and our decision is final. Paid tiers buy review speed (Fast-Track) and a clearly labelled Featured placement (Featured Launch) only \u2014 never a ranking, a roundup spot, or a more favourable review. Sponsored placements are always labelled as such.</p>'
+          + '<h2>Acceptable use</h2>'
+          + '<p>Don\u2019t misrepresent a tool you submit, impersonate another company, or attempt to disrupt the site. We may remove any listing at any time if a tool stops meeting the bar, changes hands, or breaks these terms.</p>'
+          + '<h2>Liability</h2>'
+          + '<p>The site is provided \u201Cas is\u201D. We\u2019re not responsible for decisions you make based on a listing, or for the products and services of the third-party tools we link to \u2014 those are governed by each tool\u2019s own terms.</p>'
+          + '</div>'
+      });
+    }
+
     /* ---------- ROUTER ---------- */
     function parseRouteString(str){
       var parts = str.split('?');
@@ -1723,7 +2008,7 @@
          reachable at /tool/<id>, /blog/<slug> etc. via rewrites in
          vercel.json. In the preview shell the path belongs to the shell,
          so only known route prefixes are honoured. */
-      var KNOWN = ['directory','category','tool','roundups','roundup','blog','submit','how-we-rank'];
+      var KNOWN = ['directory','category','tool','roundups','roundup','blog','submit','how-we-rank','about','contact','advertise','listing-pricing','free-ai-tools','freemium-ai-tools','all-categories','privacy','terms'];
       var p = location.pathname.replace(/^\//, '');
       if (KNOWN.indexOf(p.split('/')[0]) !== -1){
         return parseRouteString(p + location.search);
@@ -1748,7 +2033,16 @@
       else if (seg[0] === 'blog' && seg[1]){ setNav('blog'); viewPost(seg[1]); }
       else if (seg[0] === 'blog'){ setNav('blog'); viewBlog(); }
       else if (seg[0] === 'submit'){ setNav('submit'); viewSubmit(); }
+      else if (seg[0] === 'listing-pricing'){ setNav('submit'); viewListingPricing(); }
+      else if (seg[0] === 'advertise'){ setNav('submit'); viewAdvertise(); }
       else if (seg[0] === 'how-we-rank'){ setNav('rank'); viewRank(); }
+      else if (seg[0] === 'about'){ setNav(''); viewAbout(); }
+      else if (seg[0] === 'contact'){ setNav(''); viewContact(); }
+      else if (seg[0] === 'privacy'){ setNav(''); viewPrivacy(); }
+      else if (seg[0] === 'terms'){ setNav(''); viewTerms(); }
+      else if (seg[0] === 'all-categories'){ setNav('directory'); viewAllCategories(); }
+      else if (seg[0] === 'free-ai-tools'){ setNav('directory'); viewPricing('Free'); }
+      else if (seg[0] === 'freemium-ai-tools'){ setNav('directory'); viewPricing('Freemium'); }
       else { setNav(''); viewHome(); }
       document.getElementById('mobileNav').classList.remove('open');
     }
@@ -1757,7 +2051,7 @@
     /* footer category links */
     document.getElementById('footCats').innerHTML = CATEGORIES.slice(0,6).map(function(c){
       return '<li><a href="#/category/' + c.slug + '">' + esc(c.name) + '</a></li>';
-    }).join('') + '<li><a href="#/directory">All categories →</a></li>';
+    }).join('') + '<li><a href="#/all-categories">All categories →</a></li>';
 
     /* mobile nav */
     var burger = document.getElementById('burger');

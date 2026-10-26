@@ -88,3 +88,15 @@ Find the right AI tool for the job. A curated directory of AI tools with honest 
 
 - [Best AI tools for small business marketing](https://rightool.ai/roundup/best-ai-tools-for-small-business-marketing)
 - [Best AI tools for video creation](https://rightool.ai/roundup/best-ai-tools-for-video-creation)
+
+## Site pages
+
+- [Free AI tools](https://rightool.ai/free-ai-tools)
+- [Freemium AI tools](https://rightool.ai/freemium-ai-tools)
+- [Listing & launch pricing](https://rightool.ai/listing-pricing)
+- [Advertise & sponsorships](https://rightool.ai/advertise)
+- [All categories](https://rightool.ai/all-categories)
+- [About](https://rightool.ai/about)
+- [Contact](https://rightool.ai/contact)
+- [Privacy policy](https://rightool.ai/privacy)
+- [Terms of use](https://rightool.ai/terms)
