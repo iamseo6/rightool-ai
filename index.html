@@ -192,7 +192,7 @@
       .tool-card:hover{border-color:var(--accent);text-decoration:none;box-shadow:var(--shadow)}
       .tool-top{display:flex;align-items:center;gap:12px}
       .logo-mark{
-        width:44px;height:44px;flex:none;border-radius:11px;display:block;
+        width:88px;height:48px;flex:none;border-radius:11px;display:block;
         position:relative;overflow:hidden;border:1px solid var(--line);
       }
       .logo-mark .fb{
@@ -203,7 +203,7 @@
         position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
         padding:5px;background:#fff;
       }
-      .logo-mark.sm{width:40px;height:40px;border-radius:10px}
+      .logo-mark.sm{width:68px;height:40px;border-radius:10px}
       .logo-mark.sm .fb{font-size:14px}
       .logo-mark.sm img{padding:4px}
       .tool-top h3{font-size:17px;font-weight:700}
@@ -301,7 +301,7 @@
       .crumb{font-size:13.5px;color:var(--muted);padding-top:26px;font-weight:600}
       .crumb a{color:var(--muted)}
       .detail-head{display:flex;gap:18px;align-items:flex-start;margin-top:14px;flex-wrap:wrap}
-      .detail-head .logo-mark{width:64px;height:64px;border-radius:15px}
+      .detail-head .logo-mark{width:132px;height:72px;border-radius:15px}
       .detail-head .logo-mark .fb{font-size:22px}
       .detail-head .logo-mark img{padding:8px}
       .detail-head h1{font-size:clamp(28px,4vw,38px);font-weight:800}
@@ -393,6 +393,25 @@
         font-weight:700;padding:13px 28px;font-size:15.5px;
       }
       .submit-form .send:hover{background:var(--accent-dark)}
+      .contact-result{margin-top:20px}
+      .contact-result label{display:block;font-size:13.5px;font-weight:700;margin:16px 0 6px}
+      .contact-result textarea{
+        width:100%;font:inherit;font-size:14.5px;line-height:1.5;padding:12px;
+        border:1.5px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);
+        resize:vertical;
+      }
+      .contact-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
+      .contact-actions button{
+        background:var(--accent);color:#fff;border:0;border-radius:10px;
+        font-weight:700;padding:11px 20px;font-size:14.5px;
+      }
+      .contact-actions button:hover{background:var(--accent-dark)}
+      .contact-actions a{
+        border:1.5px solid var(--ink);border-radius:10px;padding:9px 18px;
+        font-weight:700;font-size:14.5px;color:var(--ink);background:var(--panel);
+      }
+      .contact-actions a:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}
+      .contact-copy-status{font-size:14px;font-weight:700;color:var(--green)}
 
       /* ---------- prose pages ---------- */
       .prose{max-width:720px}
@@ -1801,22 +1820,101 @@
     /* ---------- CONTACT ---------- */
     function viewContact(){
       pageShell({
-        path:'/contact',
+        path:'/contact', schemaType:'ContactPage',
         title:'Contact RighTool',
         metaTitle:'Contact RighTool.ai \u2014 Corrections, Listings & Sponsorships | RighTool.ai',
         metaDesc:'Get in touch with the RighTool editors: report a wrong price or stale listing, ask about a tool submission, or enquire about labelled sponsorship placements.',
-        sub:'Tell us what you need and we\u2019ll route it to the right place. The fastest channel for anything tool-related is the submission form \u2014 it lands directly with the editors who review listings.',
+        sub:'Use the form below to write to the editors \u2014 pick the topic that fits and include the details we need to act on it.',
         body: '<div class="prose">'
           + '<h2>Listing corrections</h2>'
-          + '<p>Prices and features change constantly, and a stale listing helps nobody. If a price, plan or feature on any tool page is wrong or out of date, send the tool\u2019s name and what changed through the <a href="#/submit">submission form</a> and mark it as a correction \u2014 corrections jump the queue and are always free.</p>'
+          + '<p>Prices and features change constantly, and a stale listing helps nobody. If a price, plan or feature on any tool page is wrong or out of date, use the form below, choose <b>Correction</b>, and include the tool\u2019s name and what changed \u2014 corrections are always free.</p>'
           + '<h2>Tool makers</h2>'
-          + '<p>Want your tool listed, or your existing listing updated? Start on the <a href="#/submit">submit a tool</a> page. The three listing options and exactly what each includes are broken down on the <a href="#/listing-pricing">listing &amp; launch pricing</a> page.</p>'
+          + '<p>Want your tool listed, or your existing listing updated? Start on the <a href="#/submit">submit a tool</a> page. The three listing options and exactly what each includes are broken down on the <a href="#/listing-pricing">listing &amp; launch pricing</a> page. For a question about a listing, use the form below and choose <b>Listing question</b>.</p>'
           + '<h2>Advertisers &amp; sponsors</h2>'
-          + '<p>Interested in a labelled Featured placement or a newsletter mention? Read the <a href="#/advertise">advertising page</a> first \u2014 it lists what is available, what it costs, and what is never for sale \u2014 then reach us through the submission form.</p>'
+          + '<p>Interested in a labelled Featured placement or a newsletter mention? Read the <a href="#/advertise">advertising page</a> first \u2014 it lists what is available, what it costs, and what is never for sale \u2014 then use the form below and choose <b>Sponsorship</b>.</p>'
           + '<h2>Everything else</h2>'
-          + '<p>Questions about how we rank, a tool you think we\u2019ve missed, or feedback on the directory itself: the <a href="#/how-we-rank">How we rank</a> page covers our methodology, and the submission form is the way to reach the editors about anything else. We read everything that comes in; listing reviews follow the queue published on the submit page.</p>'
+          + '<p>Questions about how we rank, a tool you think we\u2019ve missed, or feedback on the directory itself: the <a href="#/how-we-rank">How we rank</a> page covers our methodology, and the form below \u2014 topic <b>General</b> \u2014 covers everything else.</p>'
+          + '</div>'
+          + '<div class="submit-form" id="contactFormWrap"><h2>Send us a message</h2>'
+          + '<p style="color:var(--muted);font-size:14.5px;margin-top:6px">Fill this in and we\u2019ll prepare your message as text you can copy or download \u2014 nothing is sent from this page, so nothing gets lost if you close it first.</p>'
+          + '<form id="contactForm"><div class="f-grid">'
+          +   '<div><label for="cName">Your name *</label><input id="cName" name="name" required autocomplete="name" placeholder="Your name" /></div>'
+          +   '<div><label for="cEmail">Your email *</label><input id="cEmail" name="email" required type="email" autocomplete="email" placeholder="you@example.com" /></div>'
+          +   '<div class="full"><label for="cTopic">Topic *</label><select id="cTopic" name="topic" required>'
+          +     '<option value="Correction">Correction</option>'
+          +     '<option value="Listing question">Listing question</option>'
+          +     '<option value="Sponsorship">Sponsorship</option>'
+          +     '<option value="General" selected>General</option>'
+          +   '</select></div>'
+          +   '<div class="full"><label for="cMessage">Message *</label><textarea id="cMessage" name="message" required rows="6" placeholder="Include the tool name and page link if you\u2019re reporting a correction, or the details of your enquiry\u2026"></textarea></div>'
+          + '</div><button class="send" type="submit">Prepare my message</button>'
+          + '<p style="font-size:13px;color:var(--muted);margin-top:12px">Submitting prepares a copy for you below \u2014 it does not send anything from this page.</p></form>'
+          + '<div class="contact-result hidden" id="contactResult">'
+          +   '<div class="form-done">Your message is ready to copy</div>'
+          +   '<label for="cComposed">Your composed message</label>'
+          +   '<textarea id="cComposed" readonly rows="10" aria-describedby="cCopyStatus"></textarea>'
+          +   '<div class="contact-actions">'
+          +     '<button type="button" id="cCopy">Copy message</button>'
+          +     '<a id="cDownload" href="#" download="rightool-contact-message.txt">Download .txt</a>'
+          +     '<span class="contact-copy-status" id="cCopyStatus" role="status" aria-live="polite"></span>'
+          +   '</div>'
+          +   '<p style="font-size:13px;color:var(--muted);margin-top:12px">Keep the copied or downloaded text and send it through your usual email or channel \u2014 that way your message is never silently lost.</p>'
+          + '</div>'
           + '</div>'
       });
+      var contactForm = document.getElementById('contactForm');
+      if (!contactForm) return;
+      var contactBlobUrl = null;
+      contactForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        var name = document.getElementById('cName').value.trim();
+        var email = document.getElementById('cEmail').value.trim();
+        var topic = document.getElementById('cTopic').value;
+        var message = document.getElementById('cMessage').value.trim();
+        var composed = 'Contact form \u2014 RighTool.ai\n'
+          + 'Name: ' + name + '\n'
+          + 'Email: ' + email + '\n'
+          + 'Topic: ' + topic + '\n'
+          + '\n'
+          + 'Message:\n' + message + '\n';
+        var result = document.getElementById('contactResult');
+        var box = document.getElementById('cComposed');
+        var status = document.getElementById('cCopyStatus');
+        box.value = composed;
+        if (status) status.textContent = '';
+        var download = document.getElementById('cDownload');
+        if (contactBlobUrl){ try { URL.revokeObjectURL(contactBlobUrl); } catch (err) {} contactBlobUrl = null; }
+        try {
+          var blob = new Blob([composed], {type:'text/plain;charset=utf-8'});
+          contactBlobUrl = URL.createObjectURL(blob);
+          download.setAttribute('href', contactBlobUrl);
+        } catch (err) {
+          download.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(composed));
+        }
+        download.setAttribute('download', 'rightool-contact-message.txt');
+        result.classList.remove('hidden');
+        result.scrollIntoView({behavior:'smooth', block:'center'});
+      });
+      var copyBtn = document.getElementById('cCopy');
+      if (copyBtn){
+        copyBtn.addEventListener('click', function(){
+          var box = document.getElementById('cComposed');
+          var status = document.getElementById('cCopyStatus');
+          var text = box.value;
+          function done(){ if (status) status.textContent = 'Copied \u2014 ready to paste.'; }
+          function fallback(){
+            box.focus();
+            box.select();
+            try { document.execCommand('copy'); done(); }
+            catch (err) { if (status) status.textContent = 'Select the text above and copy it manually.'; }
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText){
+            navigator.clipboard.writeText(text).then(done, fallback);
+          } else {
+            fallback();
+          }
+        });
+      }
     }
 
     /* ---------- ADVERTISE ---------- */
