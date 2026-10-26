@@ -89,7 +89,7 @@
         }
       }
       *{box-sizing:border-box}
-      html{scroll-behavior:smooth}
+      html{scroll-behavior:smooth;overflow-anchor:none}
       body{
         margin:0;background:var(--bg);color:var(--ink);
         font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -2118,10 +2118,23 @@
         a.classList.toggle('active', a.dataset.nav === key);
       });
     }
+    /* Jump to the top on navigation. This must run AFTER the new view has
+       rendered: scrolling first lets the browser's scroll anchoring drag
+       the viewport back down to the clicked footer link while the old
+       page is replaced. The html smooth-scroll rule is suspended for the
+       jump so it lands instantly instead of animating from the footer. */
+    function scrollTopNow(){
+      var root = document.documentElement;
+      var prev = root.style.scrollBehavior;
+      root.style.scrollBehavior = 'auto';
+      window.scrollTo(0,0);
+      root.scrollTop = 0;
+      if (document.body) document.body.scrollTop = 0;
+      root.style.scrollBehavior = prev;
+    }
     function route(){
       var r = parseHash();
       var seg = r.path.split('/').filter(Boolean);
-      window.scrollTo(0,0);
       if (seg.length === 0){ setNav(''); viewHome(); }
       else if (seg[0] === 'directory'){ setNav('directory'); viewDirectory(r.params); }
       else if (seg[0] === 'category' && seg[1]){ setNav('directory'); viewCategory(seg[1]); }
@@ -2143,8 +2156,19 @@
       else if (seg[0] === 'freemium-ai-tools'){ setNav('directory'); viewPricing('Freemium'); }
       else { setNav(''); viewHome(); }
       document.getElementById('mobileNav').classList.remove('open');
+      scrollTopNow();
     }
+    /* The router owns scroll position: never let the browser restore a
+       previous scroll offset (e.g. the footer) across hash navigations. */
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
     window.addEventListener('hashchange', route);
+    /* Clicking a link to the page you are already on changes no hash, so
+       no hashchange fires and the page would stay at the footer — re-run
+       the route so it still lands at the top. */
+    document.addEventListener('click', function(e){
+      var a = (e.target && e.target.closest) ? e.target.closest('a[href^="#/"]') : null;
+      if (a && a.getAttribute('href') === location.hash){ e.preventDefault(); route(); }
+    });
 
     /* footer category links */
     document.getElementById('footCats').innerHTML = CATEGORIES.slice(0,6).map(function(c){
