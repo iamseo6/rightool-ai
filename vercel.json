@@ -32,7 +32,7 @@
       "headers": [
         {
           "key": "Link",
-          "value": "</llms.txt>; rel=\"describedby\", </sitemap.xml>; rel=\"sitemap\", </.well-known/ai-catalog.json>; rel=\"alternate\"; type=\"application/json\", </.well-known/agent-skills/index.json>; rel=\"alternate\"; type=\"application/json\""
+          "value": "</llms.txt>; rel=\"describedby\", </sitemap.xml>; rel=\"sitemap\", </.well-known/ai-catalog.json>; rel=\"alternate\"; type=\"application/json\", </.well-known/agent-skills/index.json>; rel=\"alternate\"; type=\"application/json\", </.well-known/api-catalog>; rel=\"api-catalog\""
         }
       ]
     },
@@ -75,6 +75,42 @@
           "value": "application/json"
         }
       ]
+    },
+    {
+      "source": "/.well-known/api-catalog",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/linkset+json"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/http-message-signatures-directory",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/api-doc.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/openapi.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
     }
   ],
   "rewrites": [
@@ -84,7 +120,7 @@
         {
           "type": "header",
           "key": "Accept",
-          "value": "text/markdown"
+          "value": ".*text/markdown.*"
         }
       ],
       "destination": "/index.md"

@@ -1,0 +1,10 @@
+{
+  "keys": [
+    {
+      "kty": "OKP",
+      "crv": "Ed25519",
+      "kid": "rightool-ai-1",
+      "x": "9O1u-AUj0sxZ9Z6lFRjyPCvJ-oajTJnZZFDG8GvXZEc"
+    }
+  ]
+}

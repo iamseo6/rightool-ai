@@ -83,6 +83,10 @@ Find the right AI tool for the job. A curated directory of AI tools with honest 
 - [ChatGPT vs Claude vs Gemini: which AI assistant should you use?](https://rightool.ai/blog/chatgpt-vs-claude-vs-gemini)
 - [The best free AI tools in 2026 (that are actually free)](https://rightool.ai/blog/best-free-ai-tools)
 - [AI tools for small business owners: where to start](https://rightool.ai/blog/ai-tools-for-small-business-owners)
+- [Best AI tools for YouTube creators: edit less, publish more](https://rightool.ai/blog/best-ai-tools-for-youtube-creators)
+- [Best AI coding tools in 2026: Cursor vs Copilot vs the chat assistants](https://rightool.ai/blog/best-ai-coding-tools)
+- [AI meeting notes: Otter vs Fireflies vs Notion AI](https://rightool.ai/blog/ai-meeting-notes-tools)
+- [AI image generators compared: Midjourney vs Stable Diffusion vs Firefly vs Ideogram](https://rightool.ai/blog/ai-image-generators-compared)
 
 ## Roundups
 
