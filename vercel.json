@@ -31,183 +31,903 @@
   "rewrites": [
     {
       "source": "/assets/logos/chatgpt.png",
-      "destination": "https://logo.clearbit.com/chatgpt.com"
+      "destination": "https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128"
     },
     {
       "source": "/assets/logos/claude.png",
-      "destination": "https://logo.clearbit.com/claude.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=claude.ai&sz=128"
     },
     {
       "source": "/assets/logos/gemini.png",
-      "destination": "https://logo.clearbit.com/gemini.google.com"
+      "destination": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128"
     },
     {
       "source": "/assets/logos/perplexity.png",
-      "destination": "https://logo.clearbit.com/perplexity.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128"
     },
     {
       "source": "/assets/logos/microsoft-copilot.png",
-      "destination": "https://logo.clearbit.com/copilot.microsoft.com"
+      "destination": "https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=128"
     },
     {
       "source": "/assets/logos/grammarly.png",
-      "destination": "https://logo.clearbit.com/grammarly.com"
+      "destination": "https://www.google.com/s2/favicons?domain=grammarly.com&sz=128"
     },
     {
       "source": "/assets/logos/jasper.png",
-      "destination": "https://logo.clearbit.com/jasper.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=jasper.ai&sz=128"
     },
     {
       "source": "/assets/logos/writesonic.png",
-      "destination": "https://logo.clearbit.com/writesonic.com"
+      "destination": "https://www.google.com/s2/favicons?domain=writesonic.com&sz=128"
     },
     {
       "source": "/assets/logos/quillbot.png",
-      "destination": "https://logo.clearbit.com/quillbot.com"
+      "destination": "https://www.google.com/s2/favicons?domain=quillbot.com&sz=128"
     },
     {
       "source": "/assets/logos/midjourney.png",
-      "destination": "https://logo.clearbit.com/midjourney.com"
+      "destination": "https://www.google.com/s2/favicons?domain=midjourney.com&sz=128"
     },
     {
       "source": "/assets/logos/ideogram.png",
-      "destination": "https://logo.clearbit.com/ideogram.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=ideogram.ai&sz=128"
     },
     {
       "source": "/assets/logos/leonardo.png",
-      "destination": "https://logo.clearbit.com/leonardo.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=leonardo.ai&sz=128"
     },
     {
       "source": "/assets/logos/adobe-firefly.png",
-      "destination": "https://logo.clearbit.com/firefly.adobe.com"
+      "destination": "https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=128"
     },
     {
       "source": "/assets/logos/stable-diffusion.png",
-      "destination": "https://logo.clearbit.com/stability.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=stability.ai&sz=128"
     },
     {
       "source": "/assets/logos/runway.png",
-      "destination": "https://logo.clearbit.com/runwayml.com"
+      "destination": "https://www.google.com/s2/favicons?domain=runwayml.com&sz=128"
     },
     {
       "source": "/assets/logos/descript.png",
-      "destination": "https://logo.clearbit.com/descript.com"
+      "destination": "https://www.google.com/s2/favicons?domain=descript.com&sz=128"
     },
     {
       "source": "/assets/logos/opus-clip.png",
-      "destination": "https://logo.clearbit.com/opus.pro"
+      "destination": "https://www.google.com/s2/favicons?domain=opus.pro&sz=128"
     },
     {
       "source": "/assets/logos/heygen.png",
-      "destination": "https://logo.clearbit.com/heygen.com"
+      "destination": "https://www.google.com/s2/favicons?domain=heygen.com&sz=128"
     },
     {
       "source": "/assets/logos/synthesia.png",
-      "destination": "https://logo.clearbit.com/synthesia.io"
+      "destination": "https://www.google.com/s2/favicons?domain=synthesia.io&sz=128"
     },
     {
       "source": "/assets/logos/capcut.png",
-      "destination": "https://logo.clearbit.com/capcut.com"
+      "destination": "https://www.google.com/s2/favicons?domain=capcut.com&sz=128"
     },
     {
       "source": "/assets/logos/elevenlabs.png",
-      "destination": "https://logo.clearbit.com/elevenlabs.io"
+      "destination": "https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128"
     },
     {
       "source": "/assets/logos/suno.png",
-      "destination": "https://logo.clearbit.com/suno.com"
+      "destination": "https://www.google.com/s2/favicons?domain=suno.com&sz=128"
     },
     {
       "source": "/assets/logos/udio.png",
-      "destination": "https://logo.clearbit.com/udio.com"
+      "destination": "https://www.google.com/s2/favicons?domain=udio.com&sz=128"
     },
     {
       "source": "/assets/logos/murf.png",
-      "destination": "https://logo.clearbit.com/murf.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=murf.ai&sz=128"
     },
     {
       "source": "/assets/logos/github-copilot.png",
-      "destination": "https://logo.clearbit.com/github.com"
+      "destination": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
     },
     {
       "source": "/assets/logos/cursor.png",
-      "destination": "https://logo.clearbit.com/cursor.com"
+      "destination": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128"
     },
     {
       "source": "/assets/logos/windsurf.png",
-      "destination": "https://logo.clearbit.com/windsurf.com"
+      "destination": "https://www.google.com/s2/favicons?domain=windsurf.com&sz=128"
     },
     {
       "source": "/assets/logos/replit.png",
-      "destination": "https://logo.clearbit.com/replit.com"
+      "destination": "https://www.google.com/s2/favicons?domain=replit.com&sz=128"
     },
     {
       "source": "/assets/logos/notion-ai.png",
-      "destination": "https://logo.clearbit.com/notion.com"
+      "destination": "https://www.google.com/s2/favicons?domain=notion.com&sz=128"
     },
     {
       "source": "/assets/logos/otter.png",
-      "destination": "https://logo.clearbit.com/otter.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=otter.ai&sz=128"
     },
     {
       "source": "/assets/logos/fireflies.png",
-      "destination": "https://logo.clearbit.com/fireflies.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=fireflies.ai&sz=128"
     },
     {
       "source": "/assets/logos/motion.png",
-      "destination": "https://logo.clearbit.com/usemotion.com"
+      "destination": "https://www.google.com/s2/favicons?domain=usemotion.com&sz=128"
     },
     {
       "source": "/assets/logos/gamma.png",
-      "destination": "https://logo.clearbit.com/gamma.app"
+      "destination": "https://www.google.com/s2/favicons?domain=gamma.app&sz=128"
     },
     {
       "source": "/assets/logos/copy-ai.png",
-      "destination": "https://logo.clearbit.com/copy.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=copy.ai&sz=128"
     },
     {
       "source": "/assets/logos/adcreative.png",
-      "destination": "https://logo.clearbit.com/adcreative.ai"
+      "destination": "https://www.google.com/s2/favicons?domain=adcreative.ai&sz=128"
     },
     {
       "source": "/assets/logos/surfer.png",
-      "destination": "https://logo.clearbit.com/surferseo.com"
+      "destination": "https://www.google.com/s2/favicons?domain=surferseo.com&sz=128"
     },
     {
       "source": "/assets/logos/anyword.png",
-      "destination": "https://logo.clearbit.com/anyword.com"
+      "destination": "https://www.google.com/s2/favicons?domain=anyword.com&sz=128"
     },
     {
       "source": "/assets/logos/canva.png",
-      "destination": "https://logo.clearbit.com/canva.com"
+      "destination": "https://www.google.com/s2/favicons?domain=canva.com&sz=128"
     },
     {
       "source": "/assets/logos/figma.png",
-      "destination": "https://logo.clearbit.com/figma.com"
+      "destination": "https://www.google.com/s2/favicons?domain=figma.com&sz=128"
     },
     {
       "source": "/assets/logos/framer.png",
-      "destination": "https://logo.clearbit.com/framer.com"
+      "destination": "https://www.google.com/s2/favicons?domain=framer.com&sz=128"
     },
     {
       "source": "/assets/logos/looka.png",
-      "destination": "https://logo.clearbit.com/looka.com"
+      "destination": "https://www.google.com/s2/favicons?domain=looka.com&sz=128"
     },
     {
       "source": "/assets/logos/zapier.png",
-      "destination": "https://logo.clearbit.com/zapier.com"
+      "destination": "https://www.google.com/s2/favicons?domain=zapier.com&sz=128"
     },
     {
       "source": "/assets/logos/make.png",
-      "destination": "https://logo.clearbit.com/make.com"
+      "destination": "https://www.google.com/s2/favicons?domain=make.com&sz=128"
     },
     {
       "source": "/assets/logos/hubspot.png",
-      "destination": "https://logo.clearbit.com/hubspot.com"
+      "destination": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128"
     },
     {
       "source": "/assets/logos/airtable.png",
-      "destination": "https://logo.clearbit.com/airtable.com"
+      "destination": "https://www.google.com/s2/favicons?domain=airtable.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/chatgpt.png",
+      "destination": "https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/claude.png",
+      "destination": "https://www.google.com/s2/favicons?domain=claude.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/gemini.png",
+      "destination": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/perplexity.png",
+      "destination": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/microsoft-copilot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/grammarly.png",
+      "destination": "https://www.google.com/s2/favicons?domain=grammarly.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/jasper.png",
+      "destination": "https://www.google.com/s2/favicons?domain=jasper.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/writesonic.png",
+      "destination": "https://www.google.com/s2/favicons?domain=writesonic.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/quillbot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=quillbot.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/midjourney.png",
+      "destination": "https://www.google.com/s2/favicons?domain=midjourney.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/ideogram.png",
+      "destination": "https://www.google.com/s2/favicons?domain=ideogram.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/leonardo.png",
+      "destination": "https://www.google.com/s2/favicons?domain=leonardo.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/adobe-firefly.png",
+      "destination": "https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/stable-diffusion.png",
+      "destination": "https://www.google.com/s2/favicons?domain=stability.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/runway.png",
+      "destination": "https://www.google.com/s2/favicons?domain=runwayml.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/descript.png",
+      "destination": "https://www.google.com/s2/favicons?domain=descript.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/opus-clip.png",
+      "destination": "https://www.google.com/s2/favicons?domain=opus.pro&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/heygen.png",
+      "destination": "https://www.google.com/s2/favicons?domain=heygen.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/synthesia.png",
+      "destination": "https://www.google.com/s2/favicons?domain=synthesia.io&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/capcut.png",
+      "destination": "https://www.google.com/s2/favicons?domain=capcut.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/elevenlabs.png",
+      "destination": "https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/suno.png",
+      "destination": "https://www.google.com/s2/favicons?domain=suno.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/udio.png",
+      "destination": "https://www.google.com/s2/favicons?domain=udio.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/murf.png",
+      "destination": "https://www.google.com/s2/favicons?domain=murf.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/github-copilot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/cursor.png",
+      "destination": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/windsurf.png",
+      "destination": "https://www.google.com/s2/favicons?domain=windsurf.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/replit.png",
+      "destination": "https://www.google.com/s2/favicons?domain=replit.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/notion-ai.png",
+      "destination": "https://www.google.com/s2/favicons?domain=notion.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/otter.png",
+      "destination": "https://www.google.com/s2/favicons?domain=otter.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/fireflies.png",
+      "destination": "https://www.google.com/s2/favicons?domain=fireflies.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/motion.png",
+      "destination": "https://www.google.com/s2/favicons?domain=usemotion.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/gamma.png",
+      "destination": "https://www.google.com/s2/favicons?domain=gamma.app&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/copy-ai.png",
+      "destination": "https://www.google.com/s2/favicons?domain=copy.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/adcreative.png",
+      "destination": "https://www.google.com/s2/favicons?domain=adcreative.ai&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/surfer.png",
+      "destination": "https://www.google.com/s2/favicons?domain=surferseo.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/anyword.png",
+      "destination": "https://www.google.com/s2/favicons?domain=anyword.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/canva.png",
+      "destination": "https://www.google.com/s2/favicons?domain=canva.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/figma.png",
+      "destination": "https://www.google.com/s2/favicons?domain=figma.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/framer.png",
+      "destination": "https://www.google.com/s2/favicons?domain=framer.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/looka.png",
+      "destination": "https://www.google.com/s2/favicons?domain=looka.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/zapier.png",
+      "destination": "https://www.google.com/s2/favicons?domain=zapier.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/make.png",
+      "destination": "https://www.google.com/s2/favicons?domain=make.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/hubspot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128"
+    },
+    {
+      "source": "/tool/assets/logos/airtable.png",
+      "destination": "https://www.google.com/s2/favicons?domain=airtable.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/chatgpt.png",
+      "destination": "https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/claude.png",
+      "destination": "https://www.google.com/s2/favicons?domain=claude.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/gemini.png",
+      "destination": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/perplexity.png",
+      "destination": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/microsoft-copilot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/grammarly.png",
+      "destination": "https://www.google.com/s2/favicons?domain=grammarly.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/jasper.png",
+      "destination": "https://www.google.com/s2/favicons?domain=jasper.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/writesonic.png",
+      "destination": "https://www.google.com/s2/favicons?domain=writesonic.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/quillbot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=quillbot.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/midjourney.png",
+      "destination": "https://www.google.com/s2/favicons?domain=midjourney.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/ideogram.png",
+      "destination": "https://www.google.com/s2/favicons?domain=ideogram.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/leonardo.png",
+      "destination": "https://www.google.com/s2/favicons?domain=leonardo.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/adobe-firefly.png",
+      "destination": "https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/stable-diffusion.png",
+      "destination": "https://www.google.com/s2/favicons?domain=stability.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/runway.png",
+      "destination": "https://www.google.com/s2/favicons?domain=runwayml.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/descript.png",
+      "destination": "https://www.google.com/s2/favicons?domain=descript.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/opus-clip.png",
+      "destination": "https://www.google.com/s2/favicons?domain=opus.pro&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/heygen.png",
+      "destination": "https://www.google.com/s2/favicons?domain=heygen.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/synthesia.png",
+      "destination": "https://www.google.com/s2/favicons?domain=synthesia.io&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/capcut.png",
+      "destination": "https://www.google.com/s2/favicons?domain=capcut.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/elevenlabs.png",
+      "destination": "https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/suno.png",
+      "destination": "https://www.google.com/s2/favicons?domain=suno.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/udio.png",
+      "destination": "https://www.google.com/s2/favicons?domain=udio.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/murf.png",
+      "destination": "https://www.google.com/s2/favicons?domain=murf.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/github-copilot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/cursor.png",
+      "destination": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/windsurf.png",
+      "destination": "https://www.google.com/s2/favicons?domain=windsurf.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/replit.png",
+      "destination": "https://www.google.com/s2/favicons?domain=replit.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/notion-ai.png",
+      "destination": "https://www.google.com/s2/favicons?domain=notion.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/otter.png",
+      "destination": "https://www.google.com/s2/favicons?domain=otter.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/fireflies.png",
+      "destination": "https://www.google.com/s2/favicons?domain=fireflies.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/motion.png",
+      "destination": "https://www.google.com/s2/favicons?domain=usemotion.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/gamma.png",
+      "destination": "https://www.google.com/s2/favicons?domain=gamma.app&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/copy-ai.png",
+      "destination": "https://www.google.com/s2/favicons?domain=copy.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/adcreative.png",
+      "destination": "https://www.google.com/s2/favicons?domain=adcreative.ai&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/surfer.png",
+      "destination": "https://www.google.com/s2/favicons?domain=surferseo.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/anyword.png",
+      "destination": "https://www.google.com/s2/favicons?domain=anyword.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/canva.png",
+      "destination": "https://www.google.com/s2/favicons?domain=canva.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/figma.png",
+      "destination": "https://www.google.com/s2/favicons?domain=figma.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/framer.png",
+      "destination": "https://www.google.com/s2/favicons?domain=framer.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/looka.png",
+      "destination": "https://www.google.com/s2/favicons?domain=looka.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/zapier.png",
+      "destination": "https://www.google.com/s2/favicons?domain=zapier.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/make.png",
+      "destination": "https://www.google.com/s2/favicons?domain=make.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/hubspot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128"
+    },
+    {
+      "source": "/category/assets/logos/airtable.png",
+      "destination": "https://www.google.com/s2/favicons?domain=airtable.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/chatgpt.png",
+      "destination": "https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/claude.png",
+      "destination": "https://www.google.com/s2/favicons?domain=claude.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/gemini.png",
+      "destination": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/perplexity.png",
+      "destination": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/microsoft-copilot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/grammarly.png",
+      "destination": "https://www.google.com/s2/favicons?domain=grammarly.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/jasper.png",
+      "destination": "https://www.google.com/s2/favicons?domain=jasper.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/writesonic.png",
+      "destination": "https://www.google.com/s2/favicons?domain=writesonic.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/quillbot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=quillbot.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/midjourney.png",
+      "destination": "https://www.google.com/s2/favicons?domain=midjourney.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/ideogram.png",
+      "destination": "https://www.google.com/s2/favicons?domain=ideogram.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/leonardo.png",
+      "destination": "https://www.google.com/s2/favicons?domain=leonardo.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/adobe-firefly.png",
+      "destination": "https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/stable-diffusion.png",
+      "destination": "https://www.google.com/s2/favicons?domain=stability.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/runway.png",
+      "destination": "https://www.google.com/s2/favicons?domain=runwayml.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/descript.png",
+      "destination": "https://www.google.com/s2/favicons?domain=descript.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/opus-clip.png",
+      "destination": "https://www.google.com/s2/favicons?domain=opus.pro&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/heygen.png",
+      "destination": "https://www.google.com/s2/favicons?domain=heygen.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/synthesia.png",
+      "destination": "https://www.google.com/s2/favicons?domain=synthesia.io&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/capcut.png",
+      "destination": "https://www.google.com/s2/favicons?domain=capcut.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/elevenlabs.png",
+      "destination": "https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/suno.png",
+      "destination": "https://www.google.com/s2/favicons?domain=suno.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/udio.png",
+      "destination": "https://www.google.com/s2/favicons?domain=udio.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/murf.png",
+      "destination": "https://www.google.com/s2/favicons?domain=murf.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/github-copilot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/cursor.png",
+      "destination": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/windsurf.png",
+      "destination": "https://www.google.com/s2/favicons?domain=windsurf.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/replit.png",
+      "destination": "https://www.google.com/s2/favicons?domain=replit.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/notion-ai.png",
+      "destination": "https://www.google.com/s2/favicons?domain=notion.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/otter.png",
+      "destination": "https://www.google.com/s2/favicons?domain=otter.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/fireflies.png",
+      "destination": "https://www.google.com/s2/favicons?domain=fireflies.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/motion.png",
+      "destination": "https://www.google.com/s2/favicons?domain=usemotion.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/gamma.png",
+      "destination": "https://www.google.com/s2/favicons?domain=gamma.app&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/copy-ai.png",
+      "destination": "https://www.google.com/s2/favicons?domain=copy.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/adcreative.png",
+      "destination": "https://www.google.com/s2/favicons?domain=adcreative.ai&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/surfer.png",
+      "destination": "https://www.google.com/s2/favicons?domain=surferseo.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/anyword.png",
+      "destination": "https://www.google.com/s2/favicons?domain=anyword.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/canva.png",
+      "destination": "https://www.google.com/s2/favicons?domain=canva.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/figma.png",
+      "destination": "https://www.google.com/s2/favicons?domain=figma.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/framer.png",
+      "destination": "https://www.google.com/s2/favicons?domain=framer.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/looka.png",
+      "destination": "https://www.google.com/s2/favicons?domain=looka.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/zapier.png",
+      "destination": "https://www.google.com/s2/favicons?domain=zapier.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/make.png",
+      "destination": "https://www.google.com/s2/favicons?domain=make.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/hubspot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128"
+    },
+    {
+      "source": "/roundup/assets/logos/airtable.png",
+      "destination": "https://www.google.com/s2/favicons?domain=airtable.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/chatgpt.png",
+      "destination": "https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/claude.png",
+      "destination": "https://www.google.com/s2/favicons?domain=claude.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/gemini.png",
+      "destination": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/perplexity.png",
+      "destination": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/microsoft-copilot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/grammarly.png",
+      "destination": "https://www.google.com/s2/favicons?domain=grammarly.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/jasper.png",
+      "destination": "https://www.google.com/s2/favicons?domain=jasper.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/writesonic.png",
+      "destination": "https://www.google.com/s2/favicons?domain=writesonic.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/quillbot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=quillbot.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/midjourney.png",
+      "destination": "https://www.google.com/s2/favicons?domain=midjourney.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/ideogram.png",
+      "destination": "https://www.google.com/s2/favicons?domain=ideogram.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/leonardo.png",
+      "destination": "https://www.google.com/s2/favicons?domain=leonardo.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/adobe-firefly.png",
+      "destination": "https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/stable-diffusion.png",
+      "destination": "https://www.google.com/s2/favicons?domain=stability.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/runway.png",
+      "destination": "https://www.google.com/s2/favicons?domain=runwayml.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/descript.png",
+      "destination": "https://www.google.com/s2/favicons?domain=descript.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/opus-clip.png",
+      "destination": "https://www.google.com/s2/favicons?domain=opus.pro&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/heygen.png",
+      "destination": "https://www.google.com/s2/favicons?domain=heygen.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/synthesia.png",
+      "destination": "https://www.google.com/s2/favicons?domain=synthesia.io&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/capcut.png",
+      "destination": "https://www.google.com/s2/favicons?domain=capcut.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/elevenlabs.png",
+      "destination": "https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/suno.png",
+      "destination": "https://www.google.com/s2/favicons?domain=suno.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/udio.png",
+      "destination": "https://www.google.com/s2/favicons?domain=udio.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/murf.png",
+      "destination": "https://www.google.com/s2/favicons?domain=murf.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/github-copilot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/cursor.png",
+      "destination": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/windsurf.png",
+      "destination": "https://www.google.com/s2/favicons?domain=windsurf.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/replit.png",
+      "destination": "https://www.google.com/s2/favicons?domain=replit.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/notion-ai.png",
+      "destination": "https://www.google.com/s2/favicons?domain=notion.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/otter.png",
+      "destination": "https://www.google.com/s2/favicons?domain=otter.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/fireflies.png",
+      "destination": "https://www.google.com/s2/favicons?domain=fireflies.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/motion.png",
+      "destination": "https://www.google.com/s2/favicons?domain=usemotion.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/gamma.png",
+      "destination": "https://www.google.com/s2/favicons?domain=gamma.app&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/copy-ai.png",
+      "destination": "https://www.google.com/s2/favicons?domain=copy.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/adcreative.png",
+      "destination": "https://www.google.com/s2/favicons?domain=adcreative.ai&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/surfer.png",
+      "destination": "https://www.google.com/s2/favicons?domain=surferseo.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/anyword.png",
+      "destination": "https://www.google.com/s2/favicons?domain=anyword.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/canva.png",
+      "destination": "https://www.google.com/s2/favicons?domain=canva.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/figma.png",
+      "destination": "https://www.google.com/s2/favicons?domain=figma.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/framer.png",
+      "destination": "https://www.google.com/s2/favicons?domain=framer.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/looka.png",
+      "destination": "https://www.google.com/s2/favicons?domain=looka.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/zapier.png",
+      "destination": "https://www.google.com/s2/favicons?domain=zapier.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/make.png",
+      "destination": "https://www.google.com/s2/favicons?domain=make.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/hubspot.png",
+      "destination": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128"
+    },
+    {
+      "source": "/blog/assets/logos/airtable.png",
+      "destination": "https://www.google.com/s2/favicons?domain=airtable.com&sz=128"
     },
     {
       "source": "/(.*)",
