@@ -1,0 +1,1 @@
+{"capabilities":{"prompts":{},"resources":{},"tools":{"listChanged":false}},"serverInfo":{"name":"RighTool.ai","version":"1.0.0"},"tools":["search_tools","get_tool_details","list_categories","list_guides","get_ranking_methodology","get_listing_options"],"transport":{"endpoint":"https://rightool.ai/mcp","type":"streamable-http"}}
