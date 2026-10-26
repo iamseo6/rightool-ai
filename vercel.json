@@ -41,7 +41,11 @@
       "headers": [
         {
           "key": "Content-Type",
-          "value": "text/markdown"
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept"
         }
       ]
     },
@@ -1037,6 +1041,32 @@
     {
       "source": "/(.*)",
       "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "Accept",
+          "value": "text/markdown"
+        }
+      ],
+      "destination": "/index.md",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "Accept",
+          "value": ".*text/markdown.*"
+        }
+      ],
+      "destination": "/index.md",
+      "permanent": false
     }
   ]
 }
