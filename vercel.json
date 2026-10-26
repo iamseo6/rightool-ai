@@ -111,6 +111,15 @@
           "value": "application/json"
         }
       ]
+    },
+    {
+      "source": "/.well-known/poppy.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
     }
   ],
   "rewrites": [
