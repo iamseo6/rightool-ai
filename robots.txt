@@ -24,3 +24,6 @@ User-agent: YouBot
 Allow: /
 
 Sitemap: https://rightool.ai/sitemap.xml
+
+Content-Signal: ai-train=no, search=yes, ai-input=no
+Agentmap: https://rightool.ai/.well-known/ai-catalog.json
